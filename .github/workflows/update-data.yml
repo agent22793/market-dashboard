@@ -30,7 +30,7 @@ jobs:
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
-          EMAIL_ONLY_ON_CHANGE: "false"
+          EMAIL_ONLY_ON_CHANGE: "true"
         run: python scripts/collect_data.py
 
       - name: Commit updated data
