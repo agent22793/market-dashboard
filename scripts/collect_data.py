@@ -43,6 +43,8 @@ SECTOR_ETFS = ["XLK", "XLF", "XLE", "XLY", "XLP", "XLV", "XLI", "XLB", "XLU", "X
 CNN_FNG_URL = "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; market-dashboard-bot/1.0)"}
 
+SP500_WIKI_URL = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+
 
 # ---------------------------------------------------------------------------
 # Data fetching
@@ -88,6 +90,91 @@ def fetch_sector_breadth() -> dict:
     return {"sectors_above_200sma": above, "sectors_total": total}
 
 
+def fetch_sp500_tickers() -> list:
+    """Pulls the current S&P 500 constituent list from Wikipedia (public, no key).
+    This is a best-effort source — if the page structure changes, market
+    internals are skipped for that run rather than failing the whole pipeline.
+    """
+    try:
+        tables = pd.read_html(SP500_WIKI_URL)
+        symbols = tables[0]["Symbol"].astype(str).str.strip()
+        # Yahoo Finance uses a dash where Wikipedia uses a dot (e.g. BRK.B -> BRK-B)
+        symbols = symbols.str.replace(".", "-", regex=False)
+        return symbols.tolist()
+    except Exception as exc:  # noqa: BLE001
+        print(f"[warn] Could not fetch S&P 500 constituent list: {exc}")
+        return []
+
+
+def fetch_market_internals(tickers: list) -> dict | None:
+    """Real market breadth across the S&P 500: advancers/decliners, new
+    52-week highs/lows, and % of stocks above their 20/50/200-day averages.
+    One batched download rather than 500 individual calls, to stay well
+    within Yahoo's informal rate limits.
+    """
+    if not tickers:
+        return None
+    try:
+        data = yf.download(
+            tickers, period="300d", interval="1d",
+            group_by="ticker", threads=True, progress=False, auto_adjust=True,
+        )
+    except Exception as exc:  # noqa: BLE001
+        print(f"[warn] Batched internals download failed: {exc}")
+        return None
+
+    advancers = decliners = unchanged = 0
+    new_highs = new_lows = 0
+    above20 = above50 = above200 = 0
+    counted = 0
+
+    for t in tickers:
+        try:
+            closes = data[t]["Close"].dropna()
+            if len(closes) < 25:
+                continue
+            last = float(closes.iloc[-1])
+            prev = float(closes.iloc[-2])
+            counted += 1
+
+            if last > prev:
+                advancers += 1
+            elif last < prev:
+                decliners += 1
+            else:
+                unchanged += 1
+
+            window = closes.tail(252)
+            if last >= float(window.max()):
+                new_highs += 1
+            if last <= float(window.min()):
+                new_lows += 1
+
+            if len(closes) >= 20 and last > float(closes.rolling(20).mean().iloc[-1]):
+                above20 += 1
+            if len(closes) >= 50 and last > float(closes.rolling(50).mean().iloc[-1]):
+                above50 += 1
+            if len(closes) >= 200 and last > float(closes.rolling(200).mean().iloc[-1]):
+                above200 += 1
+        except Exception:
+            continue  # skip any single ticker that failed to download cleanly
+
+    if counted == 0:
+        return None
+
+    return {
+        "universe_size": counted,
+        "advancers": advancers,
+        "decliners": decliners,
+        "unchanged": unchanged,
+        "new_highs": new_highs,
+        "new_lows": new_lows,
+        "pct_above_sma20": round(above20 / counted * 100, 1),
+        "pct_above_sma50": round(above50 / counted * 100, 1),
+        "pct_above_sma200": round(above200 / counted * 100, 1),
+    }
+
+
 def fetch_fear_greed() -> dict:
     """CNN's Fear & Greed Index via its public (unofficial) data endpoint.
     Falls back gracefully to None if the endpoint changes or is unreachable —
@@ -114,7 +201,7 @@ def clamp(x, lo=0, hi=100):
     return max(lo, min(hi, x))
 
 
-def compute_market_score(spx: dict, vix_price: float, breadth: dict, fng: dict) -> dict:
+def compute_market_score(spx: dict, vix_price: float, breadth: dict, fng: dict, internals: dict | None = None) -> dict:
     # Trend: reward being above SMA50/SMA200 and close to highs
     trend = 50.0
     if spx["sma50"]:
@@ -127,8 +214,11 @@ def compute_market_score(spx: dict, vix_price: float, breadth: dict, fng: dict) 
     # Volatility: lower VIX = higher score. ~12 VIX -> ~100, ~32 VIX -> ~0
     vol = clamp(100 - (vix_price - 12) * 5)
 
-    # Breadth: % of sectors above their 200-day average
-    if breadth["sectors_total"]:
+    # Breadth: prefer real S&P 500 breadth (% above 200-day avg) when available,
+    # since it's a much larger, more accurate sample than the 11-sector proxy.
+    if internals and internals.get("pct_above_sma200") is not None:
+        breadth_score = internals["pct_above_sma200"]
+    elif breadth["sectors_total"]:
         breadth_score = (breadth["sectors_above_200sma"] / breadth["sectors_total"]) * 100
     else:
         breadth_score = 50.0
@@ -229,6 +319,15 @@ def maybe_send_email(prev: dict | None, market: dict, snapshot: dict) -> None:
         f"Russell:  {snapshot['russell']['change_pct']:+.2f}%",
         f"VIX:      {snapshot['vix']:.1f}",
         f"Fear & Greed: {snapshot['fear_greed']['score']} ({snapshot['fear_greed']['rating']})",
+    ]
+    internals = snapshot.get("internals")
+    if internals:
+        lines += [
+            f"Breadth:  {internals['advancers']} advancers / {internals['decliners']} decliners "
+            f"({internals['new_highs']} new highs, {internals['new_lows']} new lows)",
+            f"% > SMA200: {internals['pct_above_sma200']}%   % > SMA50: {internals['pct_above_sma50']}%   % > SMA20: {internals['pct_above_sma20']}%",
+        ]
+    lines += [
         "",
         "Full dashboard: (add your GitHub Pages URL here)",
     ]
@@ -260,8 +359,10 @@ def main():
     vix = fetch_index_data(VIX_TICKER)
     breadth = fetch_sector_breadth()
     fng = fetch_fear_greed()
+    sp500_tickers = fetch_sp500_tickers()
+    internals = fetch_market_internals(sp500_tickers)
 
-    market = compute_market_score(spx, vix["price"], breadth, fng)
+    market = compute_market_score(spx, vix["price"], breadth, fng, internals)
 
     prev = load_previous()
 
@@ -274,6 +375,7 @@ def main():
         "russell": russell,
         "vix": vix["price"],
         "breadth": breadth,
+        "internals": internals,
         "fear_greed": fng,
     }
     snapshot["recent_alerts"] = build_alerts(prev, market, now_iso)
@@ -294,6 +396,13 @@ def main():
         "fear_greed": fng["score"],
         "sectors_above_200sma": breadth["sectors_above_200sma"],
         "sectors_total": breadth["sectors_total"],
+        "advancers": internals["advancers"] if internals else "",
+        "decliners": internals["decliners"] if internals else "",
+        "new_highs": internals["new_highs"] if internals else "",
+        "new_lows": internals["new_lows"] if internals else "",
+        "pct_above_sma20": internals["pct_above_sma20"] if internals else "",
+        "pct_above_sma50": internals["pct_above_sma50"] if internals else "",
+        "pct_above_sma200": internals["pct_above_sma200"] if internals else "",
     })
 
     maybe_send_email(prev, market, snapshot)
