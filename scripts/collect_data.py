@@ -69,21 +69,24 @@ NASDAQ100_FALLBACK_TICKERS = [
 def fetch_nasdaq100_tickers() -> list:
     """Pulls the current Nasdaq-100 list from Nasdaq's own (unofficial, but
     functional) JSON API — the same endpoint their own website's list pages
-    use internally. No key required, but undocumented, so it's wrapped with a
-    sanity check (expect ~100 tickers back) and a static-list fallback in case
-    Nasdaq changes or rate-limits this endpoint on a given run.
+    use internally. No key required, but undocumented and sometimes slow to
+    respond from cloud/datacenter IPs (which is what GitHub Actions runs on),
+    so this retries once with a longer timeout before giving up. Falls back
+    to the static list if both attempts fail.
     """
-    try:
-        resp = requests.get(NASDAQ100_API_URL, headers=HEADERS, timeout=20)
-        resp.raise_for_status()
-        rows = resp.json()["data"]["data"]["rows"]
-        tickers = [row["symbol"].strip() for row in rows if row.get("symbol")]
-        if len(tickers) < 90:
-            raise ValueError(f"Unexpectedly few tickers returned ({len(tickers)})")
-        return tickers
-    except Exception as exc:  # noqa: BLE001
-        print(f"[warn] Live Nasdaq-100 fetch failed ({exc}); using the built-in fallback list (may be slightly stale).")
-        return NASDAQ100_FALLBACK_TICKERS
+    for attempt, timeout in enumerate((20, 40), start=1):
+        try:
+            resp = requests.get(NASDAQ100_API_URL, headers=HEADERS, timeout=timeout)
+            resp.raise_for_status()
+            rows = resp.json()["data"]["data"]["rows"]
+            tickers = [row["symbol"].strip() for row in rows if row.get("symbol")]
+            if len(tickers) < 90:
+                raise ValueError(f"Unexpectedly few tickers returned ({len(tickers)})")
+            return tickers
+        except Exception as exc:  # noqa: BLE001
+            print(f"[warn] Live Nasdaq-100 fetch attempt {attempt} failed: {exc}")
+    print("[warn] Both Nasdaq-100 fetch attempts failed; using the built-in fallback list (may be slightly stale).")
+    return NASDAQ100_FALLBACK_TICKERS
 
 
 # ---------------------------------------------------------------------------
