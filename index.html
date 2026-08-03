@@ -148,7 +148,7 @@
 
   <footer>
     Data refreshed daily after market close via GitHub Actions (see <code>.github/workflows/update-data.yml</code>) &mdash;
-    prices from Yahoo Finance, breadth from the live S&amp;P 500 constituent list (Wikipedia), sentiment from CNN's
+    prices from Yahoo Finance, breadth from the live Nasdaq-100 constituent list (Wikipedia), sentiment from CNN's
     public Fear &amp; Greed feed. Market Score is a simple weighted composite of trend, volatility, breadth, and
     sentiment — not investment advice.
   </footer>
@@ -195,11 +195,11 @@ async function loadLatest() {
 
   const internals = d.internals;
   if (internals) {
-    document.getElementById("breadthUniverse").textContent = `${internals.universe_size} S&P 500 stocks`;
-    const adv = document.getElementById("advDecValue");
-    adv.textContent = `${internals.advancers} / ${internals.decliners}`;
-    adv.className = `value ${internals.advancers > internals.decliners ? "up" : internals.advancers < internals.decliners ? "down" : "flat"}`;
-    document.getElementById("highLowValue").textContent = `${internals.new_highs} / ${internals.new_lows}`;
+    document.getElementById("breadthUniverse").textContent = `${internals.universe_size} Nasdaq-100 stocks`;
+    document.getElementById("advDecValue").innerHTML =
+      `<span class="up">${internals.advancers}</span> <span class="flat">/</span> <span class="down">${internals.decliners}</span>`;
+    document.getElementById("highLowValue").innerHTML =
+      `<span class="up">${internals.new_highs}</span> <span class="flat">/</span> <span class="down">${internals.new_lows}</span>`;
     document.getElementById("smaBreadthValue").textContent =
       `${internals.pct_above_sma200}% / ${internals.pct_above_sma50}% / ${internals.pct_above_sma20}%`;
   } else {
