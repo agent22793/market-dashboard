@@ -1,0 +1,12 @@
+{
+  "updated_at": null,
+  "market": { "score": null, "label": "Awaiting first run", "emoji": "⏳", "components": {} },
+  "sp500": { "price": null, "change_pct": null },
+  "nasdaq": { "price": null, "change_pct": null },
+  "dow": { "price": null, "change_pct": null },
+  "russell": { "price": null, "change_pct": null },
+  "vix": null,
+  "breadth": { "sectors_above_200sma": null, "sectors_total": null },
+  "fear_greed": { "score": null, "rating": null },
+  "recent_alerts": [{ "time": null, "text": "Waiting for the first GitHub Actions run..." }]
+}
