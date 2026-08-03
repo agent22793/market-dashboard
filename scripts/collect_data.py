@@ -45,6 +45,7 @@ CNN_FNG_URL = "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; market-dashboard-bot/1.0)"}
 
 SP500_WIKI_URL = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+NASDAQ100_WIKI_URL = "https://en.wikipedia.org/wiki/Nasdaq-100"
 
 
 # ---------------------------------------------------------------------------
@@ -91,31 +92,37 @@ def fetch_sector_breadth() -> dict:
     return {"sectors_above_200sma": above, "sectors_total": total}
 
 
-def fetch_sp500_tickers() -> list:
-    """Pulls the current S&P 500 constituent list from Wikipedia (public, no key).
+def fetch_wiki_tickers(url: str) -> list:
+    """Pulls a constituent ticker list from a Wikipedia table (public, no key).
     Wikipedia blocks requests without a browser-like User-Agent, so we fetch the
     page ourselves first rather than letting pandas.read_html fetch it directly.
-    This is a best-effort source — if the page structure changes, market
-    internals are skipped for that run rather than failing the whole pipeline.
+    Tries both known column names ("Symbol" on the S&P 500 page, "Ticker" on the
+    Nasdaq-100 page). Best-effort — if the page structure changes, breadth is
+    skipped for that run rather than failing the whole pipeline.
     """
     try:
-        resp = requests.get(SP500_WIKI_URL, headers=HEADERS, timeout=20)
+        resp = requests.get(url, headers=HEADERS, timeout=20)
         resp.raise_for_status()
         tables = pd.read_html(io.StringIO(resp.text))
-        symbols = tables[0]["Symbol"].astype(str).str.strip()
-        # Yahoo Finance uses a dash where Wikipedia uses a dot (e.g. BRK.B -> BRK-B)
-        symbols = symbols.str.replace(".", "-", regex=False)
-        return symbols.tolist()
+        for table in tables:
+            for col in ("Symbol", "Ticker"):
+                if col in table.columns:
+                    symbols = table[col].astype(str).str.strip()
+                    # Yahoo uses a dash where Wikipedia uses a dot (e.g. BRK.B -> BRK-B)
+                    symbols = symbols.str.replace(".", "-", regex=False)
+                    return symbols.tolist()
+        print(f"[warn] No Symbol/Ticker column found in any table at {url}")
+        return []
     except Exception as exc:  # noqa: BLE001
-        print(f"[warn] Could not fetch S&P 500 constituent list: {exc}")
+        print(f"[warn] Could not fetch constituent list from {url}: {exc}")
         return []
 
 
 def fetch_market_internals(tickers: list) -> dict | None:
-    """Real market breadth across the S&P 500: advancers/decliners, new
-    52-week highs/lows, and % of stocks above their 20/50/200-day averages.
-    One batched download rather than 500 individual calls, to stay well
-    within Yahoo's informal rate limits.
+    """Real market breadth across the given ticker universe (currently the
+    Nasdaq-100): advancers/decliners, new 52-week highs/lows, and % of
+    stocks above their 20/50/200-day averages. One batched download rather
+    than one call per ticker, to stay well within Yahoo's informal rate limits.
     """
     if not tickers:
         return None
@@ -219,8 +226,9 @@ def compute_market_score(spx: dict, vix_price: float, breadth: dict, fng: dict, 
     # Volatility: lower VIX = higher score. ~12 VIX -> ~100, ~32 VIX -> ~0
     vol = clamp(100 - (vix_price - 12) * 5)
 
-    # Breadth: prefer real S&P 500 breadth (% above 200-day avg) when available,
-    # since it's a much larger, more accurate sample than the 11-sector proxy.
+    # Breadth: prefer real breadth (% above 200-day avg) across the tracked
+    # ticker universe when available, since it's a larger, more accurate
+    # sample than the 11-sector proxy.
     if internals and internals.get("pct_above_sma200") is not None:
         breadth_score = internals["pct_above_sma200"]
     elif breadth["sectors_total"]:
@@ -364,8 +372,8 @@ def main():
     vix = fetch_index_data(VIX_TICKER)
     breadth = fetch_sector_breadth()
     fng = fetch_fear_greed()
-    sp500_tickers = fetch_sp500_tickers()
-    internals = fetch_market_internals(sp500_tickers)
+    ndx100_tickers = fetch_wiki_tickers(NASDAQ100_WIKI_URL)
+    internals = fetch_market_internals(ndx100_tickers)
 
     market = compute_market_score(spx, vix["price"], breadth, fng, internals)
 
