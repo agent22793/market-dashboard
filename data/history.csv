@@ -1,3 +1,2 @@
-date,market_score,market_label,sp500_price,sp500_change_pct,nasdaq_change_pct,dow_change_pct,russell_change_pct,vix,fear_greed,sectors_above_200sma,sectors_total
-2026-08-03,72,Bullish,7489.72021484375,0.7,1.002,0.531,-0.501,15.99,42,8,11
-2026-08-03,72,Bullish,7489.72021484375,0.7,1.002,0.531,-0.501,15.99,42,8,11
+date,market_score,market_label,sp500_price,sp500_change_pct,nasdaq_change_pct,dow_change_pct,russell_change_pct,vix,fear_greed,sectors_above_200sma,sectors_total,advancers,decliners,new_highs,new_lows,pct_above_sma20,pct_above_sma50,pct_above_sma200
+2026-08-03,72,Bullish,7489.72021484375,0.7,1.002,0.531,-0.501,15.99,42,8,11,,,,,,,
