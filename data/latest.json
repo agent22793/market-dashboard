@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03T01:30:37.566689+00:00",
+  "updated_at": "2026-08-03T01:47:46.947041+00:00",
   "market": {
     "score": 72,
     "label": "Bullish",
@@ -44,11 +44,16 @@
     "sectors_above_200sma": 8,
     "sectors_total": 11
   },
+  "internals": null,
   "fear_greed": {
     "score": 42,
     "rating": "Fear"
   },
   "recent_alerts": [
+    {
+      "time": "2026-08-03T01:47:46.947041+00:00",
+      "text": "\u2714 Market remains Bullish"
+    },
     {
       "time": "2026-08-03T01:30:37.566689+00:00",
       "text": "\u2714 Market remains Bullish"
