@@ -15,6 +15,7 @@ are set — an alert email is sent.
 No API keys required for the core data. Email is optional (see README).
 """
 
+import io
 import json
 import os
 import smtplib
@@ -92,11 +93,15 @@ def fetch_sector_breadth() -> dict:
 
 def fetch_sp500_tickers() -> list:
     """Pulls the current S&P 500 constituent list from Wikipedia (public, no key).
+    Wikipedia blocks requests without a browser-like User-Agent, so we fetch the
+    page ourselves first rather than letting pandas.read_html fetch it directly.
     This is a best-effort source — if the page structure changes, market
     internals are skipped for that run rather than failing the whole pipeline.
     """
     try:
-        tables = pd.read_html(SP500_WIKI_URL)
+        resp = requests.get(SP500_WIKI_URL, headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+        tables = pd.read_html(io.StringIO(resp.text))
         symbols = tables[0]["Symbol"].astype(str).str.strip()
         # Yahoo Finance uses a dash where Wikipedia uses a dot (e.g. BRK.B -> BRK-B)
         symbols = symbols.str.replace(".", "-", regex=False)
