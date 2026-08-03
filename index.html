@@ -174,7 +174,7 @@ async function loadHistory() {
     type: "line",
     data: { labels, datasets: [{
       label: "Market Score", data: rows.map(r => Number(r.market_score)),
-      borderColor: "#5EC8FF", backgroundColor: "rgba(94,200,255,.08)", fill: true, tension: .25, pointRadius: 0,
+      borderColor: "#5EC8FF", backgroundColor: "rgba(94,200,255,.08)", fill: true, tension: .25, pointRadius: 3,
     }]},
     options: chartOpts(0, 100),
   });
@@ -187,10 +187,10 @@ async function loadHistory() {
   new Chart(document.getElementById("indexChart"), {
     type: "line",
     data: { labels, datasets: [
-      { label: "S&P 500", data: cumulative("sp500_change_pct"), borderColor: "#3DDC8A", pointRadius: 0, tension: .25 },
-      { label: "Nasdaq", data: cumulative("nasdaq_change_pct"), borderColor: "#5EC8FF", pointRadius: 0, tension: .25 },
-      { label: "Dow", data: cumulative("dow_change_pct"), borderColor: "#F5A623", pointRadius: 0, tension: .25 },
-      { label: "Russell", data: cumulative("russell_change_pct"), borderColor: "#FF5C7A", pointRadius: 0, tension: .25 },
+      { label: "S&P 500", data: cumulative("sp500_change_pct"), borderColor: "#3DDC8A", pointRadius: 3, tension: .25 },
+      { label: "Nasdaq", data: cumulative("nasdaq_change_pct"), borderColor: "#5EC8FF", pointRadius: 3, tension: .25 },
+      { label: "Dow", data: cumulative("dow_change_pct"), borderColor: "#F5A623", pointRadius: 3, tension: .25 },
+      { label: "Russell", data: cumulative("russell_change_pct"), borderColor: "#FF5C7A", pointRadius: 3, tension: .25 },
     ]},
     options: chartOpts(),
   });
