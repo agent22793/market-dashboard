@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-08-03T01:47:46.947041+00:00",
+  "updated_at": "2026-08-03T02:01:30.688639+00:00",
   "market": {
-    "score": 72,
+    "score": 71,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 83,
       "volatility": 80,
-      "breadth": 73,
+      "breadth": 68,
       "sentiment": 42
     }
   },
@@ -44,12 +44,26 @@
     "sectors_above_200sma": 8,
     "sectors_total": 11
   },
-  "internals": null,
+  "internals": {
+    "universe_size": 503,
+    "advancers": 223,
+    "decliners": 279,
+    "unchanged": 1,
+    "new_highs": 4,
+    "new_lows": 3,
+    "pct_above_sma20": 53.7,
+    "pct_above_sma50": 62.4,
+    "pct_above_sma200": 68.0
+  },
   "fear_greed": {
     "score": 42,
     "rating": "Fear"
   },
   "recent_alerts": [
+    {
+      "time": "2026-08-03T02:01:30.688639+00:00",
+      "text": "\u2714 Market remains Bullish"
+    },
     {
       "time": "2026-08-03T01:47:46.947041+00:00",
       "text": "\u2714 Market remains Bullish"
