@@ -100,14 +100,36 @@
   </div>
 
   <div class="panel">
+    <div class="panel-head">
+      <div class="panel-title">Market Breadth</div>
+      <div class="panel-sub" id="breadthUniverse"></div>
+    </div>
+    <div class="grid" style="grid-template-columns:repeat(3,1fr);padding:0 4px 4px;margin:0;">
+      <div class="card" style="border:none;">
+        <div class="label">Advancers / Decliners</div>
+        <div class="value" id="advDecValue">&mdash;</div>
+      </div>
+      <div class="card" style="border:none;">
+        <div class="label">New Highs / New Lows</div>
+        <div class="value" id="highLowValue">&mdash;</div>
+      </div>
+      <div class="card" style="border:none;">
+        <div class="label">% &gt; SMA200 / SMA50 / SMA20</div>
+        <div class="value" id="smaBreadthValue" style="font-size:18px;">&mdash;</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
     <div class="panel-head"><div class="panel-title">Recent Alerts</div></div>
     <ul class="alerts" id="alertsList"><li>Loading&hellip;</li></ul>
   </div>
 
   <footer>
     Data refreshed daily after market close via GitHub Actions (see <code>.github/workflows/update-data.yml</code>) &mdash;
-    prices from Yahoo Finance, sentiment from CNN's public Fear &amp; Greed feed. Market Score is a simple weighted
-    composite of trend, volatility, sector breadth, and sentiment — not investment advice.
+    prices from Yahoo Finance, breadth from the live S&amp;P 500 constituent list (Wikipedia), sentiment from CNN's
+    public Fear &amp; Greed feed. Market Score is a simple weighted composite of trend, volatility, breadth, and
+    sentiment — not investment advice.
   </footer>
 </div>
 
@@ -147,6 +169,19 @@ async function loadLatest() {
   setIdx("ndxValue", d.nasdaq);
   setIdx("djiValue", d.dow);
   setIdx("rutValue", d.russell);
+
+  const internals = d.internals;
+  if (internals) {
+    document.getElementById("breadthUniverse").textContent = `${internals.universe_size} S&P 500 stocks`;
+    const adv = document.getElementById("advDecValue");
+    adv.textContent = `${internals.advancers} / ${internals.decliners}`;
+    adv.className = `value ${internals.advancers > internals.decliners ? "up" : internals.advancers < internals.decliners ? "down" : "flat"}`;
+    document.getElementById("highLowValue").textContent = `${internals.new_highs} / ${internals.new_lows}`;
+    document.getElementById("smaBreadthValue").textContent =
+      `${internals.pct_above_sma200}% / ${internals.pct_above_sma50}% / ${internals.pct_above_sma20}%`;
+  } else {
+    document.getElementById("breadthUniverse").textContent = "unavailable this run";
+  }
 
   const list = document.getElementById("alertsList");
   list.innerHTML = (d.recent_alerts || []).map(a => `
