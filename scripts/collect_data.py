@@ -15,7 +15,6 @@ are set — an alert email is sent.
 No API keys required for the core data. Email is optional (see README).
 """
 
-import io
 import json
 import os
 import smtplib
@@ -44,8 +43,47 @@ SECTOR_ETFS = ["XLK", "XLF", "XLE", "XLY", "XLP", "XLV", "XLI", "XLB", "XLU", "X
 CNN_FNG_URL = "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; market-dashboard-bot/1.0)"}
 
-SP500_WIKI_URL = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
-NASDAQ100_WIKI_URL = "https://en.wikipedia.org/wiki/Nasdaq-100"
+NASDAQ100_API_URL = "https://api.nasdaq.com/api/quote/list-type/nasdaq100"
+
+# Fallback only — used if the live api.nasdaq.com fetch below fails. Wikipedia
+# no longer maintains a scrapable Nasdaq-100 table (removed from the article),
+# and the Invesco QQQ holdings page loads via JS rather than a static file, so
+# there's no other free, reliable source to fall back to. This list is not
+# actively maintained; it exists purely so one bad day for Nasdaq's API doesn't
+# take out the whole breadth panel. Last verified: Aug 2026.
+NASDAQ100_FALLBACK_TICKERS = [
+    "ADBE", "ADP", "AMD", "ABNB", "ALNY", "GOOGL", "GOOG", "AMZN", "AEP", "AMGN",
+    "ADI", "AAPL", "AMAT", "APP", "ARM", "ASML", "TEAM", "ADSK", "AXON", "BKR",
+    "BKNG", "AVGO", "CDNS", "CHTR", "CTAS", "CSCO", "CCEP", "CTSH", "CMCSA", "CEG",
+    "CPRT", "CSGP", "COST", "CRWD", "CSX", "DDOG", "DXCM", "FANG", "DASH", "EA",
+    "EXC", "FAST", "FER", "FTNT", "GEHC", "GILD", "HON", "IDXX", "INSM", "INTC",
+    "INTU", "ISRG", "KDP", "KLAC", "KHC", "LRCX", "LIN", "MAR", "MRVL", "MELI",
+    "META", "MCHP", "MU", "MSFT", "MSTR", "MDLZ", "MPWR", "MNST", "NFLX", "NVDA",
+    "NXPI", "ODFL", "ORLY", "PCAR", "PLTR", "PANW", "PAYX", "PYPL", "PDD", "PEP",
+    "QCOM", "REGN", "ROP", "ROST", "STX", "SHOP", "SBUX", "SNPS", "TTWO", "TSLA",
+    "TXN", "TRI", "TMUS", "VRSK", "VRTX", "WMT", "WBD", "WDC", "WDAY", "XEL", "ZS",
+    "ALAB",
+]
+
+
+def fetch_nasdaq100_tickers() -> list:
+    """Pulls the current Nasdaq-100 list from Nasdaq's own (unofficial, but
+    functional) JSON API — the same endpoint their own website's list pages
+    use internally. No key required, but undocumented, so it's wrapped with a
+    sanity check (expect ~100 tickers back) and a static-list fallback in case
+    Nasdaq changes or rate-limits this endpoint on a given run.
+    """
+    try:
+        resp = requests.get(NASDAQ100_API_URL, headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+        rows = resp.json()["data"]["data"]["rows"]
+        tickers = [row["symbol"].strip() for row in rows if row.get("symbol")]
+        if len(tickers) < 90:
+            raise ValueError(f"Unexpectedly few tickers returned ({len(tickers)})")
+        return tickers
+    except Exception as exc:  # noqa: BLE001
+        print(f"[warn] Live Nasdaq-100 fetch failed ({exc}); using the built-in fallback list (may be slightly stale).")
+        return NASDAQ100_FALLBACK_TICKERS
 
 
 # ---------------------------------------------------------------------------
@@ -90,32 +128,6 @@ def fetch_sector_breadth() -> dict:
         except Exception:
             continue
     return {"sectors_above_200sma": above, "sectors_total": total}
-
-
-def fetch_wiki_tickers(url: str) -> list:
-    """Pulls a constituent ticker list from a Wikipedia table (public, no key).
-    Wikipedia blocks requests without a browser-like User-Agent, so we fetch the
-    page ourselves first rather than letting pandas.read_html fetch it directly.
-    Tries both known column names ("Symbol" on the S&P 500 page, "Ticker" on the
-    Nasdaq-100 page). Best-effort — if the page structure changes, breadth is
-    skipped for that run rather than failing the whole pipeline.
-    """
-    try:
-        resp = requests.get(url, headers=HEADERS, timeout=20)
-        resp.raise_for_status()
-        tables = pd.read_html(io.StringIO(resp.text))
-        for table in tables:
-            for col in ("Symbol", "Ticker"):
-                if col in table.columns:
-                    symbols = table[col].astype(str).str.strip()
-                    # Yahoo uses a dash where Wikipedia uses a dot (e.g. BRK.B -> BRK-B)
-                    symbols = symbols.str.replace(".", "-", regex=False)
-                    return symbols.tolist()
-        print(f"[warn] No Symbol/Ticker column found in any table at {url}")
-        return []
-    except Exception as exc:  # noqa: BLE001
-        print(f"[warn] Could not fetch constituent list from {url}: {exc}")
-        return []
 
 
 def fetch_market_internals(tickers: list) -> dict | None:
@@ -372,7 +384,7 @@ def main():
     vix = fetch_index_data(VIX_TICKER)
     breadth = fetch_sector_breadth()
     fng = fetch_fear_greed()
-    ndx100_tickers = fetch_wiki_tickers(NASDAQ100_WIKI_URL)
+    ndx100_tickers = fetch_nasdaq100_tickers()
     internals = fetch_market_internals(ndx100_tickers)
 
     market = compute_market_score(spx, vix["price"], breadth, fng, internals)
