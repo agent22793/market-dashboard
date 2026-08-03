@@ -29,6 +29,7 @@
   .card{background:var(--panel);border:1px solid var(--hair);border-radius:var(--radius);padding:18px;}
   .card .label{font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;}
   .card .value{font-family:'Fraunces',serif;font-weight:700;font-size:24px;}
+  .card .card-sub{font-size:10px;color:var(--dim);margin-top:6px;letter-spacing:.03em;}
   .up{color:var(--up);} .down{color:var(--down);} .flat{color:var(--dim);}
 
   .hero{grid-column:span 2;}
@@ -39,6 +40,12 @@
   .score-den{color:var(--dim);font-size:13px;}
   .bar{height:6px;background:var(--panel-2);border-radius:4px;margin-top:10px;overflow:hidden;border:1px solid var(--hair);}
   .bar-fill{height:100%;border-radius:4px;transition:width .4s ease;}
+
+  .scale{margin-top:12px;}
+  .scale-track{display:flex;height:6px;border-radius:3px;overflow:hidden;border:1px solid var(--hair);}
+  .scale-marker-row{position:relative;height:9px;}
+  .tri{position:absolute;top:0;left:0%;width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid var(--text);transform:translateX(-50%);transition:left .4s ease;}
+  .scale-legend{display:flex;justify-content:space-between;font-size:9px;color:var(--dim);letter-spacing:.02em;margin-top:2px;}
 
   .panel{background:var(--panel);border:1px solid var(--hair);border-radius:var(--radius);margin-bottom:20px;overflow:hidden;}
   .panel-head{padding:16px 20px;border-bottom:1px solid var(--hair);}
@@ -72,6 +79,15 @@
         <div class="score-den">/ 100 Market Score</div>
       </div>
       <div class="bar"><div class="bar-fill" id="scoreBar" style="width:0%;background:var(--dim);"></div></div>
+      <div class="scale">
+        <div class="scale-track">
+          <div class="seg" style="flex:40;background:rgba(255,92,122,.3);"></div>
+          <div class="seg" style="flex:20;background:rgba(245,166,35,.3);"></div>
+          <div class="seg" style="flex:40;background:rgba(61,220,138,.3);"></div>
+        </div>
+        <div class="scale-marker-row"><div class="tri" id="scoreMarker"></div></div>
+        <div class="scale-legend"><span>0 &middot; Correction</span><span>40</span><span>60</span><span>100 &middot; Uptrend</span></div>
+      </div>
     </div>
 
     <div class="card">
@@ -81,12 +97,38 @@
     <div class="card">
       <div class="label">Fear &amp; Greed</div>
       <div class="value" id="fngValue">&mdash;</div>
+      <div class="scale">
+        <div class="scale-track">
+          <div class="seg" style="flex:25;background:rgba(255,92,122,.35);"></div>
+          <div class="seg" style="flex:20;background:rgba(245,166,35,.3);"></div>
+          <div class="seg" style="flex:10;background:var(--panel-2);"></div>
+          <div class="seg" style="flex:20;background:rgba(61,220,138,.25);"></div>
+          <div class="seg" style="flex:25;background:rgba(61,220,138,.45);"></div>
+        </div>
+        <div class="scale-marker-row"><div class="tri" id="fngMarker"></div></div>
+        <div class="scale-legend"><span>Extreme Fear</span><span>Extreme Greed</span></div>
+      </div>
     </div>
 
     <div class="card"><div class="label">S&amp;P 500</div><div class="value" id="spxValue">&mdash;</div></div>
     <div class="card"><div class="label">Nasdaq</div><div class="value" id="ndxValue">&mdash;</div></div>
     <div class="card"><div class="label">Dow</div><div class="value" id="djiValue">&mdash;</div></div>
     <div class="card"><div class="label">Russell</div><div class="value" id="rutValue">&mdash;</div></div>
+
+    <div class="card">
+      <div class="label">Advancers / Decliners</div>
+      <div class="value" id="advDecValue" style="font-size:20px;">&mdash;</div>
+      <div class="card-sub" id="breadthUniverse"></div>
+    </div>
+    <div class="card">
+      <div class="label">New Highs / New Lows</div>
+      <div class="value" id="highLowValue" style="font-size:20px;">&mdash;</div>
+    </div>
+    <div class="card hero">
+      <div class="label">% Above Moving Averages</div>
+      <div class="value" id="smaBreadthValue" style="font-size:20px;">&mdash;</div>
+      <div class="card-sub">200-day / 50-day / 20-day</div>
+    </div>
   </div>
 
   <div class="panel">
@@ -97,27 +139,6 @@
   <div class="panel">
     <div class="panel-head"><div class="panel-title">Index Performance — Last 60 Sessions (cumulative %)</div></div>
     <div class="panel-body"><canvas id="indexChart"></canvas></div>
-  </div>
-
-  <div class="panel">
-    <div class="panel-head">
-      <div class="panel-title">Market Breadth</div>
-      <div class="panel-sub" id="breadthUniverse"></div>
-    </div>
-    <div class="grid" style="grid-template-columns:repeat(3,1fr);padding:0 4px 4px;margin:0;">
-      <div class="card" style="border:none;">
-        <div class="label">Advancers / Decliners</div>
-        <div class="value" id="advDecValue">&mdash;</div>
-      </div>
-      <div class="card" style="border:none;">
-        <div class="label">New Highs / New Lows</div>
-        <div class="value" id="highLowValue">&mdash;</div>
-      </div>
-      <div class="card" style="border:none;">
-        <div class="label">% &gt; SMA200 / SMA50 / SMA20</div>
-        <div class="value" id="smaBreadthValue" style="font-size:18px;">&mdash;</div>
-      </div>
-    </div>
   </div>
 
   <div class="panel">
@@ -154,10 +175,12 @@ async function loadLatest() {
   const bar = document.getElementById("scoreBar");
   bar.style.width = `${d.market.score ?? 0}%`;
   bar.style.background = colorFor(d.market.label);
+  document.getElementById("scoreMarker").style.left = `${d.market.score ?? 50}%`;
 
   document.getElementById("vixValue").textContent = d.vix ? d.vix.toFixed(1) : "—";
   document.getElementById("fngValue").textContent = d.fear_greed && d.fear_greed.score !== null
     ? `${d.fear_greed.score} (${d.fear_greed.rating})` : "—";
+  document.getElementById("fngMarker").style.left = `${d.fear_greed && d.fear_greed.score !== null ? d.fear_greed.score : 50}%`;
 
   const setIdx = (id, obj) => {
     const el = document.getElementById(id);
