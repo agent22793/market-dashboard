@@ -6,7 +6,7 @@
 <title>Market Dashboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="assets/chart.umd.js"></script>
 <style>
   :root{
     --bg:#0A0E14; --panel:#10161F; --panel-2:#141B26; --hair:#212A38;
@@ -174,7 +174,7 @@ async function loadHistory() {
     type: "line",
     data: { labels, datasets: [{
       label: "Market Score", data: rows.map(r => Number(r.market_score)),
-      borderColor: "#5EC8FF", backgroundColor: "rgba(94,200,255,.08)", fill: true, tension: .25, pointRadius: 3,
+      borderColor: "#5EC8FF", backgroundColor: "rgba(94,200,255,.08)", fill: true, tension: .25, pointRadius: 3, pointBackgroundColor: "#5EC8FF",
     }]},
     options: chartOpts(0, 100),
   });
