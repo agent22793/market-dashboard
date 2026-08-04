@@ -1,65 +1,69 @@
 {
-  "updated_at": "2026-08-03T02:47:03.517795+00:00",
+  "updated_at": "2026-08-04T00:50:50.821227+00:00",
   "market": {
-    "score": 69,
+    "score": 71,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
-      "trend": 83,
-      "volatility": 80,
-      "breadth": 61,
-      "sentiment": 42
+      "trend": 85,
+      "volatility": 81,
+      "breadth": 62,
+      "sentiment": 46
     }
   },
   "sp500": {
-    "price": 7489.72021484375,
-    "change_pct": 0.700361981598796,
-    "sma50": 7471.50962890625,
-    "sma200": 7024.106752929688,
-    "off_52w_high_pct": -1.5777009808705666
+    "price": 7600.5,
+    "change_pct": 1.479091100582064,
+    "sma50": 7474.860224609375,
+    "sma200": 7028.887702636719,
+    "off_52w_high_pct": -0.12194551509034923
   },
   "nasdaq": {
-    "price": 25373.849609375,
-    "change_pct": 1.0017837823213416,
-    "sma50": 25948.42359375,
-    "sma200": 23998.0614453125,
-    "off_52w_high_pct": -6.3484797554108185
+    "price": 25913.896484375,
+    "change_pct": 2.12836003725847,
+    "sma50": 25941.2943359375,
+    "sma200": 24015.022431640624,
+    "off_52w_high_pct": -4.355238224239965
   },
   "dow": {
-    "price": 52485.03125,
-    "change_pct": 0.5305170575393925,
-    "sma50": 51705.55328125,
-    "sma200": 49050.44705078125,
-    "off_52w_high_pct": -1.0759949354723353
+    "price": 53178.41015625,
+    "change_pct": 1.3210983965070922,
+    "sma50": 51768.934453125,
+    "sma200": 49084.986796875,
+    "off_52w_high_pct": 0.0
   },
   "russell": {
-    "price": 2931.340087890625,
-    "change_pct": -0.50100163865332,
-    "sma50": 2943.493408203125,
-    "sma200": 2676.496551513672,
-    "off_52w_high_pct": -3.0760133744274665
+    "price": 2981.908447265625,
+    "change_pct": 1.7250935701353054,
+    "sma50": 2946.7841748046876,
+    "sma200": 2678.92859375,
+    "off_52w_high_pct": -1.4039839132308995
   },
-  "vix": 15.989999771118164,
+  "vix": 15.859999656677246,
   "breadth": {
-    "sectors_above_200sma": 8,
+    "sectors_above_200sma": 9,
     "sectors_total": 11
   },
   "internals": {
     "universe_size": 102,
-    "advancers": 52,
-    "decliners": 50,
+    "advancers": 66,
+    "decliners": 36,
     "unchanged": 0,
-    "new_highs": 2,
+    "new_highs": 4,
     "new_lows": 0,
-    "pct_above_sma20": 56.9,
-    "pct_above_sma50": 52.0,
-    "pct_above_sma200": 60.8
+    "pct_above_sma20": 58.8,
+    "pct_above_sma50": 53.9,
+    "pct_above_sma200": 61.8
   },
   "fear_greed": {
-    "score": 42,
-    "rating": "Fear"
+    "score": 46,
+    "rating": "Neutral"
   },
   "recent_alerts": [
+    {
+      "time": "2026-08-04T00:50:50.821227+00:00",
+      "text": "\u2714 Market remains Bullish"
+    },
     {
       "time": "2026-08-03T02:47:03.517795+00:00",
       "text": "\u2714 Market remains Bullish"
