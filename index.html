@@ -31,6 +31,14 @@
   .card .value{font-family:'Fraunces',serif;font-weight:700;font-size:24px;}
   .card .card-sub{font-size:10px;color:var(--dim);margin-top:6px;letter-spacing:.03em;}
   .up{color:var(--up);} .down{color:var(--down);} .flat{color:var(--dim);}
+  .ma200{color:#FF7A93;} .ma50{color:#FFC24D;} .ma20{color:#4FE39E;}
+
+  .ma-rows{display:flex;flex-direction:column;gap:8px;margin-top:6px;}
+  .ma-row{display:flex;align-items:center;gap:9px;}
+  .ma-dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto;}
+  .ma-dot.ma200{background:#FF7A93;} .ma-dot.ma50{background:#FFC24D;} .ma-dot.ma20{background:#4FE39E;}
+  .ma-name{color:var(--dim);font-size:11.5px;width:54px;flex:0 0 auto;}
+  .ma-pct{font-family:'Fraunces',serif;font-weight:700;font-size:18px;margin-left:auto;}
 
   .hero{grid-column:span 2;}
   @media(max-width:480px){.hero{grid-column:span 1;}}
@@ -48,10 +56,20 @@
   .scale-legend{display:flex;justify-content:space-between;font-size:9px;color:var(--dim);letter-spacing:.02em;margin-top:2px;}
 
   .panel{background:var(--panel);border:1px solid var(--hair);border-radius:var(--radius);margin-bottom:20px;overflow:hidden;}
-  .panel-head{padding:16px 20px;border-bottom:1px solid var(--hair);}
+  .panel-head{padding:16px 20px;border-bottom:1px solid var(--hair);display:flex;justify-content:space-between;align-items:baseline;gap:12px;}
   .panel-title{font-family:'Fraunces',serif;font-size:16px;font-weight:600;}
+  .panel-sub{font-size:11px;color:var(--dim);letter-spacing:.04em;white-space:nowrap;}
   .panel-body{padding:18px 20px;}
   canvas{max-height:260px;}
+
+  .method-body{padding:18px 20px;display:flex;flex-direction:column;gap:14px;}
+  .method-row{display:flex;align-items:center;gap:14px;}
+  .method-label{width:120px;flex:0 0 auto;font-size:12.5px;}
+  .method-weight{color:var(--dim);font-size:10px;margin-left:4px;}
+  .method-bar-track{flex:1;height:6px;background:var(--panel-2);border-radius:3px;overflow:hidden;border:1px solid var(--hair);}
+  .method-bar-fill{height:100%;border-radius:3px;transition:width .4s ease;}
+  .method-val{width:34px;flex:0 0 auto;text-align:right;font-size:12.5px;color:var(--dim);}
+  .breadth-summary{padding:14px 20px 18px;border-top:1px solid var(--hair);font-size:11.5px;color:var(--dim);line-height:1.6;}
 
   .alerts{list-style:none;margin:0;padding:0;}
   .alerts li{padding:10px 20px;border-bottom:1px solid var(--hair);font-size:13px;display:flex;justify-content:space-between;gap:12px;}
@@ -126,8 +144,11 @@
     </div>
     <div class="card hero">
       <div class="label">% Above Moving Averages</div>
-      <div class="value" id="smaBreadthValue" style="font-size:20px;">&mdash;</div>
-      <div class="card-sub">200-day / 50-day / 20-day</div>
+      <div class="ma-rows">
+        <div class="ma-row"><span class="ma-dot ma200"></span><span class="ma-name">200-day</span><span class="ma-pct ma200" id="pct200">&mdash;</span></div>
+        <div class="ma-row"><span class="ma-dot ma50"></span><span class="ma-name">50-day</span><span class="ma-pct ma50" id="pct50">&mdash;</span></div>
+        <div class="ma-row"><span class="ma-dot ma20"></span><span class="ma-name">20-day</span><span class="ma-pct ma20" id="pct20">&mdash;</span></div>
+      </div>
     </div>
   </div>
 
@@ -146,11 +167,45 @@
     <ul class="alerts" id="alertsList"><li>Loading&hellip;</li></ul>
   </div>
 
+  <div class="panel">
+    <div class="panel-head">
+      <div class="panel-title">How the Score Works</div>
+      <div class="panel-sub">Weighted composite, 0&ndash;100</div>
+    </div>
+    <div class="method-body" id="methodBody">
+      <div class="method-row">
+        <span class="method-label">Trend <span class="method-weight">35%</span></span>
+        <div class="method-bar-track"><div class="method-bar-fill" id="mTrend" style="background:var(--pulse);"></div></div>
+        <span class="method-val" id="mTrendVal">&mdash;</span>
+      </div>
+      <div class="method-row">
+        <span class="method-label">Volatility <span class="method-weight">25%</span></span>
+        <div class="method-bar-track"><div class="method-bar-fill" id="mVol" style="background:var(--up);"></div></div>
+        <span class="method-val" id="mVolVal">&mdash;</span>
+      </div>
+      <div class="method-row">
+        <span class="method-label">Breadth <span class="method-weight">20%</span></span>
+        <div class="method-bar-track"><div class="method-bar-fill" id="mBreadth" style="background:var(--warn);"></div></div>
+        <span class="method-val" id="mBreadthVal">&mdash;</span>
+      </div>
+      <div class="method-row">
+        <span class="method-label">Sentiment <span class="method-weight">20%</span></span>
+        <div class="method-bar-track"><div class="method-bar-fill" id="mSentiment" style="background:var(--down);"></div></div>
+        <span class="method-val" id="mSentimentVal">&mdash;</span>
+      </div>
+    </div>
+    <div class="breadth-summary">
+      Trend uses the S&amp;P 500 vs its 50/200-day averages and distance from its 52-week high. Volatility scores VIX
+      (lower = higher score). Breadth uses % of Nasdaq-100 stocks above their 200-day average. Sentiment is CNN's
+      Fear &amp; Greed Index as-is. &ge;60 = Bullish &middot; 40&ndash;59 = Neutral &middot; &lt;40 = Bearish.
+    </div>
+  </div>
+
   <footer>
-    Data refreshed daily after market close via GitHub Actions (see <code>.github/workflows/update-data.yml</code>) &mdash;
-    prices from Yahoo Finance, breadth from the live Nasdaq-100 constituent list (Wikipedia), sentiment from CNN's
-    public Fear &amp; Greed feed. Market Score is a simple weighted composite of trend, volatility, breadth, and
-    sentiment — not investment advice.
+    Data refreshed roughly every 15 minutes during US market hours via GitHub Actions
+    (see <code>.github/workflows/update-data.yml</code>) &mdash; prices from Yahoo Finance, breadth from Nasdaq's
+    own Nasdaq-100 list API, sentiment from CNN's public Fear &amp; Greed feed. Market Score is a simple weighted
+    composite of trend, volatility, breadth, and sentiment — not investment advice.
   </footer>
 </div>
 
@@ -200,16 +255,28 @@ async function loadLatest() {
       `<span class="up">${internals.advancers}</span> <span class="flat">/</span> <span class="down">${internals.decliners}</span>`;
     document.getElementById("highLowValue").innerHTML =
       `<span class="up">${internals.new_highs}</span> <span class="flat">/</span> <span class="down">${internals.new_lows}</span>`;
-    document.getElementById("smaBreadthValue").textContent =
-      `${internals.pct_above_sma200}% / ${internals.pct_above_sma50}% / ${internals.pct_above_sma20}%`;
+    document.getElementById("pct200").textContent = `${internals.pct_above_sma200}%`;
+    document.getElementById("pct50").textContent = `${internals.pct_above_sma50}%`;
+    document.getElementById("pct20").textContent = `${internals.pct_above_sma20}%`;
   } else {
     document.getElementById("breadthUniverse").textContent = "unavailable this run";
   }
 
   const list = document.getElementById("alertsList");
-  list.innerHTML = (d.recent_alerts || []).map(a => `
+  list.innerHTML = (d.recent_alerts || []).slice(0, 5).map(a => `
     <li><span>${a.text}</span><time>${a.time ? new Date(a.time).toLocaleDateString() : ""}</time></li>
   `).join("") || "<li>No alerts yet.</li>";
+
+  const comp = d.market.components || {};
+  const setMethod = (barId, valId, value) => {
+    const v = value ?? 0;
+    document.getElementById(barId).style.width = `${v}%`;
+    document.getElementById(valId).textContent = value !== undefined && value !== null ? v : "—";
+  };
+  setMethod("mTrend", "mTrendVal", comp.trend);
+  setMethod("mVol", "mVolVal", comp.volatility);
+  setMethod("mBreadth", "mBreadthVal", comp.breadth);
+  setMethod("mSentiment", "mSentimentVal", comp.sentiment);
 }
 
 async function loadHistory() {
