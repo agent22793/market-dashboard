@@ -119,9 +119,9 @@
       </div>
     </div>
 
-    <div class="card hero">
+    <div class="card">
       <div class="label">Market Trend</div>
-      <div class="value" id="trendValue">&mdash;</div>
+      <div class="value" id="trendValue" style="font-size:18px;">&mdash;</div>
       <div class="score-row">
         <div class="card-sub" id="trendConfidenceLabel">Confidence: &mdash;</div>
       </div>
@@ -129,10 +129,6 @@
       <div class="card-sub" id="trendRelation" style="margin-top:10px;">&mdash;</div>
     </div>
 
-    <div class="card">
-      <div class="label">VIX</div>
-      <div class="value" id="vixValue">&mdash;</div>
-    </div>
     <div class="card">
       <div class="label">Fear &amp; Greed</div>
       <div class="value" id="fngValue">&mdash;</div>
@@ -147,13 +143,17 @@
         <div class="scale-marker-row"><div class="tri" id="fngMarker"></div></div>
         <div class="scale-legend"><span>Extreme Fear</span><span>Extreme Greed</span></div>
       </div>
-      <div class="fng-components" id="fngComponents"></div>
     </div>
 
     <div class="card"><div class="label">S&amp;P 500</div><div class="value" id="spxValue">&mdash;</div></div>
     <div class="card"><div class="label">Nasdaq</div><div class="value" id="ndxValue">&mdash;</div></div>
     <div class="card"><div class="label">Dow</div><div class="value" id="djiValue">&mdash;</div></div>
     <div class="card"><div class="label">Russell</div><div class="value" id="rutValue">&mdash;</div></div>
+
+    <div class="card">
+      <div class="label">VIX</div>
+      <div class="value" id="vixValue">&mdash;</div>
+    </div>
 
     <div class="card">
       <div class="label">Advancers / Decliners</div>
@@ -296,12 +296,6 @@ async function loadLatest() {
   document.getElementById("fngValue").textContent = d.fear_greed && d.fear_greed.score !== null
     ? `${d.fear_greed.score} (${d.fear_greed.rating})` : "—";
   document.getElementById("fngMarker").style.left = `${d.fear_greed && d.fear_greed.score !== null ? d.fear_greed.score : 50}%`;
-
-  const fngComp = document.getElementById("fngComponents");
-  const components = d.fear_greed && d.fear_greed.components;
-  fngComp.innerHTML = (components && components.length)
-    ? components.map(c => `<div class="fng-row"><span class="fng-name">${c.name}</span><span class="fng-val">${c.val}</span></div>`).join("")
-    : "";
 
   const setIdx = (id, obj) => {
     const el = document.getElementById(id);
