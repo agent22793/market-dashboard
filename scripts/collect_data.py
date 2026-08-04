@@ -105,13 +105,111 @@ def fetch_index_data(ticker: str) -> dict:
     sma200 = float(close.rolling(200).mean().iloc[-1]) if len(close) >= 200 else None
     high_252 = float(close.rolling(252).max().iloc[-1]) if len(close) >= 20 else last
     off_high = (last / max(high_252, last) - 1) * 100
+    ema20 = float(close.ewm(span=20, adjust=False).mean().iloc[-1]) if len(close) >= 20 else None
+    ema50 = float(close.ewm(span=50, adjust=False).mean().iloc[-1]) if len(close) >= 50 else None
+    ema200 = float(close.ewm(span=200, adjust=False).mean().iloc[-1]) if len(close) >= 200 else None
     return {
         "price": last,
         "change_pct": change_pct,
         "sma50": sma50,
         "sma200": sma200,
         "off_52w_high_pct": off_high,
+        "ema20": ema20,
+        "ema50": ema50,
+        "ema200": ema200,
     }
+
+
+def compute_trend_strength(spx: dict) -> dict | None:
+    """Classifies trend direction/strength from EMA20/50/200 alignment on the
+    S&P 500, with a confidence score derived from how cleanly separated the
+    EMAs are (as a % of price) — tightly bunched EMAs mean a weaker, less
+    reliable read even when the ordering technically qualifies as a trend.
+    """
+    ema20, ema50, ema200 = spx.get("ema20"), spx.get("ema50"), spx.get("ema200")
+    price = spx.get("price")
+    if not all([ema20, ema50, ema200, price]):
+        return None
+
+    if ema20 > ema50 > ema200:
+        label, arrow, base = "Strong Uptrend", "▲", 70
+        relation = "EMA20 > EMA50 > EMA200"
+    elif ema20 > ema50:
+        label, arrow, base = "Uptrend", "▲", 50
+        relation = "EMA20 > EMA50, EMA50 ≤ EMA200"
+    elif ema20 < ema50 < ema200:
+        label, arrow, base = "Strong Downtrend", "▼", 70
+        relation = "EMA20 < EMA50 < EMA200"
+    elif ema20 < ema50:
+        label, arrow, base = "Downtrend", "▼", 50
+        relation = "EMA20 < EMA50, EMA50 ≥ EMA200"
+    else:
+        label, arrow, base = "Sideways", "─", 25
+        relation = "EMA20 ≈ EMA50"
+
+    # Spread between EMA20 and EMA200, as a % of price, is the separation
+    # signal — a 10% spread is treated as a "fully confident" reading; smaller
+    # spreads (EMAs bunched close together) scale confidence down from there,
+    # since a technically-qualifying trend on barely-separated EMAs is a much
+    # weaker read than one with wide separation.
+    spread_pct = abs(ema20 - ema200) / price * 100
+    confidence = round(min(base + min(spread_pct / 10 * 25, 25), 97))
+
+    return {"label": label, "arrow": arrow, "confidence": confidence, "relation": relation}
+
+
+def vix_level_label(vix: float) -> str:
+    if vix < 15:
+        return "very calm"
+    if vix < 20:
+        return "calm"
+    if vix < 25:
+        return "moderate"
+    if vix < 30:
+        return "elevated"
+    return "high stress"
+
+
+def build_market_summary(spx: dict, market: dict, trend: dict | None, vix_price: float,
+                          internals: dict | None, fng: dict) -> list:
+    """Five plain-language bullets recapping the same data already computed
+    elsewhere on the dashboard — Overall status plus one bullet per score
+    component (Trend, Volatility, Breadth, Sentiment), so it mirrors "How the
+    Score Works" as a quick "catch me up" read. Deterministic and
+    template-based (no external AI call), so it's free and can't hallucinate
+    a number.
+    """
+    bullets = [
+        f"{market['emoji']} Overall market is {market['label']} with a Market Score of {market['score']}/100."
+    ]
+
+    if trend:
+        bullets.append(
+            f"{trend['arrow']} Trend: {trend['label']} ({trend['relation']}), "
+            f"{trend['confidence']}% confidence."
+        )
+    else:
+        bullets.append("Trend data unavailable this run.")
+
+    bullets.append(f"Volatility: VIX at {vix_price:.1f} — {vix_level_label(vix_price)} conditions.")
+
+    if internals:
+        lean = "more advancers than decliners" if internals["advancers"] > internals["decliners"] else \
+               "more decliners than advancers" if internals["decliners"] > internals["advancers"] else \
+               "advancers and decliners roughly even"
+        bullets.append(
+            f"Breadth: {internals['pct_above_sma200']}% of Nasdaq-100 stocks above their 200-day average, "
+            f"{lean} today ({internals['advancers']} vs {internals['decliners']})."
+        )
+    else:
+        bullets.append("Breadth data unavailable this run.")
+
+    if fng.get("score") is not None:
+        bullets.append(f"Sentiment: Fear & Greed at {fng['score']} ({fng['rating']}).")
+    else:
+        bullets.append("Sentiment data unavailable this run.")
+
+    return bullets[:5]
 
 
 def fetch_sector_breadth() -> dict:
@@ -205,9 +303,10 @@ def fetch_market_internals(tickers: list) -> dict | None:
 def fetch_fear_greed() -> dict:
     """Fear & Greed Index via FearGreedChart.com's free public JSON API —
     documented, no key required, CORS-enabled, 15-minute server-side cache.
-    Replaces the earlier CNN scrape, which was hitting an undocumented
-    internal endpoint. Falls back gracefully to None if unreachable — the
-    dashboard should not break just because this one field is missing.
+    Also captures the 5-component breakdown (Momentum, Volatility, Safe
+    Haven, Breadth, Junk Bonds) the composite score is built from. Falls
+    back gracefully to None if unreachable — the dashboard should not break
+    just because this one field is missing.
     """
     try:
         resp = requests.get(FNG_API_URL, headers=HEADERS, timeout=15)
@@ -221,10 +320,14 @@ def fetch_fear_greed() -> dict:
             "Greed" if score <= 80 else
             "Extreme Greed"
         )
-        return {"score": score, "rating": rating}
+        components = [
+            {"name": c.get("name"), "val": c.get("val")}
+            for c in payload.get("score", {}).get("components", [])
+        ]
+        return {"score": score, "rating": rating, "components": components}
     except Exception as exc:  # noqa: BLE001
         print(f"[warn] Fear & Greed fetch failed: {exc}")
-        return {"score": None, "rating": None}
+        return {"score": None, "rating": None, "components": []}
 
 
 # ---------------------------------------------------------------------------
@@ -412,12 +515,16 @@ def main():
     internals = fetch_market_internals(ndx100_tickers)
 
     market = compute_market_score(spx, vix["price"], breadth, fng, internals)
+    trend_strength = compute_trend_strength(spx)
+    market_summary = build_market_summary(spx, market, trend_strength, vix["price"], internals, fng)
 
     prev = load_previous()
 
     snapshot = {
         "updated_at": now_iso,
         "market": market,
+        "trend_strength": trend_strength,
+        "market_summary": market_summary,
         "sp500": spx,
         "nasdaq": nasdaq,
         "dow": dow,
