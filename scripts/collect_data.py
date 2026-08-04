@@ -294,29 +294,43 @@ def load_previous() -> dict | None:
 
 
 def append_history(row: dict) -> None:
+    """Writes one row per calendar date. If today's date already has a row
+    (from an earlier run today, now that this runs every 15 minutes rather
+    than once daily), that row is replaced in place rather than duplicated —
+    keeps the historical chart at one point per day while still reflecting
+    the latest intraday value for today.
+    """
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     df_row = pd.DataFrame([row])
     if HISTORY_PATH.exists():
-        df_row.to_csv(HISTORY_PATH, mode="a", header=False, index=False)
+        existing = pd.read_csv(HISTORY_PATH, dtype={"date": str})
+        existing = existing[existing["date"] != row["date"]]
+        combined = pd.concat([existing, df_row], ignore_index=True)
     else:
-        df_row.to_csv(HISTORY_PATH, mode="w", header=True, index=False)
+        combined = df_row
+    combined.to_csv(HISTORY_PATH, mode="w", header=True, index=False)
 
 
 def build_alerts(prev: dict | None, market: dict, now_iso: str) -> list:
-    alerts = []
-    if prev:
-        alerts = prev.get("recent_alerts", [])[:9]  # keep most recent 9, we add 1 more below
-
+    """Keeps at most 5 alerts. Regime changes are logged immediately; an
+    unchanged status is logged at most once per calendar day rather than
+    every run, now that this runs every 15 minutes instead of once daily.
+    """
+    alerts = prev.get("recent_alerts", [])[:4] if prev else []
     prev_label = prev["market"]["label"] if prev else None
-    if prev_label != market["label"]:
+    changed = prev_label != market["label"]
+
+    if changed:
         text = f"Market shifted to {market['label']}" if prev_label else f"Market opened as {market['label']}"
         icon = "⚠" if market["label"] != "Bullish" else "✔"
+        alerts.insert(0, {"time": now_iso, "text": f"{icon} {text}"})
     else:
-        text = f"Market remains {market['label']}"
-        icon = "✔"
+        today = now_iso[:10]
+        already_logged_today = alerts and str(alerts[0].get("time", ""))[:10] == today
+        if not already_logged_today:
+            alerts.insert(0, {"time": now_iso, "text": f"✔ Market remains {market['label']}"})
 
-    alerts.insert(0, {"time": now_iso, "text": f"{icon} {text}"})
-    return alerts[:10]
+    return alerts[:5]
 
 
 # ---------------------------------------------------------------------------
