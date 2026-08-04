@@ -40,7 +40,7 @@ INDEX_TICKERS = {
 VIX_TICKER = "^VIX"
 SECTOR_ETFS = ["XLK", "XLF", "XLE", "XLY", "XLP", "XLV", "XLI", "XLB", "XLU", "XLRE", "XLC"]
 
-CNN_FNG_URL = "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+FNG_API_URL = "https://feargreedchart.com/api/?action=all"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; market-dashboard-bot/1.0)"}
 
 NASDAQ100_API_URL = "https://api.nasdaq.com/api/quote/list-type/nasdaq100"
@@ -203,18 +203,25 @@ def fetch_market_internals(tickers: list) -> dict | None:
 
 
 def fetch_fear_greed() -> dict:
-    """CNN's Fear & Greed Index via its public (unofficial) data endpoint.
-    Falls back gracefully to None if the endpoint changes or is unreachable —
-    the dashboard should not break just because this one field is missing.
+    """Fear & Greed Index via FearGreedChart.com's free public JSON API —
+    documented, no key required, CORS-enabled, 15-minute server-side cache.
+    Replaces the earlier CNN scrape, which was hitting an undocumented
+    internal endpoint. Falls back gracefully to None if unreachable — the
+    dashboard should not break just because this one field is missing.
     """
     try:
-        start_date = (datetime.now(timezone.utc)).strftime("%Y-%m-%d")
-        resp = requests.get(f"{CNN_FNG_URL}/{start_date}", headers=HEADERS, timeout=15)
+        resp = requests.get(FNG_API_URL, headers=HEADERS, timeout=15)
         resp.raise_for_status()
         payload = resp.json()
-        score = float(payload["fear_and_greed"]["score"])
-        rating = str(payload["fear_and_greed"]["rating"]).title()
-        return {"score": round(score), "rating": rating}
+        score = int(payload["score"]["score"])
+        rating = (
+            "Extreme Fear" if score <= 20 else
+            "Fear" if score <= 40 else
+            "Neutral" if score <= 60 else
+            "Greed" if score <= 80 else
+            "Extreme Greed"
+        )
+        return {"score": score, "rating": rating}
     except Exception as exc:  # noqa: BLE001
         print(f"[warn] Fear & Greed fetch failed: {exc}")
         return {"score": None, "rating": None}
