@@ -1,10 +1,11 @@
-name: Update Market Data
-
 on:
   schedule:
-    # 21:15 UTC = 4:15pm ET (weekdays), shortly after the US market close.
-    # Adjust for daylight saving if you want to be precise year-round.
-    - cron: "15 21 * * 1-5"
+    # Every 15 minutes, 13:00-20:59 UTC, weekdays — covers US market hours
+    # (9:30am-4:00pm ET = 13:30-20:00 UTC) plus a buffer on each side.
+    # UTC doesn't shift for daylight saving, so this runs ~30-60min early/late
+    # relative to the actual open/close depending on the time of year — good
+    # enough for "near real-time" without hand-adjusting the cron twice a year.
+    - cron: "*/15 13-20 * * 1-5"
   workflow_dispatch: {}   # lets you trigger a manual run from the Actions tab
 
 permissions:
