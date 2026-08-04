@@ -63,12 +63,14 @@
   canvas{max-height:260px;}
 
   .method-body{padding:18px 20px;display:flex;flex-direction:column;gap:14px;}
+  .method-row-wrap{display:flex;flex-direction:column;gap:4px;}
   .method-row{display:flex;align-items:center;gap:14px;}
   .method-label{width:120px;flex:0 0 auto;font-size:12.5px;}
   .method-weight{color:var(--dim);font-size:10px;margin-left:4px;}
   .method-bar-track{flex:1;height:6px;background:var(--panel-2);border-radius:3px;overflow:hidden;border:1px solid var(--hair);}
   .method-bar-fill{height:100%;border-radius:3px;transition:width .4s ease;}
-  .method-val{width:34px;flex:0 0 auto;text-align:right;font-size:12.5px;color:var(--dim);}
+  .method-val{width:60px;flex:0 0 auto;text-align:right;font-size:12px;color:var(--text);font-weight:600;}
+  .method-explain{margin-left:134px;font-size:11px;color:var(--dim);line-height:1.5;}
   .breadth-summary{padding:14px 20px 18px;border-top:1px solid var(--hair);font-size:11.5px;color:var(--dim);line-height:1.6;}
 
   .alerts{list-style:none;margin:0;padding:0;}
@@ -163,48 +165,59 @@
   </div>
 
   <div class="panel">
-    <div class="panel-head"><div class="panel-title">Recent Alerts</div></div>
-    <ul class="alerts" id="alertsList"><li>Loading&hellip;</li></ul>
-  </div>
-
-  <div class="panel">
     <div class="panel-head">
       <div class="panel-title">How the Score Works</div>
       <div class="panel-sub">Weighted composite, 0&ndash;100</div>
     </div>
     <div class="method-body" id="methodBody">
-      <div class="method-row">
-        <span class="method-label">Trend <span class="method-weight">35%</span></span>
-        <div class="method-bar-track"><div class="method-bar-fill" id="mTrend" style="background:var(--pulse);"></div></div>
-        <span class="method-val" id="mTrendVal">&mdash;</span>
+      <div class="method-row-wrap">
+        <div class="method-row">
+          <span class="method-label">Trend <span class="method-weight">35%</span></span>
+          <div class="method-bar-track"><div class="method-bar-fill" id="mTrend" style="background:var(--pulse);"></div></div>
+          <span class="method-val" id="mTrendVal">&mdash;</span>
+        </div>
+        <div class="method-explain" id="mTrendExplain">&mdash;</div>
       </div>
-      <div class="method-row">
-        <span class="method-label">Volatility <span class="method-weight">25%</span></span>
-        <div class="method-bar-track"><div class="method-bar-fill" id="mVol" style="background:var(--up);"></div></div>
-        <span class="method-val" id="mVolVal">&mdash;</span>
+      <div class="method-row-wrap">
+        <div class="method-row">
+          <span class="method-label">Volatility <span class="method-weight">25%</span></span>
+          <div class="method-bar-track"><div class="method-bar-fill" id="mVol" style="background:var(--up);"></div></div>
+          <span class="method-val" id="mVolVal">&mdash;</span>
+        </div>
+        <div class="method-explain" id="mVolExplain">&mdash;</div>
       </div>
-      <div class="method-row">
-        <span class="method-label">Breadth <span class="method-weight">20%</span></span>
-        <div class="method-bar-track"><div class="method-bar-fill" id="mBreadth" style="background:var(--warn);"></div></div>
-        <span class="method-val" id="mBreadthVal">&mdash;</span>
+      <div class="method-row-wrap">
+        <div class="method-row">
+          <span class="method-label">Breadth <span class="method-weight">20%</span></span>
+          <div class="method-bar-track"><div class="method-bar-fill" id="mBreadth" style="background:var(--warn);"></div></div>
+          <span class="method-val" id="mBreadthVal">&mdash;</span>
+        </div>
+        <div class="method-explain" id="mBreadthExplain">&mdash;</div>
       </div>
-      <div class="method-row">
-        <span class="method-label">Sentiment <span class="method-weight">20%</span></span>
-        <div class="method-bar-track"><div class="method-bar-fill" id="mSentiment" style="background:var(--down);"></div></div>
-        <span class="method-val" id="mSentimentVal">&mdash;</span>
+      <div class="method-row-wrap">
+        <div class="method-row">
+          <span class="method-label">Sentiment <span class="method-weight">20%</span></span>
+          <div class="method-bar-track"><div class="method-bar-fill" id="mSentiment" style="background:var(--down);"></div></div>
+          <span class="method-val" id="mSentimentVal">&mdash;</span>
+        </div>
+        <div class="method-explain" id="mSentimentExplain">&mdash;</div>
       </div>
     </div>
     <div class="breadth-summary">
-      Trend uses the S&amp;P 500 vs its 50/200-day averages and distance from its 52-week high. Volatility scores VIX
-      (lower = higher score). Breadth uses % of Nasdaq-100 stocks above their 200-day average. Sentiment is CNN's
-      Fear &amp; Greed Index as-is. &ge;60 = Bullish &middot; 40&ndash;59 = Neutral &middot; &lt;40 = Bearish.
+      Each component contributes up to its weight in points toward the 0&ndash;100 Market Score (shown above as
+      "X pts"). &ge;60 total = Bullish &middot; 40&ndash;59 = Neutral &middot; &lt;40 = Bearish.
     </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head"><div class="panel-title">Recent Alerts</div></div>
+    <ul class="alerts" id="alertsList"><li>Loading&hellip;</li></ul>
   </div>
 
   <footer>
     Data refreshed roughly every 15 minutes during US market hours via GitHub Actions
     (see <code>.github/workflows/update-data.yml</code>) &mdash; prices from Yahoo Finance, breadth from Nasdaq's
-    own Nasdaq-100 list API, sentiment from CNN's public Fear &amp; Greed feed. Market Score is a simple weighted
+    own Nasdaq-100 list API, sentiment from FearGreedChart.com's public Fear &amp; Greed API. Market Score is a simple weighted
     composite of trend, volatility, breadth, and sentiment — not investment advice.
   </footer>
 </div>
@@ -268,15 +281,44 @@ async function loadLatest() {
   `).join("") || "<li>No alerts yet.</li>";
 
   const comp = d.market.components || {};
-  const setMethod = (barId, valId, value) => {
+  const setMethod = (barId, valId, explainId, value, weight, explainText) => {
     const v = value ?? 0;
     document.getElementById(barId).style.width = `${v}%`;
-    document.getElementById(valId).textContent = value !== undefined && value !== null ? v : "—";
+    const contribution = value !== undefined && value !== null ? (weight * v / 100) : null;
+    document.getElementById(valId).textContent = contribution !== null ? `${contribution.toFixed(1)} pts` : "—";
+    document.getElementById(explainId).textContent = explainText;
   };
-  setMethod("mTrend", "mTrendVal", comp.trend);
-  setMethod("mVol", "mVolVal", comp.volatility);
-  setMethod("mBreadth", "mBreadthVal", comp.breadth);
-  setMethod("mSentiment", "mSentimentVal", comp.sentiment);
+
+  const vixLevel = (vix) => {
+    if (vix === null || vix === undefined) return "unavailable";
+    if (vix < 15) return "very calm";
+    if (vix < 20) return "calm";
+    if (vix < 25) return "moderate";
+    if (vix < 30) return "elevated";
+    return "high stress";
+  };
+
+  const spx = d.sp500 || {};
+  const trendText = (spx.price && spx.sma50 && spx.sma200)
+    ? `S&P 500 is ${spx.price > spx.sma50 ? "above" : "below"} its 50-day and ${spx.price > spx.sma200 ? "above" : "below"} its 200-day average, ${fmtPct(spx.off_52w_high_pct)} off its 52-week high.`
+    : "S&P 500 trend data unavailable this run.";
+
+  const volText = d.vix
+    ? `VIX at ${d.vix.toFixed(1)} — ${vixLevel(d.vix)} conditions.`
+    : "VIX data unavailable this run.";
+
+  const breadthText = internals
+    ? `${internals.pct_above_sma200}% of Nasdaq-100 stocks are above their 200-day average (${internals.advancers} advancing vs ${internals.decliners} declining today).`
+    : "Breadth data unavailable this run.";
+
+  const sentimentText = (d.fear_greed && d.fear_greed.score !== null)
+    ? `Fear & Greed at ${d.fear_greed.score} (${d.fear_greed.rating}).`
+    : "Sentiment data unavailable this run.";
+
+  setMethod("mTrend", "mTrendVal", "mTrendExplain", comp.trend, 35, trendText);
+  setMethod("mVol", "mVolVal", "mVolExplain", comp.volatility, 25, volText);
+  setMethod("mBreadth", "mBreadthVal", "mBreadthExplain", comp.breadth, 20, breadthText);
+  setMethod("mSentiment", "mSentimentVal", "mSentimentExplain", comp.sentiment, 20, sentimentText);
 }
 
 async function loadHistory() {
