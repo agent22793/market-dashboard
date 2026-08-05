@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T18:11:55.342109+00:00",
+  "updated_at": "2026-08-05T22:20:08.552231+00:00",
   "market": {
     "score": 77,
     "label": "Bullish",
@@ -7,7 +7,7 @@
     "components": {
       "trend": 85,
       "volatility": 81,
-      "breadth": 67,
+      "breadth": 69,
       "sentiment": 67
     }
   },
@@ -21,50 +21,50 @@
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 77/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 85% confidence.",
     "Volatility: VIX at 15.8 \u2014 calm conditions.",
-    "Breadth: 66.7% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (41 vs 60).",
+    "Breadth: 68.6% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (41 vs 61).",
     "Sentiment: Fear & Greed at 67 (Greed)."
   ],
   "sp500": {
-    "price": 7744.14013671875,
-    "change_pct": 0.09849541096336178,
-    "sma50": 7486.089619140625,
-    "sma200": 7039.790354003906,
-    "off_52w_high_pct": 0.0,
-    "ema20": 7517.849856792904,
-    "ema50": 7445.429050225267,
-    "ema200": 7056.665990348148
+    "price": 7723.5498046875,
+    "change_pct": -0.16764921193257454,
+    "sma50": 7485.6778125,
+    "sma200": 7039.68740234375,
+    "off_52w_high_pct": -0.16764921193257454,
+    "ema20": 7515.8888727899275,
+    "ema50": 7444.6215862240415,
+    "ema200": 7056.461111422464
   },
   "nasdaq": {
-    "price": 26468.1875,
-    "change_pct": -0.43935594237672904,
-    "sma50": 25949.6165625,
-    "sma200": 24054.125244140625,
-    "off_52w_high_pct": -2.309423455478221,
-    "ema20": 25670.813173961335,
-    "ema50": 25618.04759649932,
-    "ema200": 24104.249642693503
+    "price": 26363.439453125,
+    "change_pct": -0.8333679241436354,
+    "sma50": 25947.5216015625,
+    "sma200": 24053.60150390625,
+    "off_52w_high_pct": -2.696034631295663,
+    "ema20": 25660.83716949705,
+    "ema50": 25613.9398299552,
+    "ema200": 24103.20737357037
   },
   "dow": {
-    "price": 54562.109375,
-    "change_pct": 0.88050795952761,
-    "sma50": 51924.58703125,
-    "sma200": 49167.19900390625,
+    "price": 54349.12109375,
+    "change_pct": 0.48671149073178377,
+    "sma50": 51920.327265625,
+    "sma200": 49166.1340625,
     "off_52w_high_pct": 0.0,
-    "ema20": 52643.91288757552,
-    "ema50": 51840.35184367513,
-    "ema200": 49245.959435617275
+    "ema20": 52623.62828936124,
+    "ema50": 51831.99936205749,
+    "ema200": 49243.840149236676
   },
   "russell": {
-    "price": 3031.443603515625,
-    "change_pct": -0.18229876353252905,
-    "sma50": 2953.8990771484373,
-    "sma200": 2684.3368688964842,
-    "off_52w_high_pct": -0.18229876353252905,
-    "ema20": 2968.964350650829,
-    "ema50": 2932.334148298706,
-    "ema200": 2710.449078659113
+    "price": 3019.18798828125,
+    "change_pct": -0.5858448953211082,
+    "sma50": 2953.65396484375,
+    "sma200": 2684.2755908203126,
+    "off_52w_high_pct": -0.5858448953211082,
+    "ema20": 2967.797149199936,
+    "ema50": 2931.8535359365737,
+    "ema200": 2710.327132238871
   },
-  "vix": 15.84000015258789,
+  "vix": 15.8100004196167,
   "breadth": {
     "sectors_above_200sma": 9,
     "sectors_total": 11
@@ -72,13 +72,13 @@
   "internals": {
     "universe_size": 102,
     "advancers": 41,
-    "decliners": 60,
-    "unchanged": 1,
-    "new_highs": 4,
+    "decliners": 61,
+    "unchanged": 0,
+    "new_highs": 3,
     "new_lows": 0,
-    "pct_above_sma20": 70.6,
+    "pct_above_sma20": 65.7,
     "pct_above_sma50": 57.8,
-    "pct_above_sma200": 66.7
+    "pct_above_sma200": 68.6
   },
   "fear_greed": {
     "score": 67,
@@ -90,11 +90,11 @@
       },
       {
         "name": "MOMENTUM",
-        "val": 74
+        "val": 73
       },
       {
         "name": "PUT/CALL",
-        "val": 77
+        "val": 78
       },
       {
         "name": "SAFE HAVEN",
@@ -102,7 +102,7 @@
       },
       {
         "name": "JUNK BONDS",
-        "val": 54
+        "val": 55
       }
     ]
   },
@@ -121,10 +121,6 @@
     },
     {
       "time": "2026-08-03T02:40:53.904726+00:00",
-      "text": "\u2714 Market remains Bullish"
-    },
-    {
-      "time": "2026-08-03T02:30:49.176138+00:00",
       "text": "\u2714 Market remains Bullish"
     }
   ]
