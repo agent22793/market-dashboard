@@ -84,6 +84,10 @@
     position:sticky;top:0;background:var(--panel);text-align:right;font-weight:500;color:var(--dim);
     font-size:10px;text-transform:uppercase;letter-spacing:.06em;padding:10px 16px;border-bottom:1px solid var(--hair);z-index:1;
   }
+  .constituents-table thead th.sortable{cursor:pointer;user-select:none;}
+  .constituents-table thead th.sortable:hover{color:var(--text);}
+  .constituents-table thead th.sort-active{color:var(--pulse);}
+  .sort-arrow{display:inline-block;width:10px;font-size:9px;}
   .constituents-table thead th:first-child{text-align:left;}
   .constituents-table td{padding:8px 16px;border-bottom:1px solid var(--hair);text-align:right;}
   .constituents-table td:first-child{text-align:left;font-family:'Fraunces',serif;font-weight:600;}
@@ -260,8 +264,16 @@
     </div>
     <div class="table-scroll">
       <table class="constituents-table">
-        <thead><tr><th>Symbol</th><th>Price</th><th>Change %</th><th>vs 200D</th></tr></thead>
-        <tbody id="constituentsBody"><tr><td colspan="4" class="placeholder">Loading&hellip;</td></tr></tbody>
+        <thead><tr>
+          <th data-sort-key="symbol" class="sortable">Symbol<span class="sort-arrow"></span></th>
+          <th data-sort-key="price" class="sortable">Price<span class="sort-arrow"></span></th>
+          <th data-sort-key="change_pct" class="sortable">Change %<span class="sort-arrow"></span></th>
+          <th data-sort-key="above_sma5" class="sortable">5D<span class="sort-arrow"></span></th>
+          <th data-sort-key="above_sma10" class="sortable">10D<span class="sort-arrow"></span></th>
+          <th data-sort-key="above_sma20" class="sortable">20D<span class="sort-arrow"></span></th>
+          <th data-sort-key="above_sma50" class="sortable">50D<span class="sort-arrow"></span></th>
+        </tr></thead>
+        <tbody id="constituentsBody"><tr><td colspan="7" class="placeholder">Loading&hellip;</td></tr></tbody>
       </table>
     </div>
   </div>
@@ -276,6 +288,65 @@
 
 <script>
 const fmtPct = x => (x === null || x === undefined || isNaN(x)) ? "&mdash;" : `${x > 0 ? "+" : ""}${x.toFixed(2)}%`;
+
+let currentConstituents = [];
+let sortState = { key: "change_pct", dir: "desc" };
+
+function renderConstituentsTable() {
+  const cBody = document.getElementById("constituentsBody");
+  const countEl = document.getElementById("constituentsCount");
+
+  if (!currentConstituents.length) {
+    countEl.textContent = "unavailable this run";
+    cBody.innerHTML = '<tr><td colspan="7" class="placeholder">No data available.</td></tr>';
+    return;
+  }
+
+  const { key, dir } = sortState;
+  const sorted = [...currentConstituents].sort((a, b) => {
+    let va = a[key], vb = b[key];
+    if (typeof va === "boolean") { va = va ? 1 : 0; vb = vb ? 1 : 0; }
+    if (typeof va === "string") return dir === "asc" ? va.localeCompare(vb) : vb.localeCompare(va);
+    return dir === "asc" ? va - vb : vb - va;
+  });
+
+  countEl.textContent = `${sorted.length} stocks, sorted by ${key.replace("_", " ")} (${dir})`;
+  cBody.innerHTML = sorted.map(c => `
+    <tr>
+      <td>${c.symbol}${c.new_high ? '<span class="badge-high">52W HIGH</span>' : ''}${c.new_low ? '<span class="badge-low">52W LOW</span>' : ''}</td>
+      <td>${c.price.toFixed(2)}</td>
+      <td class="${pctClass(c.change_pct)}">${fmtPct(c.change_pct)}</td>
+      <td class="${c.above_sma5 ? 'up' : 'down'}">${c.above_sma5 ? '▲' : '▼'}</td>
+      <td class="${c.above_sma10 ? 'up' : 'down'}">${c.above_sma10 ? '▲' : '▼'}</td>
+      <td class="${c.above_sma20 ? 'up' : 'down'}">${c.above_sma20 ? '▲' : '▼'}</td>
+      <td class="${c.above_sma50 ? 'up' : 'down'}">${c.above_sma50 ? '▲' : '▼'}</td>
+    </tr>`).join("");
+
+  document.querySelectorAll(".constituents-table th.sortable").forEach(th => {
+    const arrow = th.querySelector(".sort-arrow");
+    if (th.dataset.sortKey === key) {
+      th.classList.add("sort-active");
+      arrow.textContent = dir === "asc" ? "▲" : "▼";
+    } else {
+      th.classList.remove("sort-active");
+      arrow.textContent = "";
+    }
+  });
+}
+
+function setupConstituentsSorting() {
+  document.querySelectorAll(".constituents-table th.sortable").forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.sortKey;
+      if (sortState.key === key) {
+        sortState.dir = sortState.dir === "asc" ? "desc" : "asc";
+      } else {
+        sortState = { key, dir: key === "symbol" ? "asc" : "desc" };
+      }
+      renderConstituentsTable();
+    });
+  });
+}
 const pctClass = x => (x === null || x === undefined) ? "flat" : x > 0.02 ? "up" : x < -0.02 ? "down" : "flat";
 const colorFor = label => label === "Bullish" ? "var(--up)" : label === "Bearish" ? "var(--down)" : "var(--warn)";
 
@@ -354,21 +425,8 @@ async function loadLatest() {
     <li><span>${a.text}</span><time>${a.time ? new Date(a.time).toLocaleDateString() : ""}</time></li>
   `).join("") || "<li>No alerts yet.</li>";
 
-  const cList = internals && internals.constituents;
-  const cBody = document.getElementById("constituentsBody");
-  if (cList && cList.length) {
-    document.getElementById("constituentsCount").textContent = `${cList.length} stocks, sorted by change %`;
-    cBody.innerHTML = cList.map(c => `
-      <tr>
-        <td>${c.symbol}${c.new_high ? '<span class="badge-high">52W HIGH</span>' : ''}${c.new_low ? '<span class="badge-low">52W LOW</span>' : ''}</td>
-        <td>${c.price.toFixed(2)}</td>
-        <td class="${pctClass(c.change_pct)}">${fmtPct(c.change_pct)}</td>
-        <td class="${c.above_sma200 ? 'up' : 'down'}">${c.above_sma200 ? 'Above' : 'Below'}</td>
-      </tr>`).join("");
-  } else {
-    document.getElementById("constituentsCount").textContent = "unavailable this run";
-    cBody.innerHTML = '<tr><td colspan="4" class="placeholder">No data available.</td></tr>';
-  }
+  currentConstituents = (internals && internals.constituents) || [];
+  renderConstituentsTable();
 
   const comp = d.market.components || {};
   const setMethod = (barId, valId, explainId, value, weight, explainText) => {
@@ -464,6 +522,7 @@ function chartOpts(min, max) {
   };
 }
 
+setupConstituentsSorting();
 loadLatest();
 loadHistory();
 </script>
