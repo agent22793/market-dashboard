@@ -78,6 +78,20 @@
   .method-explain{margin-left:134px;font-size:11px;color:var(--dim);line-height:1.5;}
   .breadth-summary{padding:14px 20px 18px;border-top:1px solid var(--hair);font-size:11.5px;color:var(--dim);line-height:1.6;}
 
+  .table-scroll{max-height:420px;overflow-y:auto;}
+  .constituents-table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  .constituents-table thead th{
+    position:sticky;top:0;background:var(--panel);text-align:right;font-weight:500;color:var(--dim);
+    font-size:10px;text-transform:uppercase;letter-spacing:.06em;padding:10px 16px;border-bottom:1px solid var(--hair);z-index:1;
+  }
+  .constituents-table thead th:first-child{text-align:left;}
+  .constituents-table td{padding:8px 16px;border-bottom:1px solid var(--hair);text-align:right;}
+  .constituents-table td:first-child{text-align:left;font-family:'Fraunces',serif;font-weight:600;}
+  .constituents-table tr:last-child td{border-bottom:none;}
+  .constituents-table .placeholder{color:var(--dim);font-style:italic;text-align:center;}
+  .badge-high{font-size:9px;color:var(--up);border:1px solid rgba(61,220,138,.35);border-radius:4px;padding:1px 5px;margin-left:6px;}
+  .badge-low{font-size:9px;color:var(--down);border:1px solid rgba(255,92,122,.35);border-radius:4px;padding:1px 5px;margin-left:6px;}
+
   .alerts{list-style:none;margin:0;padding:0;}
   .alerts li{padding:10px 20px;border-bottom:1px solid var(--hair);font-size:13px;display:flex;justify-content:space-between;gap:12px;}
   .alerts li:last-child{border-bottom:none;}
@@ -164,7 +178,7 @@
       <div class="label">New Highs / New Lows</div>
       <div class="value" id="highLowValue" style="font-size:20px;">&mdash;</div>
     </div>
-    <div class="card hero">
+    <div class="card">
       <div class="label">% Above Moving Averages</div>
       <div class="ma-rows">
         <div class="ma-row"><span class="ma-dot ma200"></span><span class="ma-name">200-day</span><span class="ma-pct ma200" id="pct200">&mdash;</span></div>
@@ -237,6 +251,19 @@
   <div class="panel">
     <div class="panel-head"><div class="panel-title">Recent Alerts</div></div>
     <ul class="alerts" id="alertsList"><li>Loading&hellip;</li></ul>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head">
+      <div class="panel-title">Nasdaq-100 Constituents</div>
+      <div class="panel-sub" id="constituentsCount">&mdash;</div>
+    </div>
+    <div class="table-scroll">
+      <table class="constituents-table">
+        <thead><tr><th>Symbol</th><th>Price</th><th>Change %</th><th>vs 200D</th></tr></thead>
+        <tbody id="constituentsBody"><tr><td colspan="4" class="placeholder">Loading&hellip;</td></tr></tbody>
+      </table>
+    </div>
   </div>
 
   <footer>
@@ -326,6 +353,22 @@ async function loadLatest() {
   list.innerHTML = (d.recent_alerts || []).slice(0, 5).map(a => `
     <li><span>${a.text}</span><time>${a.time ? new Date(a.time).toLocaleDateString() : ""}</time></li>
   `).join("") || "<li>No alerts yet.</li>";
+
+  const cList = internals && internals.constituents;
+  const cBody = document.getElementById("constituentsBody");
+  if (cList && cList.length) {
+    document.getElementById("constituentsCount").textContent = `${cList.length} stocks, sorted by change %`;
+    cBody.innerHTML = cList.map(c => `
+      <tr>
+        <td>${c.symbol}${c.new_high ? '<span class="badge-high">52W HIGH</span>' : ''}${c.new_low ? '<span class="badge-low">52W LOW</span>' : ''}</td>
+        <td>${c.price.toFixed(2)}</td>
+        <td class="${pctClass(c.change_pct)}">${fmtPct(c.change_pct)}</td>
+        <td class="${c.above_sma200 ? 'up' : 'down'}">${c.above_sma200 ? 'Above' : 'Below'}</td>
+      </tr>`).join("");
+  } else {
+    document.getElementById("constituentsCount").textContent = "unavailable this run";
+    cBody.innerHTML = '<tr><td colspan="4" class="placeholder">No data available.</td></tr>';
+  }
 
   const comp = d.market.components || {};
   const setMethod = (barId, valId, explainId, value, weight, explainText) => {
