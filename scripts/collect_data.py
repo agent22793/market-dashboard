@@ -18,6 +18,7 @@ No API keys required for the core data. Email is optional (see README).
 import json
 import os
 import smtplib
+import time
 from datetime import datetime, timezone
 from email.mime.text import MIMEText
 from pathlib import Path
@@ -94,9 +95,21 @@ def fetch_nasdaq100_tickers() -> list:
 # ---------------------------------------------------------------------------
 
 def fetch_index_data(ticker: str) -> dict:
-    hist = yf.Ticker(ticker).history(period="400d", interval="1d")
-    if hist.empty or len(hist) < 20:
-        raise ValueError(f"No data for {ticker}")
+    hist = None
+    last_exc = None
+    for attempt, delay in enumerate((0, 15, 45), start=1):
+        if delay:
+            print(f"[warn] {ticker}: retrying after rate limit (attempt {attempt}, waited {delay}s)")
+            time.sleep(delay)
+        try:
+            hist = yf.Ticker(ticker).history(period="400d", interval="1d")
+            if not hist.empty and len(hist) >= 20:
+                break
+        except Exception as exc:  # noqa: BLE001
+            last_exc = exc
+            hist = None
+    if hist is None or hist.empty or len(hist) < 20:
+        raise ValueError(f"No data for {ticker} after 3 attempts") from last_exc
     close = hist["Close"]
     last = float(close.iloc[-1])
     prev = float(close.iloc[-2])
