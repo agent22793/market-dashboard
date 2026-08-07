@@ -265,6 +265,7 @@ def fetch_market_internals(tickers: list) -> dict | None:
     new_highs = new_lows = 0
     above20 = above50 = above200 = 0
     counted = 0
+    constituents = []
 
     for t in tickers:
         try:
@@ -283,22 +284,36 @@ def fetch_market_internals(tickers: list) -> dict | None:
                 unchanged += 1
 
             window = closes.tail(252)
-            if last >= float(window.max()):
+            is_new_high = last >= float(window.max())
+            is_new_low = last <= float(window.min())
+            if is_new_high:
                 new_highs += 1
-            if last <= float(window.min()):
+            if is_new_low:
                 new_lows += 1
 
+            above_sma200 = len(closes) >= 200 and last > float(closes.rolling(200).mean().iloc[-1])
             if len(closes) >= 20 and last > float(closes.rolling(20).mean().iloc[-1]):
                 above20 += 1
             if len(closes) >= 50 and last > float(closes.rolling(50).mean().iloc[-1]):
                 above50 += 1
-            if len(closes) >= 200 and last > float(closes.rolling(200).mean().iloc[-1]):
+            if above_sma200:
                 above200 += 1
+
+            constituents.append({
+                "symbol": t,
+                "price": round(last, 2),
+                "change_pct": round((last / prev - 1) * 100, 2),
+                "above_sma200": above_sma200,
+                "new_high": is_new_high,
+                "new_low": is_new_low,
+            })
         except Exception:
             continue  # skip any single ticker that failed to download cleanly
 
     if counted == 0:
         return None
+
+    constituents.sort(key=lambda c: c["change_pct"], reverse=True)
 
     return {
         "universe_size": counted,
@@ -310,6 +325,7 @@ def fetch_market_internals(tickers: list) -> dict | None:
         "pct_above_sma20": round(above20 / counted * 100, 1),
         "pct_above_sma50": round(above50 / counted * 100, 1),
         "pct_above_sma200": round(above200 / counted * 100, 1),
+        "constituents": constituents,
     }
 
 
