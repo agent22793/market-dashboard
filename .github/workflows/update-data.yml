@@ -1,3 +1,4 @@
+name: Update Market Data
 on:
   schedule:
     # Every 15 minutes, 13:00-20:59 UTC, weekdays — covers US market hours
