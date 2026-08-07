@@ -291,10 +291,14 @@ def fetch_market_internals(tickers: list) -> dict | None:
             if is_new_low:
                 new_lows += 1
 
+            above_sma5 = len(closes) >= 5 and last > float(closes.rolling(5).mean().iloc[-1])
+            above_sma10 = len(closes) >= 10 and last > float(closes.rolling(10).mean().iloc[-1])
+            above_sma20_ticker = len(closes) >= 20 and last > float(closes.rolling(20).mean().iloc[-1])
+            above_sma50_ticker = len(closes) >= 50 and last > float(closes.rolling(50).mean().iloc[-1])
             above_sma200 = len(closes) >= 200 and last > float(closes.rolling(200).mean().iloc[-1])
-            if len(closes) >= 20 and last > float(closes.rolling(20).mean().iloc[-1]):
+            if above_sma20_ticker:
                 above20 += 1
-            if len(closes) >= 50 and last > float(closes.rolling(50).mean().iloc[-1]):
+            if above_sma50_ticker:
                 above50 += 1
             if above_sma200:
                 above200 += 1
@@ -303,6 +307,10 @@ def fetch_market_internals(tickers: list) -> dict | None:
                 "symbol": t,
                 "price": round(last, 2),
                 "change_pct": round((last / prev - 1) * 100, 2),
+                "above_sma5": above_sma5,
+                "above_sma10": above_sma10,
+                "above_sma20": above_sma20_ticker,
+                "above_sma50": above_sma50_ticker,
                 "above_sma200": above_sma200,
                 "new_high": is_new_high,
                 "new_low": is_new_low,
