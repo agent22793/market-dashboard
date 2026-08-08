@@ -96,15 +96,16 @@
 
   .chart-modal-backdrop{
     display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:100;
-    align-items:center;justify-content:center;padding:20px;
   }
-  .chart-modal-backdrop.open{display:flex;}
+  .chart-modal-backdrop.open{display:block;}
   .chart-modal{
-    background:var(--panel);border:1px solid var(--hair);border-radius:var(--radius);
+    position:fixed;background:var(--panel);border:1px solid var(--hair);border-radius:var(--radius);
     width:min(1250px,100%);height:min(775px,90vh);display:flex;flex-direction:column;overflow:hidden;
+    box-shadow:0 24px 70px rgba(0,0,0,.55);
   }
   .chart-modal-head{
-    padding:14px 18px;border-bottom:1px solid var(--hair);display:flex;justify-content:space-between;align-items:center;flex:0 0 auto;
+    padding:14px 18px;border-bottom:1px solid var(--hair);display:flex;justify-content:space-between;align-items:center;
+    flex:0 0 auto;cursor:move;user-select:none;
   }
   .chart-modal-title{font-family:'Fraunces',serif;font-weight:700;font-size:16px;}
   .chart-modal-close{
@@ -309,8 +310,8 @@
 </div>
 
 <div class="chart-modal-backdrop" id="chartModalBackdrop" onclick="if(event.target===this) closeChartModal()">
-  <div class="chart-modal">
-    <div class="chart-modal-head">
+  <div class="chart-modal" id="chartModal">
+    <div class="chart-modal-head" id="chartModalHead">
       <div class="chart-modal-title" id="chartModalTitle">&mdash;</div>
       <button class="chart-modal-close" onclick="closeChartModal()">&times;</button>
     </div>
@@ -354,6 +355,14 @@ function openChartModal(symbol) {
   container.appendChild(script);
 
   body.appendChild(container);
+
+  // Re-center on every open (in case the window was resized since last time)
+  const modal = document.getElementById("chartModal");
+  const w = Math.min(1250, window.innerWidth);
+  const h = Math.min(775, window.innerHeight * 0.9);
+  modal.style.left = `${Math.max(0, (window.innerWidth - w) / 2)}px`;
+  modal.style.top = `${Math.max(0, (window.innerHeight - h) / 2)}px`;
+
   document.getElementById("chartModalBackdrop").classList.add("open");
 }
 
@@ -365,6 +374,46 @@ function closeChartModal() {
 document.addEventListener("keydown", e => {
   if (e.key === "Escape") closeChartModal();
 });
+
+// --- Drag-to-move, via the modal header ---
+let dragState = null;
+
+function startModalDrag(e) {
+  if (e.target.closest(".chart-modal-close")) return; // don't start a drag from the close button
+  const modal = document.getElementById("chartModal");
+  const rect = modal.getBoundingClientRect();
+  const point = e.touches ? e.touches[0] : e;
+  dragState = { offsetX: point.clientX - rect.left, offsetY: point.clientY - rect.top };
+  document.addEventListener("mousemove", onModalDrag);
+  document.addEventListener("mouseup", stopModalDrag);
+  document.addEventListener("touchmove", onModalDrag, { passive: false });
+  document.addEventListener("touchend", stopModalDrag);
+}
+
+function onModalDrag(e) {
+  if (!dragState) return;
+  e.preventDefault();
+  const point = e.touches ? e.touches[0] : e;
+  const modal = document.getElementById("chartModal");
+  let left = point.clientX - dragState.offsetX;
+  let top = point.clientY - dragState.offsetY;
+  left = Math.max(-modal.offsetWidth + 80, Math.min(left, window.innerWidth - 80));
+  top = Math.max(0, Math.min(top, window.innerHeight - 40));
+  modal.style.left = `${left}px`;
+  modal.style.top = `${top}px`;
+}
+
+function stopModalDrag() {
+  dragState = null;
+  document.removeEventListener("mousemove", onModalDrag);
+  document.removeEventListener("mouseup", stopModalDrag);
+  document.removeEventListener("touchmove", onModalDrag);
+  document.removeEventListener("touchend", stopModalDrag);
+}
+
+document.getElementById("chartModalHead").addEventListener("mousedown", startModalDrag);
+document.getElementById("chartModalHead").addEventListener("touchstart", startModalDrag, { passive: true });
+
 
 let currentConstituents = [];
 let sortState = { key: "change_pct", dir: "desc" };
