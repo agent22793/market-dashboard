@@ -295,8 +295,9 @@
           <th data-sort-key="above_sma10" class="sortable">10D<span class="sort-arrow"></span></th>
           <th data-sort-key="above_sma20" class="sortable">20D<span class="sort-arrow"></span></th>
           <th data-sort-key="above_sma50" class="sortable">50D<span class="sort-arrow"></span></th>
+          <th data-sort-key="rs_rating" class="sortable">RS Rating<span class="sort-arrow"></span></th>
         </tr></thead>
-        <tbody id="constituentsBody"><tr><td colspan="7" class="placeholder">Loading&hellip;</td></tr></tbody>
+        <tbody id="constituentsBody"><tr><td colspan="8" class="placeholder">Loading&hellip;</td></tr></tbody>
       </table>
     </div>
   </div>
@@ -424,7 +425,7 @@ function renderConstituentsTable() {
 
   if (!currentConstituents.length) {
     countEl.textContent = "unavailable this run";
-    cBody.innerHTML = '<tr><td colspan="7" class="placeholder">No data available.</td></tr>';
+    cBody.innerHTML = '<tr><td colspan="8" class="placeholder">No data available.</td></tr>';
     return;
   }
 
@@ -446,6 +447,7 @@ function renderConstituentsTable() {
       <td class="${c.above_sma10 ? 'up' : 'down'}">${c.above_sma10 ? '▲' : '▼'}</td>
       <td class="${c.above_sma20 ? 'up' : 'down'}">${c.above_sma20 ? '▲' : '▼'}</td>
       <td class="${c.above_sma50 ? 'up' : 'down'}">${c.above_sma50 ? '▲' : '▼'}</td>
+      <td class="${rsClass(c.rs_rating)}">${c.rs_rating ?? '—'}</td>
     </tr>`).join("");
 
   document.querySelectorAll(".constituents-table th.sortable").forEach(th => {
@@ -474,6 +476,7 @@ function setupConstituentsSorting() {
   });
 }
 const pctClass = x => (x === null || x === undefined) ? "flat" : x > 0.02 ? "up" : x < -0.02 ? "down" : "flat";
+const rsClass = x => (x === null || x === undefined) ? "flat" : x >= 80 ? "up" : x <= 30 ? "down" : "flat";
 const colorFor = label => label === "Bullish" ? "var(--up)" : label === "Bearish" ? "var(--down)" : "var(--warn)";
 
 async function loadLatest() {
