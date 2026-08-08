@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-07T22:08:46.648936+00:00",
+  "updated_at": "2026-08-08T19:16:57.970159+00:00",
   "market": {
     "score": 79,
     "label": "Bullish",
@@ -35,14 +35,14 @@
     "ema200": 7069.177288045437
   },
   "nasdaq": {
-    "price": 26690.615234375,
-    "change_pct": 1.2990021389355677,
-    "sma50": 25941.6826953125,
-    "sma200": 24090.443779296875,
-    "off_52w_high_pct": -1.4884721300206127,
-    "ema20": 25818.15270564271,
-    "ema50": 25683.83332917912,
-    "ema200": 24147.329341585828
+    "price": 26690.619140625,
+    "change_pct": 1.2990169643422922,
+    "sma50": 25941.6827734375,
+    "sma200": 24090.443798828124,
+    "off_52w_high_pct": -1.4884577125689247,
+    "ema20": 25818.15307766652,
+    "ema50": 25683.833482365393,
+    "ema200": 24147.329380453986
   },
   "dow": {
     "price": 54036.9296875,
@@ -55,14 +55,14 @@
     "ema200": 49333.93668456976
   },
   "russell": {
-    "price": 3034.494140625,
-    "change_pct": 1.0975692978945073,
-    "sma50": 2957.5652880859375,
-    "sma200": 2689.695422363281,
-    "off_52w_high_pct": -0.08185236187715494,
-    "ema20": 2977.057809009509,
-    "ema50": 2938.5047412232393,
-    "ema200": 2716.492410670503
+    "price": 3034.489990234375,
+    "change_pct": 1.0974310229846296,
+    "sma50": 2957.565205078125,
+    "sma200": 2689.695401611328,
+    "off_52w_high_pct": -0.08198902364811023,
+    "ema20": 2977.0574137342114,
+    "ema50": 2938.504578462823,
+    "ema200": 2716.492369373084
   },
   "vix": 14.899999618530273,
   "breadth": {
@@ -1233,6 +1233,18 @@
         "new_low": false
       },
       {
+        "symbol": "BKR",
+        "price": 61.55,
+        "change_pct": -1.55,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false
+      },
+      {
         "symbol": "MAR",
         "price": 353.91,
         "change_pct": -1.6,
@@ -1240,18 +1252,6 @@
         "above_sma10": false,
         "above_sma20": false,
         "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false
-      },
-      {
-        "symbol": "BKR",
-        "price": 61.55,
-        "change_pct": -1.91,
-        "above_sma5": false,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
         "above_sma200": true,
         "new_high": false,
         "new_low": false
@@ -1333,6 +1333,10 @@
     ]
   },
   "recent_alerts": [
+    {
+      "time": "2026-08-08T19:16:57.970159+00:00",
+      "text": "\u2714 Market remains Bullish"
+    },
     {
       "time": "2026-08-07T01:47:37.536000+00:00",
       "text": "\u2714 Market remains Bullish"
