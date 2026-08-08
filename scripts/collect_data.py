@@ -15,6 +15,7 @@ are set — an alert email is sent.
 No API keys required for the core data. Email is optional (see README).
 """
 
+import io
 import json
 import os
 import smtplib
@@ -88,6 +89,71 @@ def fetch_nasdaq100_tickers() -> list:
             print(f"[warn] Live Nasdaq-100 fetch attempt {attempt} failed: {exc}")
     print("[warn] Both Nasdaq-100 fetch attempts failed; using the built-in fallback list (may be slightly stale).")
     return NASDAQ100_FALLBACK_TICKERS
+
+
+SP500_WIKI_URL = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+
+
+def fetch_sp500_tickers() -> list:
+    """Pulls the current S&P 500 constituent list from Wikipedia. Used only
+    to broaden the RS Rating ranking pool (see compute_rs_scores) beyond the
+    102-stock Nasdaq-100 -- still far short of IBD's full multi-thousand-
+    stock universe, but a meaningfully bigger, more representative one than
+    Nasdaq-100 alone. Wikipedia blocks requests without a browser-like
+    User-Agent, so this fetches the page itself before handing it to pandas
+    rather than letting pandas.read_html fetch it directly. Best-effort --
+    if this fails, the RS Rating column falls back to ranking within
+    Nasdaq-100 only, same as before.
+    """
+    try:
+        resp = requests.get(SP500_WIKI_URL, headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+        tables = pd.read_html(io.StringIO(resp.text))
+        symbols = tables[0]["Symbol"].astype(str).str.strip()
+        symbols = symbols.str.replace(".", "-", regex=False)  # BRK.B -> BRK-B
+        return symbols.tolist()
+    except Exception as exc:  # noqa: BLE001
+        print(f"[warn] Could not fetch S&P 500 constituent list: {exc}")
+        return []
+
+
+def compute_rs_scores(tickers: list) -> dict:
+    """Computes the same weighted-quarter return score used for RS Rating
+    (40% most recent quarter, 20% each of the prior three) across a broad
+    ticker universe, purely for ranking purposes -- returns {symbol: raw_score}.
+    Separate from fetch_market_internals() so the RS ranking pool (ideally
+    S&P 500 sized) can differ from the Nasdaq-100 breadth-stats universe.
+    """
+    if not tickers:
+        return {}
+    try:
+        data = yf.download(
+            tickers, period="400d", interval="1d",
+            group_by="ticker", threads=True, progress=False, auto_adjust=True,
+        )
+    except Exception as exc:  # noqa: BLE001
+        print(f"[warn] RS universe download failed: {exc}")
+        return {}
+
+    scores = {}
+    for t in tickers:
+        try:
+            closes = data[t]["Close"].dropna()
+            if len(closes) < 253:
+                continue
+            p_now = float(closes.iloc[-1])
+            p_q1 = float(closes.iloc[-64])
+            p_q2 = float(closes.iloc[-127])
+            p_q3 = float(closes.iloc[-190])
+            p_q4 = float(closes.iloc[-253])
+            q1r = p_now / p_q1 - 1
+            q2r = p_q1 / p_q2 - 1
+            q3r = p_q2 / p_q3 - 1
+            q4r = p_q3 / p_q4 - 1
+            scores[t] = 0.4 * q1r + 0.2 * q2r + 0.2 * q3r + 0.2 * q4r
+        except Exception:
+            continue
+    return scores
 
 
 # ---------------------------------------------------------------------------
@@ -303,23 +369,6 @@ def fetch_market_internals(tickers: list) -> dict | None:
             if above_sma200:
                 above200 += 1
 
-            # Weighted trailing-quarter return, used below to rank all tickers into a
-            # 1-99 relative-strength percentile — our own independent approximation of
-            # the concept IBD's RS Rating measures (40% weight on the most recent
-            # quarter, 20% each on the prior three), not their proprietary number.
-            rs_raw = None
-            if len(closes) >= 253:
-                p_now = float(closes.iloc[-1])
-                p_q1 = float(closes.iloc[-64])
-                p_q2 = float(closes.iloc[-127])
-                p_q3 = float(closes.iloc[-190])
-                p_q4 = float(closes.iloc[-253])
-                q1r = p_now / p_q1 - 1
-                q2r = p_q1 / p_q2 - 1
-                q3r = p_q2 / p_q3 - 1
-                q4r = p_q3 / p_q4 - 1
-                rs_raw = 0.4 * q1r + 0.2 * q2r + 0.2 * q3r + 0.2 * q4r
-
             constituents.append({
                 "symbol": t,
                 "price": round(last, 2),
@@ -331,27 +380,13 @@ def fetch_market_internals(tickers: list) -> dict | None:
                 "above_sma200": above_sma200,
                 "new_high": is_new_high,
                 "new_low": is_new_low,
-                "_rs_raw": rs_raw,
+                "rs_rating": None,  # filled in later by apply_rs_ratings() using a broader ranking pool
             })
         except Exception:
             continue  # skip any single ticker that failed to download cleanly
 
     if counted == 0:
         return None
-
-    # Convert raw weighted-return scores into a 1-99 percentile rank across
-    # the whole universe (IBD's RS Rating scale convention) -- ranked only
-    # among tickers with enough history; the rest get rs_rating: null.
-    ranked = sorted(
-        (c for c in constituents if c["_rs_raw"] is not None),
-        key=lambda c: c["_rs_raw"],
-    )
-    n = len(ranked)
-    for i, c in enumerate(ranked):
-        c["rs_rating"] = round(1 + i / (n - 1) * 98) if n > 1 else 50
-    for c in constituents:
-        c.setdefault("rs_rating", None)
-        c.pop("_rs_raw", None)
 
     constituents.sort(key=lambda c: c["change_pct"], reverse=True)
 
@@ -462,6 +497,28 @@ def compute_market_score(spx: dict, vix_price: float, breadth: dict, fng: dict, 
 # ---------------------------------------------------------------------------
 # Persistence
 # ---------------------------------------------------------------------------
+
+def apply_rs_ratings(internals: dict | None, nasdaq100_tickers: list) -> None:
+    """Broadens the RS Rating ranking pool from just the Nasdaq-100 to the
+    S&P 500 (unioned with the Nasdaq-100 tickers themselves, since a few
+    Nasdaq-100 names aren't S&P 500 members) -- still far short of IBD's
+    full multi-thousand-stock universe, but meaningfully closer than 102
+    names. Mutates internals["constituents"] in place, filling in rs_rating.
+    """
+    if not internals or not internals.get("constituents"):
+        return
+    sp500 = fetch_sp500_tickers()
+    universe = sorted(set(sp500) | set(nasdaq100_tickers)) if sp500 else nasdaq100_tickers
+    scores = compute_rs_scores(universe)
+    if not scores:
+        print("[warn] RS universe scoring returned no data; rs_rating stays null this run.")
+        return
+    ranked_symbols = sorted(scores, key=lambda s: scores[s])
+    n = len(ranked_symbols)
+    percentile = {sym: (round(1 + i / (n - 1) * 98) if n > 1 else 50) for i, sym in enumerate(ranked_symbols)}
+    for c in internals["constituents"]:
+        c["rs_rating"] = percentile.get(c["symbol"])
+
 
 def load_previous() -> dict | None:
     if LATEST_PATH.exists():
@@ -582,6 +639,7 @@ def main():
     fng = fetch_fear_greed()
     ndx100_tickers = fetch_nasdaq100_tickers()
     internals = fetch_market_internals(ndx100_tickers)
+    apply_rs_ratings(internals, ndx100_tickers)
 
     market = compute_market_score(spx, vix["price"], breadth, fng, internals)
     trend_strength = compute_trend_strength(spx)
