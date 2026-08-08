@@ -91,6 +91,28 @@
   .constituents-table thead th:first-child{text-align:left;}
   .constituents-table td{padding:8px 16px;border-bottom:1px solid var(--hair);text-align:right;}
   .constituents-table td:first-child{text-align:left;font-family:'Fraunces',serif;font-weight:600;}
+  .ticker-link{color:inherit;text-decoration:none;border-bottom:1px dotted var(--dim);cursor:pointer;}
+  .ticker-link:hover{color:var(--pulse);border-bottom-color:var(--pulse);}
+
+  .chart-modal-backdrop{
+    display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:100;
+    align-items:center;justify-content:center;padding:20px;
+  }
+  .chart-modal-backdrop.open{display:flex;}
+  .chart-modal{
+    background:var(--panel);border:1px solid var(--hair);border-radius:var(--radius);
+    width:min(1000px,100%);height:min(620px,90vh);display:flex;flex-direction:column;overflow:hidden;
+  }
+  .chart-modal-head{
+    padding:14px 18px;border-bottom:1px solid var(--hair);display:flex;justify-content:space-between;align-items:center;flex:0 0 auto;
+  }
+  .chart-modal-title{font-family:'Fraunces',serif;font-weight:700;font-size:16px;}
+  .chart-modal-close{
+    background:none;border:1px solid var(--hair);color:var(--text);width:28px;height:28px;border-radius:6px;
+    cursor:pointer;font-size:14px;line-height:1;
+  }
+  .chart-modal-close:hover{border-color:var(--down);color:var(--down);}
+  .chart-modal-body{flex:1;position:relative;}
   .constituents-table tr:last-child td{border-bottom:none;}
   .constituents-table .placeholder{color:var(--dim);font-style:italic;text-align:center;}
   .badge-high{font-size:9px;color:var(--up);border:1px solid rgba(61,220,138,.35);border-radius:4px;padding:1px 5px;margin-left:6px;}
@@ -286,8 +308,63 @@
   </footer>
 </div>
 
+<div class="chart-modal-backdrop" id="chartModalBackdrop" onclick="if(event.target===this) closeChartModal()">
+  <div class="chart-modal">
+    <div class="chart-modal-head">
+      <div class="chart-modal-title" id="chartModalTitle">&mdash;</div>
+      <button class="chart-modal-close" onclick="closeChartModal()">&times;</button>
+    </div>
+    <div class="chart-modal-body" id="chartModalBody"></div>
+  </div>
+</div>
+
 <script>
 const fmtPct = x => (x === null || x === undefined || isNaN(x)) ? "&mdash;" : `${x > 0 ? "+" : ""}${x.toFixed(2)}%`;
+
+function openChartModal(symbol) {
+  document.getElementById("chartModalTitle").textContent = symbol;
+  const body = document.getElementById("chartModalBody");
+  body.innerHTML = ""; // clear any previous widget before loading a new symbol
+
+  const container = document.createElement("div");
+  container.className = "tradingview-widget-container";
+  container.style.height = "100%";
+  container.style.width = "100%";
+
+  const widgetDiv = document.createElement("div");
+  widgetDiv.className = "tradingview-widget-container__widget";
+  widgetDiv.style.height = "100%";
+  widgetDiv.style.width = "100%";
+  container.appendChild(widgetDiv);
+
+  const script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
+  script.async = true;
+  script.text = JSON.stringify({
+    symbol: `NASDAQ:${symbol}`,
+    interval: "D",
+    theme: "dark",
+    style: "1",
+    locale: "en",
+    autosize: true,
+    hide_top_toolbar: false,
+    allow_symbol_change: true,
+  });
+  container.appendChild(script);
+
+  body.appendChild(container);
+  document.getElementById("chartModalBackdrop").classList.add("open");
+}
+
+function closeChartModal() {
+  document.getElementById("chartModalBackdrop").classList.remove("open");
+  document.getElementById("chartModalBody").innerHTML = ""; // stop the widget rather than leave it running hidden
+}
+
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeChartModal();
+});
 
 let currentConstituents = [];
 let sortState = { key: "change_pct", dir: "desc" };
@@ -313,7 +390,7 @@ function renderConstituentsTable() {
   countEl.textContent = `${sorted.length} stocks, sorted by ${key.replace("_", " ")} (${dir})`;
   cBody.innerHTML = sorted.map(c => `
     <tr>
-      <td>${c.symbol}${c.new_high ? '<span class="badge-high">52W HIGH</span>' : ''}${c.new_low ? '<span class="badge-low">52W LOW</span>' : ''}</td>
+      <td><span class="ticker-link" onclick="openChartModal('${c.symbol}')">${c.symbol}</span>${c.new_high ? '<span class="badge-high">52W HIGH</span>' : ''}${c.new_low ? '<span class="badge-low">52W LOW</span>' : ''}</td>
       <td>${c.price.toFixed(2)}</td>
       <td class="${pctClass(c.change_pct)}">${fmtPct(c.change_pct)}</td>
       <td class="${c.above_sma5 ? 'up' : 'down'}">${c.above_sma5 ? '▲' : '▼'}</td>
