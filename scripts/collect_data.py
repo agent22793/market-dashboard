@@ -254,7 +254,7 @@ def fetch_market_internals(tickers: list) -> dict | None:
         return None
     try:
         data = yf.download(
-            tickers, period="300d", interval="1d",
+            tickers, period="400d", interval="1d",
             group_by="ticker", threads=True, progress=False, auto_adjust=True,
         )
     except Exception as exc:  # noqa: BLE001
@@ -303,6 +303,23 @@ def fetch_market_internals(tickers: list) -> dict | None:
             if above_sma200:
                 above200 += 1
 
+            # Weighted trailing-quarter return, used below to rank all tickers into a
+            # 1-99 relative-strength percentile — our own independent approximation of
+            # the concept IBD's RS Rating measures (40% weight on the most recent
+            # quarter, 20% each on the prior three), not their proprietary number.
+            rs_raw = None
+            if len(closes) >= 253:
+                p_now = float(closes.iloc[-1])
+                p_q1 = float(closes.iloc[-64])
+                p_q2 = float(closes.iloc[-127])
+                p_q3 = float(closes.iloc[-190])
+                p_q4 = float(closes.iloc[-253])
+                q1r = p_now / p_q1 - 1
+                q2r = p_q1 / p_q2 - 1
+                q3r = p_q2 / p_q3 - 1
+                q4r = p_q3 / p_q4 - 1
+                rs_raw = 0.4 * q1r + 0.2 * q2r + 0.2 * q3r + 0.2 * q4r
+
             constituents.append({
                 "symbol": t,
                 "price": round(last, 2),
@@ -314,12 +331,27 @@ def fetch_market_internals(tickers: list) -> dict | None:
                 "above_sma200": above_sma200,
                 "new_high": is_new_high,
                 "new_low": is_new_low,
+                "_rs_raw": rs_raw,
             })
         except Exception:
             continue  # skip any single ticker that failed to download cleanly
 
     if counted == 0:
         return None
+
+    # Convert raw weighted-return scores into a 1-99 percentile rank across
+    # the whole universe (IBD's RS Rating scale convention) -- ranked only
+    # among tickers with enough history; the rest get rs_rating: null.
+    ranked = sorted(
+        (c for c in constituents if c["_rs_raw"] is not None),
+        key=lambda c: c["_rs_raw"],
+    )
+    n = len(ranked)
+    for i, c in enumerate(ranked):
+        c["rs_rating"] = round(1 + i / (n - 1) * 98) if n > 1 else 50
+    for c in constituents:
+        c.setdefault("rs_rating", None)
+        c.pop("_rs_raw", None)
 
     constituents.sort(key=lambda c: c["change_pct"], reverse=True)
 
