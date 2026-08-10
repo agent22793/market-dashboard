@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T23:00:33.943369+00:00",
+  "updated_at": "2026-08-10T23:30:29.575206+00:00",
   "market": {
     "score": 78,
     "label": "Bullish",
@@ -21,7 +21,7 @@
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 78/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 86% confidence.",
     "Volatility: VIX at 15.5 \u2014 calm conditions.",
-    "Breadth: 67.6% of Nasdaq-100 stocks above their 200-day average, advancers and decliners roughly even today (50 vs 50).",
+    "Breadth: 67.6% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (51 vs 49).",
     "Sentiment: Fear & Greed at 70 (Greed)."
   ],
   "sp500": {
@@ -71,15 +71,28 @@
   },
   "internals": {
     "universe_size": 102,
-    "advancers": 50,
-    "decliners": 50,
+    "advancers": 51,
+    "decliners": 49,
     "unchanged": 2,
-    "new_highs": 7,
+    "new_highs": 8,
     "new_lows": 0,
-    "pct_above_sma20": 67.6,
-    "pct_above_sma50": 61.8,
+    "pct_above_sma20": 68.6,
+    "pct_above_sma50": 62.7,
     "pct_above_sma200": 67.6,
     "constituents": [
+      {
+        "symbol": "MNST",
+        "price": 91.43,
+        "change_pct": 102.37,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": true,
+        "new_low": false,
+        "rs_rating": 98
+      },
       {
         "symbol": "DDOG",
         "price": 260.78,
@@ -104,7 +117,7 @@
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 98
+        "rs_rating": 97
       },
       {
         "symbol": "FANG",
@@ -234,7 +247,7 @@
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 86
+        "rs_rating": 85
       },
       {
         "symbol": "REGN",
@@ -299,7 +312,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 96
+        "rs_rating": 95
       },
       {
         "symbol": "INTU",
@@ -832,7 +845,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 94
+        "rs_rating": 93
       },
       {
         "symbol": "CMCSA",
@@ -1248,7 +1261,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 91
+        "rs_rating": 90
       },
       {
         "symbol": "AMD",
@@ -1392,19 +1405,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 8
-      },
-      {
-        "symbol": "MNST",
-        "price": 91.43,
-        "change_pct": -6.23,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 84
       }
     ]
   },
