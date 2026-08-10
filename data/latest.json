@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T20:00:34.250588+00:00",
+  "updated_at": "2026-08-10T20:30:30.806764+00:00",
   "market": {
     "score": 78,
     "label": "Bullish",
@@ -8,7 +8,7 @@
       "trend": 85,
       "volatility": 83,
       "breadth": 68,
-      "sentiment": 69
+      "sentiment": 70
     }
   },
   "trend_strength": {
@@ -20,19 +20,19 @@
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 78/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 86% confidence.",
-    "Volatility: VIX at 15.4 \u2014 calm conditions.",
+    "Volatility: VIX at 15.5 \u2014 calm conditions.",
     "Breadth: 67.6% of Nasdaq-100 stocks above their 200-day average, advancers and decliners roughly even today (50 vs 50).",
-    "Sentiment: Fear & Greed at 69 (Greed)."
+    "Sentiment: Fear & Greed at 70 (Greed)."
   ],
   "sp500": {
-    "price": 7753.02001953125,
-    "change_pct": -0.05955570387483622,
-    "sma50": 7498.028017578125,
-    "sma200": 7055.118054199219,
-    "off_52w_high_pct": -0.05955570387483622,
-    "ema20": 7574.434008918164,
-    "ema50": 7478.114818892502,
-    "ema200": 7077.335547742878
+    "price": 7753.10986328125,
+    "change_pct": -0.058397571396195946,
+    "sma50": 7498.029814453125,
+    "sma200": 7055.118503417969,
+    "off_52w_high_pct": -0.058397571396195946,
+    "ema20": 7574.442565465783,
+    "ema50": 7478.118342176815,
+    "ema200": 7077.3364417105395
   },
   "nasdaq": {
     "price": 26605.357421875,
@@ -45,26 +45,26 @@
     "ema200": 24178.0307923833
   },
   "dow": {
-    "price": 53975.62890625,
-    "change_pct": -0.11344238394835893,
-    "sma50": 52122.781875,
-    "sma200": 49276.512734375,
-    "off_52w_high_pct": -0.6872092500920912,
-    "ema20": 52972.51747659986,
-    "ema50": 52073.4630668472,
-    "ema200": 49386.34721091969
+    "price": 53975.98046875,
+    "change_pct": -0.11279178721380623,
+    "sma50": 52122.78890625,
+    "sma200": 49276.5144921875,
+    "off_52w_high_pct": -0.6865623905055407,
+    "ema20": 52972.550958742715,
+    "ema50": 52073.47685361191,
+    "ema200": 49386.350709054015
   },
   "russell": {
-    "price": 3018.740234375,
-    "change_pct": -0.5190248084541715,
-    "sma50": 2959.2086083984377,
-    "sma200": 2692.350653076172,
-    "off_52w_high_pct": -0.6005882887293423,
-    "ema20": 2981.027206176191,
-    "ema50": 2941.6510789055787,
-    "ema200": 2720.173804754137
+    "price": 3017.39697265625,
+    "change_pct": -0.5632912823286262,
+    "sma50": 2959.1817431640625,
+    "sma200": 2692.3439367675783,
+    "off_52w_high_pct": -0.644818468954067,
+    "ema20": 2980.899276488691,
+    "ema50": 2941.5984019754314,
+    "ema200": 2720.160438965891
   },
-  "vix": 15.430000305175781,
+  "vix": 15.460000038146973,
   "breadth": {
     "sectors_above_200sma": 9,
     "sectors_total": 11
@@ -130,7 +130,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 79
+        "rs_rating": 78
       },
       {
         "symbol": "CRWD",
@@ -1144,7 +1144,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 54
+        "rs_rating": 55
       },
       {
         "symbol": "CDNS",
@@ -1274,7 +1274,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 44
+        "rs_rating": 43
       },
       {
         "symbol": "DASH",
@@ -1313,7 +1313,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 33
+        "rs_rating": 32
       },
       {
         "symbol": "MCHP",
@@ -1409,7 +1409,7 @@
     ]
   },
   "fear_greed": {
-    "score": 69,
+    "score": 70,
     "rating": "Greed",
     "components": [
       {
@@ -1422,11 +1422,11 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 83
+        "val": 84
       },
       {
         "name": "SAFE HAVEN",
-        "val": 65
+        "val": 66
       },
       {
         "name": "JUNK BONDS",
