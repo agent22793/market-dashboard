@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-10T07:30:31.973868+00:00",
+  "updated_at": "2026-08-10T08:00:34.135841+00:00",
   "market": {
-    "score": 79,
+    "score": 78,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 85,
       "volatility": 83,
       "breadth": 70,
-      "sentiment": 72
+      "sentiment": 69
     }
   },
   "trend_strength": {
@@ -18,11 +18,11 @@
     "relation": "EMA20 > EMA50 > EMA200"
   },
   "market_summary": [
-    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 79/100.",
+    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 78/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 86% confidence.",
     "Volatility: VIX at 15.4 \u2014 calm conditions.",
     "Breadth: 69.6% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (75 vs 26).",
-    "Sentiment: Fear & Greed at 72 (Greed)."
+    "Sentiment: Fear & Greed at 69 (Greed)."
   ],
   "sp500": {
     "price": 7757.64013671875,
@@ -64,7 +64,7 @@
     "ema50": 2938.504578462823,
     "ema200": 2716.492369373084
   },
-  "vix": 15.399999618530273,
+  "vix": 15.430000305175781,
   "breadth": {
     "sectors_above_200sma": 9,
     "sectors_total": 11
@@ -143,7 +143,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 33
+        "rs_rating": 34
       },
       {
         "symbol": "TTWO",
@@ -156,7 +156,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 46
+        "rs_rating": 47
       },
       {
         "symbol": "WDAY",
@@ -260,7 +260,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 9
+        "rs_rating": 10
       },
       {
         "symbol": "ADI",
@@ -520,7 +520,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 50
+        "rs_rating": 51
       },
       {
         "symbol": "FAST",
@@ -676,7 +676,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 31
+        "rs_rating": 32
       },
       {
         "symbol": "WBD",
@@ -702,7 +702,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": null
+        "rs_rating": 2
       },
       {
         "symbol": "XEL",
@@ -767,7 +767,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 16
+        "rs_rating": 17
       },
       {
         "symbol": "PANW",
@@ -949,7 +949,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 47
+        "rs_rating": 48
       },
       {
         "symbol": "AEP",
@@ -975,7 +975,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 8
+        "rs_rating": 9
       },
       {
         "symbol": "ROST",
@@ -1027,7 +1027,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 14
+        "rs_rating": 15
       },
       {
         "symbol": "CCEP",
@@ -1092,7 +1092,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 51
+        "rs_rating": 52
       },
       {
         "symbol": "COST",
@@ -1131,7 +1131,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 30
+        "rs_rating": 31
       },
       {
         "symbol": "FTNT",
@@ -1409,12 +1409,12 @@
     ]
   },
   "fear_greed": {
-    "score": 72,
+    "score": 69,
     "rating": "Greed",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 70
+        "val": 65
       },
       {
         "name": "MOMENTUM",
@@ -1422,7 +1422,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 90
+        "val": 81
       },
       {
         "name": "SAFE HAVEN",
