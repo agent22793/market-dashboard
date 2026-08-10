@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T06:00:36.152752+00:00",
+  "updated_at": "2026-08-10T06:30:30.803942+00:00",
   "market": {
     "score": 79,
     "label": "Bullish",
@@ -76,8 +76,8 @@
     "unchanged": 1,
     "new_highs": 6,
     "new_lows": 0,
-    "pct_above_sma20": 72.5,
-    "pct_above_sma50": 56.9,
+    "pct_above_sma20": 73.5,
+    "pct_above_sma50": 57.8,
     "pct_above_sma200": 69.6,
     "constituents": [
       {
@@ -663,7 +663,7 @@
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 87
+        "rs_rating": 86
       },
       {
         "symbol": "KHC",
@@ -1355,6 +1355,19 @@
         "rs_rating": 60
       },
       {
+        "symbol": "MNST",
+        "price": 97.5,
+        "change_pct": -2.44,
+        "above_sma5": false,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 91
+      },
+      {
         "symbol": "CHTR",
         "price": 152.57,
         "change_pct": -3.09,
@@ -1379,19 +1392,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 98
-      },
-      {
-        "symbol": "MNST",
-        "price": 90.36,
-        "change_pct": -4.04,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 84
       },
       {
         "symbol": "STX",
