@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T01:00:33.269558+00:00",
+  "updated_at": "2026-08-11T01:30:33.822180+00:00",
   "market": {
     "score": 78,
     "label": "Bullish",
@@ -1004,6 +1004,19 @@
         "rs_rating": 73
       },
       {
+        "symbol": "AAPL",
+        "price": 308.26,
+        "change_pct": -1.53,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 65
+      },
+      {
         "symbol": "ADI",
         "price": 383.92,
         "change_pct": -1.54,
@@ -1040,6 +1053,19 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
+        "rs_rating": 29
+      },
+      {
+        "symbol": "AEP",
+        "price": 122.84,
+        "change_pct": -1.55,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
         "rs_rating": 30
       },
       {
@@ -1067,19 +1093,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 96
-      },
-      {
-        "symbol": "AAPL",
-        "price": 308.26,
-        "change_pct": -1.62,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 65
       },
       {
         "symbol": "FER",
@@ -1184,19 +1197,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 7
-      },
-      {
-        "symbol": "AEP",
-        "price": 122.84,
-        "change_pct": -2.3,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 29
       },
       {
         "symbol": "KDP",
