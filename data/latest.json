@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T08:30:30.995867+00:00",
+  "updated_at": "2026-08-11T09:00:37.482870+00:00",
   "market": {
     "score": 78,
     "label": "Bullish",
@@ -64,7 +64,7 @@
     "ema50": 2941.5985168651373,
     "ema200": 2720.1604681170106
   },
-  "vix": 15.479999542236328,
+  "vix": 15.470000267028809,
   "breadth": {
     "sectors_above_200sma": 9,
     "sectors_total": 11
@@ -747,14 +747,14 @@
         "symbol": "EA",
         "price": 209.7,
         "change_pct": 0.0,
-        "above_sma5": true,
+        "above_sma5": false,
         "above_sma10": true,
         "above_sma20": true,
         "above_sma50": true,
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 60
+        "rs_rating": 64
       },
       {
         "symbol": "PYPL",
@@ -1422,7 +1422,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 84
+        "val": 83
       },
       {
         "name": "SAFE HAVEN",
