@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T20:30:33.730382+00:00",
+  "updated_at": "2026-08-12T21:00:35.030874+00:00",
   "market": {
     "score": 79,
     "label": "Bullish",
@@ -1414,7 +1414,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 72
+        "val": 71
       },
       {
         "name": "MOMENTUM",
@@ -1422,7 +1422,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 94
+        "val": 93
       },
       {
         "name": "SAFE HAVEN",
@@ -1430,7 +1430,7 @@
       },
       {
         "name": "JUNK BONDS",
-        "val": 58
+        "val": 60
       }
     ]
   },
