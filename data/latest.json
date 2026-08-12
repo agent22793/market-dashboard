@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-12T07:30:32.409197+00:00",
+  "updated_at": "2026-08-12T08:00:41.203456+00:00",
   "market": {
     "score": 78,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 84,
-      "volatility": 84,
+      "volatility": 83,
       "breadth": 67,
       "sentiment": 70
     }
@@ -64,7 +64,7 @@
     "ema50": 2944.952304908686,
     "ema200": 2723.181458379748
   },
-  "vix": 15.279999732971191,
+  "vix": 15.329999923706055,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -1422,7 +1422,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 86
+        "val": 85
       },
       {
         "name": "SAFE HAVEN",
