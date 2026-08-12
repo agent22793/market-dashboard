@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-08-12T03:00:38.728309+00:00",
+  "updated_at": "2026-08-12T03:30:38.396565+00:00",
   "market": {
-    "score": 78,
+    "score": 77,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 84,
       "volatility": 84,
-      "breadth": 66,
+      "breadth": 65,
       "sentiment": 70
     }
   },
@@ -18,10 +18,10 @@
     "relation": "EMA20 > EMA50 > EMA200"
   },
   "market_summary": [
-    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 78/100.",
+    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 77/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 86% confidence.",
     "Volatility: VIX at 15.3 \u2014 calm conditions.",
-    "Breadth: 65.7% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (53 vs 48).",
+    "Breadth: 64.7% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (53 vs 48).",
     "Sentiment: Fear & Greed at 70 (Greed)."
   ],
   "sp500": {
@@ -75,10 +75,10 @@
     "decliners": 48,
     "unchanged": 1,
     "new_highs": 5,
-    "new_lows": 1,
+    "new_lows": 2,
     "pct_above_sma20": 67.6,
     "pct_above_sma50": 57.8,
-    "pct_above_sma200": 65.7,
+    "pct_above_sma200": 64.7,
     "constituents": [
       {
         "symbol": "AXON",
@@ -195,7 +195,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 42
+        "rs_rating": 43
       },
       {
         "symbol": "ISRG",
@@ -455,7 +455,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 26
+        "rs_rating": 27
       },
       {
         "symbol": "WBD",
@@ -572,7 +572,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 16
+        "rs_rating": 17
       },
       {
         "symbol": "TRI",
@@ -780,7 +780,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 64
+        "rs_rating": 65
       },
       {
         "symbol": "EA",
@@ -806,7 +806,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 39
+        "rs_rating": 40
       },
       {
         "symbol": "WDC",
@@ -926,19 +926,6 @@
         "rs_rating": 26
       },
       {
-        "symbol": "MNST",
-        "price": 45.53,
-        "change_pct": -0.4,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 65
-      },
-      {
         "symbol": "KDP",
         "price": 29.18,
         "change_pct": -0.41,
@@ -975,7 +962,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 43
+        "rs_rating": 44
       },
       {
         "symbol": "CPRT",
@@ -1053,7 +1040,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 20
+        "rs_rating": 21
       },
       {
         "symbol": "KHC",
@@ -1066,7 +1053,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 25
+        "rs_rating": 26
       },
       {
         "symbol": "CSGP",
@@ -1405,6 +1392,19 @@
         "new_high": false,
         "new_low": true,
         "rs_rating": 4
+      },
+      {
+        "symbol": "MNST",
+        "price": 45.53,
+        "change_pct": -49.61,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": true,
+        "rs_rating": 3
       }
     ]
   },
