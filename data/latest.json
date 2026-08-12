@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T00:00:42.277777+00:00",
+  "updated_at": "2026-08-12T00:30:30.425363+00:00",
   "market": {
     "score": 78,
     "label": "Bullish",
@@ -975,7 +975,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 44
+        "rs_rating": 43
       },
       {
         "symbol": "CPRT",
@@ -1449,10 +1449,6 @@
     },
     {
       "time": "2026-08-09T00:00:37.988003+00:00",
-      "text": "\u2714 Market remains Bullish"
-    },
-    {
-      "time": "2026-08-08T19:16:57.970159+00:00",
       "text": "\u2714 Market remains Bullish"
     }
   ]
