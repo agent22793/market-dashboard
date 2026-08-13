@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-13T09:00:35.687186+00:00",
+  "updated_at": "2026-08-13T09:30:41.032984+00:00",
   "market": {
-    "score": 74,
+    "score": 78,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 85,
       "volatility": 87,
       "breadth": 64,
-      "sentiment": 50
+      "sentiment": 72
     }
   },
   "trend_strength": {
@@ -18,31 +18,31 @@
     "relation": "EMA20 > EMA50 > EMA200"
   },
   "market_summary": [
-    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 74/100.",
+    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 78/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 87% confidence.",
     "Volatility: VIX at 14.7 \u2014 very calm conditions.",
     "Breadth: 63.7% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (45 vs 56).",
-    "Sentiment data unavailable this run."
+    "Sentiment: Fear & Greed at 72 (Greed)."
   ],
   "sp500": {
     "price": 7748.5,
     "change_pct": 0.26267182752088836,
-    "sma50": 7508.87880859375,
-    "sma200": 7053.689353027344,
+    "sma50": 7503.96341796875,
+    "sma200": 7065.312805175781,
     "off_52w_high_pct": -0.1178210971077065,
-    "ema20": 7601.930997526389,
-    "ema50": 7491.539613897469,
-    "ema200": 7076.931456936313
+    "ema20": 7604.268420759689,
+    "ema50": 7498.1440786478,
+    "ema200": 7089.8080421193645
   },
   "nasdaq": {
     "price": 26588.490234375,
     "change_pct": 0.5408908521152389,
-    "sma50": 25996.42953125,
-    "sma200": 24104.13048828125,
+    "sma50": 25914.9307421875,
+    "sma200": 24145.4609375,
     "off_52w_high_pct": -1.865401987027604,
-    "ema20": 26016.876413220052,
-    "ema50": 25783.077788188988,
-    "ema200": 24177.951746655206
+    "ema20": 26006.942910241436,
+    "ema50": 25781.36572705183,
+    "ema200": 24221.89044589957
   },
   "dow": {
     "price": 53770.26953125,
@@ -57,14 +57,14 @@
   "russell": {
     "price": 3045.47998046875,
     "change_pct": 0.6065125456041764,
-    "sma50": 2961.7916064453125,
-    "sma200": 2690.752001953125,
+    "sma50": 2964.1318017578124,
+    "sma200": 2698.0359020996093,
     "off_52w_high_pct": 0.0,
-    "ema20": 2991.6952403201444,
-    "ema50": 2945.904296444132,
-    "ema200": 2718.870467286683
+    "ema20": 2991.0327963053887,
+    "ema50": 2948.8945648031968,
+    "ema200": 2726.0798033031533
   },
-  "vix": 14.6899995803833,
+  "vix": 14.680000305175781,
   "breadth": {
     "sectors_above_200sma": 9,
     "sectors_total": 11
@@ -182,7 +182,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 46
+        "rs_rating": 47
       },
       {
         "symbol": "CSCO",
@@ -208,7 +208,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 27
+        "rs_rating": 26
       },
       {
         "symbol": "HON",
@@ -286,7 +286,7 @@
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 46
+        "rs_rating": 47
       },
       {
         "symbol": "MPWR",
@@ -312,7 +312,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 72
+        "rs_rating": 79
       },
       {
         "symbol": "MAR",
@@ -325,7 +325,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 62
+        "rs_rating": 61
       },
       {
         "symbol": "DXCM",
@@ -338,7 +338,7 @@
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 89
+        "rs_rating": 88
       },
       {
         "symbol": "KDP",
@@ -377,7 +377,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 33
+        "rs_rating": 34
       },
       {
         "symbol": "ARM",
@@ -442,7 +442,20 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 29
+        "rs_rating": 28
+      },
+      {
+        "symbol": "FER",
+        "price": 65.94,
+        "change_pct": 0.78,
+        "above_sma5": false,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 47
       },
       {
         "symbol": "TEAM",
@@ -521,19 +534,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 85
-      },
-      {
-        "symbol": "FER",
-        "price": 65.94,
-        "change_pct": 0.41,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 47
       },
       {
         "symbol": "PYPL",
@@ -624,7 +624,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 74
+        "rs_rating": 73
       },
       {
         "symbol": "CEG",
@@ -676,7 +676,7 @@
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 63
+        "rs_rating": 64
       },
       {
         "symbol": "AVGO",
@@ -715,7 +715,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 73
+        "rs_rating": 72
       },
       {
         "symbol": "GOOG",
@@ -767,7 +767,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 64
+        "rs_rating": 62
       },
       {
         "symbol": "FAST",
@@ -780,7 +780,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 61
+        "rs_rating": 60
       },
       {
         "symbol": "VRSK",
@@ -793,7 +793,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 7
+        "rs_rating": 9
       },
       {
         "symbol": "FANG",
@@ -874,19 +874,6 @@
         "rs_rating": 94
       },
       {
-        "symbol": "GEHC",
-        "price": 72.28,
-        "change_pct": -0.65,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 43
-      },
-      {
         "symbol": "CTSH",
         "price": 58.2,
         "change_pct": -0.68,
@@ -936,7 +923,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 75
+        "rs_rating": 74
       },
       {
         "symbol": "PAYX",
@@ -949,7 +936,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 52
+        "rs_rating": 51
       },
       {
         "symbol": "NFLX",
@@ -988,7 +975,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 67
+        "rs_rating": 68
       },
       {
         "symbol": "ADSK",
@@ -1043,6 +1030,19 @@
         "rs_rating": 57
       },
       {
+        "symbol": "GEHC",
+        "price": 72.28,
+        "change_pct": -0.9,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 46
+      },
+      {
         "symbol": "ROP",
         "price": 395.23,
         "change_pct": -1.07,
@@ -1053,7 +1053,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 22
+        "rs_rating": 23
       },
       {
         "symbol": "NXPI",
@@ -1118,7 +1118,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 85
+        "rs_rating": 86
       },
       {
         "symbol": "SHOP",
@@ -1131,7 +1131,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 84
+        "rs_rating": 83
       },
       {
         "symbol": "TSLA",
@@ -1144,7 +1144,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 10
+        "rs_rating": 9
       },
       {
         "symbol": "PDD",
@@ -1157,7 +1157,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 9
+        "rs_rating": 8
       },
       {
         "symbol": "TXN",
@@ -1209,7 +1209,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 45
+        "rs_rating": 46
       },
       {
         "symbol": "CSGP",
@@ -1261,7 +1261,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 25
+        "rs_rating": 22
       },
       {
         "symbol": "MSFT",
@@ -1326,7 +1326,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 48
+        "rs_rating": 40
       },
       {
         "symbol": "WDAY",
@@ -1391,7 +1391,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 50
+        "rs_rating": 65
       },
       {
         "symbol": "MELI",
@@ -1404,14 +1404,35 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 9
+        "rs_rating": 19
       }
     ]
   },
   "fear_greed": {
-    "score": null,
-    "rating": null,
-    "components": []
+    "score": 72,
+    "rating": "Greed",
+    "components": [
+      {
+        "name": "VOLATILITY",
+        "val": 69
+      },
+      {
+        "name": "MOMENTUM",
+        "val": 73
+      },
+      {
+        "name": "PUT/CALL",
+        "val": 91
+      },
+      {
+        "name": "SAFE HAVEN",
+        "val": 66
+      },
+      {
+        "name": "JUNK BONDS",
+        "val": 58
+      }
+    ]
   },
   "recent_alerts": [
     {
