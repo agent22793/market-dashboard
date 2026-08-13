@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T21:30:31.083607+00:00",
+  "updated_at": "2026-08-13T22:00:35.645429+00:00",
   "market": {
     "score": 76,
     "label": "Bullish",
@@ -76,7 +76,7 @@
     "unchanged": 2,
     "new_highs": 7,
     "new_lows": 0,
-    "pct_above_sma20": 68.6,
+    "pct_above_sma20": 69.6,
     "pct_above_sma50": 64.7,
     "pct_above_sma200": 70.6,
     "constituents": [
@@ -91,7 +91,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 93
+        "rs_rating": 92
       },
       {
         "symbol": "CSGP",
@@ -143,7 +143,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 96
+        "rs_rating": 97
       },
       {
         "symbol": "ZS",
@@ -299,7 +299,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 10
+        "rs_rating": 9
       },
       {
         "symbol": "INTC",
@@ -351,7 +351,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 26
+        "rs_rating": 25
       },
       {
         "symbol": "TRI",
@@ -364,7 +364,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 19
+        "rs_rating": 20
       },
       {
         "symbol": "LRCX",
@@ -429,7 +429,7 @@
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 90
+        "rs_rating": 89
       },
       {
         "symbol": "CMCSA",
@@ -468,7 +468,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 81
+        "rs_rating": 82
       },
       {
         "symbol": "ADP",
@@ -481,7 +481,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 57
+        "rs_rating": 58
       },
       {
         "symbol": "ARM",
@@ -533,7 +533,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 64
+        "rs_rating": 63
       },
       {
         "symbol": "PANW",
@@ -585,7 +585,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 46
+        "rs_rating": 47
       },
       {
         "symbol": "CTSH",
@@ -663,7 +663,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 79
+        "rs_rating": 80
       },
       {
         "symbol": "ALNY",
@@ -702,7 +702,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 17
+        "rs_rating": 16
       },
       {
         "symbol": "COST",
@@ -884,7 +884,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 45
+        "rs_rating": 44
       },
       {
         "symbol": "BKNG",
@@ -1001,7 +1001,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 72
+        "rs_rating": 73
       },
       {
         "symbol": "SBUX",
@@ -1053,7 +1053,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 9
+        "rs_rating": 8
       },
       {
         "symbol": "MELI",
@@ -1170,7 +1170,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 60
+        "rs_rating": 56
       },
       {
         "symbol": "IDXX",
@@ -1274,7 +1274,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 85
+        "rs_rating": 86
       },
       {
         "symbol": "CTAS",
@@ -1300,7 +1300,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 52
+        "rs_rating": 53
       },
       {
         "symbol": "VRTX",
@@ -1321,7 +1321,7 @@
         "change_pct": -2.17,
         "above_sma5": false,
         "above_sma10": false,
-        "above_sma20": false,
+        "above_sma20": true,
         "above_sma50": false,
         "above_sma200": false,
         "new_high": false,
