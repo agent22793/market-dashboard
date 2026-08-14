@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T20:30:33.317663+00:00",
+  "updated_at": "2026-08-14T21:00:30.382934+00:00",
   "market": {
     "score": 81,
     "label": "Bullish",
@@ -8,7 +8,7 @@
       "trend": 85,
       "volatility": 89,
       "breadth": 71,
-      "sentiment": 75
+      "sentiment": 74
     }
   },
   "trend_strength": {
@@ -22,7 +22,7 @@
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 87% confidence.",
     "Volatility: VIX at 14.2 \u2014 very calm conditions.",
     "Breadth: 70.6% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (44 vs 56).",
-    "Sentiment: Fear & Greed at 75 (Greed)."
+    "Sentiment: Fear & Greed at 74 (Greed)."
   ],
   "sp500": {
     "price": 7785.759765625,
@@ -104,7 +104,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 96
+        "rs_rating": 97
       },
       {
         "symbol": "STX",
@@ -260,7 +260,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 68
+        "rs_rating": 69
       },
       {
         "symbol": "CEG",
@@ -442,7 +442,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 31
+        "rs_rating": 30
       },
       {
         "symbol": "KHC",
@@ -468,7 +468,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 19
+        "rs_rating": 30
       },
       {
         "symbol": "DASH",
@@ -546,7 +546,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 57
+        "rs_rating": 58
       },
       {
         "symbol": "AEP",
@@ -598,7 +598,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 65
+        "rs_rating": 64
       },
       {
         "symbol": "MDLZ",
@@ -676,7 +676,7 @@
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 63
+        "rs_rating": 64
       },
       {
         "symbol": "HON",
@@ -845,7 +845,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 28
+        "rs_rating": 27
       },
       {
         "symbol": "TMUS",
@@ -936,7 +936,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 51
+        "rs_rating": 53
       },
       {
         "symbol": "AMGN",
@@ -1014,7 +1014,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 55
+        "rs_rating": 56
       },
       {
         "symbol": "LRCX",
@@ -1300,7 +1300,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 11
+        "rs_rating": 12
       },
       {
         "symbol": "PANW",
@@ -1409,12 +1409,12 @@
     ]
   },
   "fear_greed": {
-    "score": 75,
+    "score": 74,
     "rating": "Greed",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 72
+        "val": 71
       },
       {
         "name": "MOMENTUM",
@@ -1430,7 +1430,7 @@
       },
       {
         "name": "JUNK BONDS",
-        "val": 57
+        "val": 58
       }
     ]
   },
