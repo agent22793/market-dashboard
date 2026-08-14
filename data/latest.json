@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T10:00:33.060775+00:00",
+  "updated_at": "2026-08-14T10:30:31.112939+00:00",
   "market": {
     "score": 80,
     "label": "Bullish",
@@ -57,14 +57,14 @@
   "russell": {
     "price": 3052.85009765625,
     "change_pct": 0.24200182679794402,
-    "sma50": 2966.5496044921874,
-    "sma200": 2700.732802734375,
+    "sma50": 2964.11720703125,
+    "sma200": 2693.577802734375,
     "off_52w_high_pct": 0.0,
-    "ema20": 2996.920158338804,
-    "ema50": 2952.971251148771,
-    "ema200": 2729.1327125008766
+    "ema20": 2997.5195124473926,
+    "ema50": 2950.0982480603298,
+    "ema200": 2721.989064782884
   },
-  "vix": 14.569999694824219,
+  "vix": 14.5600004196167,
   "breadth": {
     "sectors_above_200sma": 9,
     "sectors_total": 11
@@ -364,7 +364,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 20
+        "rs_rating": 19
       },
       {
         "symbol": "LRCX",
@@ -468,7 +468,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 82
+        "rs_rating": 64
       },
       {
         "symbol": "ADP",
@@ -637,7 +637,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 50
+        "rs_rating": 49
       },
       {
         "symbol": "MNST",
@@ -663,7 +663,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 79
+        "rs_rating": 80
       },
       {
         "symbol": "ALNY",
@@ -741,7 +741,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 21
+        "rs_rating": 22
       },
       {
         "symbol": "AAPL",
@@ -806,7 +806,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 74
+        "rs_rating": 75
       },
       {
         "symbol": "DXCM",
@@ -832,7 +832,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 35
+        "rs_rating": 31
       },
       {
         "symbol": "ORLY",
@@ -858,7 +858,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 13
+        "rs_rating": 28
       },
       {
         "symbol": "KLAC",
@@ -884,7 +884,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 45
+        "rs_rating": 44
       },
       {
         "symbol": "BKNG",
@@ -897,7 +897,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 64
+        "rs_rating": 67
       },
       {
         "symbol": "XEL",
@@ -910,7 +910,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 32
+        "rs_rating": 33
       },
       {
         "symbol": "GOOG",
@@ -962,7 +962,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 61
+        "rs_rating": 62
       },
       {
         "symbol": "WBD",
@@ -1001,7 +1001,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 72
+        "rs_rating": 73
       },
       {
         "symbol": "SBUX",
@@ -1079,7 +1079,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 10
+        "rs_rating": 11
       },
       {
         "symbol": "FANG",
@@ -1131,7 +1131,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 18
+        "rs_rating": 17
       },
       {
         "symbol": "PCAR",
@@ -1183,7 +1183,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 60
+        "rs_rating": 56
       },
       {
         "symbol": "IDXX",
@@ -1196,7 +1196,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 16
+        "rs_rating": 12
       },
       {
         "symbol": "NXPI",
@@ -1222,7 +1222,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 46
+        "rs_rating": 45
       },
       {
         "symbol": "ADI",
@@ -1300,7 +1300,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 53
+        "rs_rating": 55
       },
       {
         "symbol": "VRTX",
@@ -1339,7 +1339,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 38
+        "rs_rating": 37
       },
       {
         "symbol": "AMAT",
