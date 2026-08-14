@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T20:16:41.423265+00:00",
+  "updated_at": "2026-08-14T20:30:33.317663+00:00",
   "market": {
     "score": 81,
     "label": "Bullish",
@@ -8,7 +8,7 @@
       "trend": 85,
       "volatility": 89,
       "breadth": 71,
-      "sentiment": 74
+      "sentiment": 75
     }
   },
   "trend_strength": {
@@ -22,7 +22,7 @@
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 87% confidence.",
     "Volatility: VIX at 14.2 \u2014 very calm conditions.",
     "Breadth: 70.6% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (44 vs 56).",
-    "Sentiment: Fear & Greed at 74 (Greed)."
+    "Sentiment: Fear & Greed at 75 (Greed)."
   ],
   "sp500": {
     "price": 7785.759765625,
@@ -47,24 +47,24 @@
   "dow": {
     "price": 53732.41015625,
     "change_pct": -0.19981082543709672,
-    "sma50": 52266.265078125,
-    "sma200": 49334.5937890625,
+    "sma50": 52343.3553125,
+    "sma200": 49411.8034375,
     "off_52w_high_pct": -1.1347210867241109,
-    "ema20": 53226.0349448915,
-    "ema50": 52264.51862362567,
-    "ema200": 49455.7067921485
+    "ema20": 53239.64543782039,
+    "ema50": 52326.28176095975,
+    "ema200": 49544.28926594566
   },
   "russell": {
-    "price": 3068.40869140625,
-    "change_pct": 0.5096415890824435,
-    "sma50": 2970.047578125,
-    "sma200": 2703.472646484375,
+    "price": 3068.415283203125,
+    "change_pct": 0.509857511799372,
+    "sma50": 2970.0477099609375,
+    "sma200": 2703.4726794433595,
     "off_52w_high_pct": 0.0,
-    "ema20": 3003.7285900595134,
-    "ema50": 2957.498204005797,
-    "ema200": 2731.5977868849463
+    "ema20": 3003.729217849692,
+    "ema50": 2957.4984625076354,
+    "ema200": 2731.5978524749653
   },
-  "vix": 14.239999771118164,
+  "vix": 14.25,
   "breadth": {
     "sectors_above_200sma": 9,
     "sectors_total": 11
@@ -104,7 +104,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 97
+        "rs_rating": 96
       },
       {
         "symbol": "STX",
@@ -143,7 +143,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 71
+        "rs_rating": 70
       },
       {
         "symbol": "SNPS",
@@ -208,7 +208,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 77
+        "rs_rating": 76
       },
       {
         "symbol": "TTWO",
@@ -260,7 +260,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 69
+        "rs_rating": 68
       },
       {
         "symbol": "CEG",
@@ -312,7 +312,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 56
+        "rs_rating": 57
       },
       {
         "symbol": "KDP",
@@ -442,7 +442,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 30
+        "rs_rating": 31
       },
       {
         "symbol": "KHC",
@@ -559,7 +559,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 37
+        "rs_rating": 35
       },
       {
         "symbol": "GILD",
@@ -598,7 +598,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 64
+        "rs_rating": 65
       },
       {
         "symbol": "MDLZ",
@@ -650,7 +650,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 72
+        "rs_rating": 71
       },
       {
         "symbol": "CMCSA",
@@ -780,7 +780,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 43
+        "rs_rating": 44
       },
       {
         "symbol": "ASML",
@@ -897,7 +897,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 39
+        "rs_rating": 37
       },
       {
         "symbol": "FER",
@@ -910,7 +910,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 40
+        "rs_rating": 39
       },
       {
         "symbol": "BKNG",
@@ -936,7 +936,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 50
+        "rs_rating": 51
       },
       {
         "symbol": "AMGN",
@@ -1183,7 +1183,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 11
+        "rs_rating": 10
       },
       {
         "symbol": "TRI",
@@ -1300,7 +1300,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 12
+        "rs_rating": 11
       },
       {
         "symbol": "PANW",
@@ -1352,7 +1352,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 89
+        "rs_rating": 90
       },
       {
         "symbol": "CRWD",
@@ -1409,12 +1409,12 @@
     ]
   },
   "fear_greed": {
-    "score": 74,
+    "score": 75,
     "rating": "Greed",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 71
+        "val": 72
       },
       {
         "name": "MOMENTUM",
@@ -1430,7 +1430,7 @@
       },
       {
         "name": "JUNK BONDS",
-        "val": 58
+        "val": 57
       }
     ]
   },
