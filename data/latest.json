@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T23:00:32.493641+00:00",
+  "updated_at": "2026-08-14T23:30:30.831283+00:00",
   "market": {
     "score": 81,
     "label": "Bullish",
@@ -8,41 +8,41 @@
       "trend": 85,
       "volatility": 89,
       "breadth": 71,
-      "sentiment": 75
+      "sentiment": 74
     }
   },
   "trend_strength": {
     "label": "Strong Uptrend",
     "arrow": "\u25b2",
-    "confidence": 87,
+    "confidence": 88,
     "relation": "EMA20 > EMA50 > EMA200"
   },
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 81/100.",
-    "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 87% confidence.",
+    "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 88% confidence.",
     "Volatility: VIX at 14.2 \u2014 very calm conditions.",
     "Breadth: 70.6% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (44 vs 56).",
-    "Sentiment: Fear & Greed at 75 (Greed)."
+    "Sentiment: Fear & Greed at 74 (Greed)."
   ],
   "sp500": {
     "price": 7785.759765625,
     "change_pct": -0.16964335577297485,
-    "sma50": 7512.38921875,
-    "sma200": 7074.9023046875,
+    "sma50": 7517.700009765625,
+    "sma200": 7064.439353027344,
     "off_52w_high_pct": -0.16964335577297485,
-    "ema20": 7638.332061126413,
-    "ema50": 7520.758342115604,
-    "ema200": 7102.215934987152
+    "ema20": 7636.41866024836,
+    "ema50": 7514.661716612843,
+    "ema200": 7089.548541933913
   },
   "nasdaq": {
     "price": 26729.1640625,
     "change_pct": -0.2755853958030463,
-    "sma50": 25906.6169921875,
-    "sma200": 24178.91025390625,
+    "sma50": 25989.2716015625,
+    "sma200": 24143.321103515624,
     "off_52w_high_pct": -1.3461935080089305,
-    "ema20": 26144.322890030402,
-    "ema50": 25857.02830466258,
-    "ema200": 24266.259608124907
+    "ema20": 26152.45439700383,
+    "ema50": 25858.608714731035,
+    "ema200": 24223.008041333793
   },
   "dow": {
     "price": 53732.41015625,
@@ -143,7 +143,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 71
+        "rs_rating": 70
       },
       {
         "symbol": "SNPS",
@@ -182,7 +182,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 70
+        "rs_rating": 69
       },
       {
         "symbol": "BKR",
@@ -208,7 +208,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 77
+        "rs_rating": 76
       },
       {
         "symbol": "TTWO",
@@ -260,7 +260,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 69
+        "rs_rating": 68
       },
       {
         "symbol": "CEG",
@@ -312,7 +312,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 57
+        "rs_rating": 60
       },
       {
         "symbol": "KDP",
@@ -572,7 +572,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 51
+        "rs_rating": 50
       },
       {
         "symbol": "ROST",
@@ -585,7 +585,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 86
+        "rs_rating": 85
       },
       {
         "symbol": "CCEP",
@@ -598,7 +598,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 64
+        "rs_rating": 58
       },
       {
         "symbol": "MDLZ",
@@ -676,7 +676,7 @@
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 63
+        "rs_rating": 64
       },
       {
         "symbol": "HON",
@@ -728,7 +728,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 14
+        "rs_rating": 15
       },
       {
         "symbol": "NFLX",
@@ -741,7 +741,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 5
+        "rs_rating": 4
       },
       {
         "symbol": "GOOG",
@@ -780,7 +780,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 47
+        "rs_rating": 43
       },
       {
         "symbol": "ASML",
@@ -897,7 +897,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 37
+        "rs_rating": 39
       },
       {
         "symbol": "FER",
@@ -910,7 +910,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 42
+        "rs_rating": 39
       },
       {
         "symbol": "BKNG",
@@ -949,7 +949,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 85
+        "rs_rating": 86
       },
       {
         "symbol": "SBUX",
@@ -1014,7 +1014,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 55
+        "rs_rating": 56
       },
       {
         "symbol": "LRCX",
@@ -1053,7 +1053,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 79
+        "rs_rating": 78
       },
       {
         "symbol": "ORLY",
@@ -1066,7 +1066,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 13
+        "rs_rating": 14
       },
       {
         "symbol": "ISRG",
@@ -1183,7 +1183,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 11
+        "rs_rating": 10
       },
       {
         "symbol": "TRI",
@@ -1300,7 +1300,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 12
+        "rs_rating": 11
       },
       {
         "symbol": "PANW",
@@ -1409,7 +1409,7 @@
     ]
   },
   "fear_greed": {
-    "score": 75,
+    "score": 74,
     "rating": "Greed",
     "components": [
       {
@@ -1430,7 +1430,7 @@
       },
       {
         "name": "JUNK BONDS",
-        "val": 60
+        "val": 58
       }
     ]
   },
