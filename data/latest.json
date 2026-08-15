@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T09:30:28.246181+00:00",
+  "updated_at": "2026-08-15T10:00:33.157414+00:00",
   "market": {
     "score": 81,
     "label": "Bullish",
@@ -1401,7 +1401,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 71
+        "val": 72
       },
       {
         "name": "MOMENTUM",
@@ -1417,7 +1417,7 @@
       },
       {
         "name": "JUNK BONDS",
-        "val": 61
+        "val": 60
       }
     ]
   },
