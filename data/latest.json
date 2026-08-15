@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T01:00:40.046286+00:00",
+  "updated_at": "2026-08-15T01:30:31.565232+00:00",
   "market": {
     "score": 81,
     "label": "Bullish",
@@ -21,7 +21,7 @@
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 81/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 87% confidence.",
     "Volatility: VIX at 14.2 \u2014 very calm conditions.",
-    "Breadth: 70.6% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (44 vs 56).",
+    "Breadth: 70.6% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (45 vs 55).",
     "Sentiment: Fear & Greed at 74 (Greed)."
   ],
   "sp500": {
@@ -71,8 +71,8 @@
   },
   "internals": {
     "universe_size": 102,
-    "advancers": 44,
-    "decliners": 56,
+    "advancers": 45,
+    "decliners": 55,
     "unchanged": 2,
     "new_highs": 1,
     "new_lows": 0,
@@ -208,7 +208,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 77
+        "rs_rating": 76
       },
       {
         "symbol": "TTWO",
@@ -510,6 +510,19 @@
         "rs_rating": 3
       },
       {
+        "symbol": "HON",
+        "price": 233.96,
+        "change_pct": 0.29,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 39
+      },
+      {
         "symbol": "ARM",
         "price": 279.44,
         "change_pct": 0.28,
@@ -679,19 +692,6 @@
         "rs_rating": 63
       },
       {
-        "symbol": "HON",
-        "price": 233.96,
-        "change_pct": -0.01,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 38
-      },
-      {
         "symbol": "NVDA",
         "price": 225.16,
         "change_pct": -0.06,
@@ -796,6 +796,19 @@
         "rs_rating": 94
       },
       {
+        "symbol": "SBUX",
+        "price": 107.69,
+        "change_pct": -0.22,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 44
+      },
+      {
         "symbol": "MSFT",
         "price": 495.4,
         "change_pct": -0.3,
@@ -820,6 +833,19 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 77
+      },
+      {
+        "symbol": "CTAS",
+        "price": 199.52,
+        "change_pct": -0.33,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 38
       },
       {
         "symbol": "ALAB",
@@ -887,19 +913,6 @@
         "rs_rating": 90
       },
       {
-        "symbol": "CTAS",
-        "price": 199.52,
-        "change_pct": -0.59,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 37
-      },
-      {
         "symbol": "FER",
         "price": 64.13,
         "change_pct": -0.59,
@@ -950,19 +963,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 85
-      },
-      {
-        "symbol": "SBUX",
-        "price": 107.69,
-        "change_pct": -0.79,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 43
       },
       {
         "symbol": "CTSH",
@@ -1183,7 +1183,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 11
+        "rs_rating": 10
       },
       {
         "symbol": "TRI",
