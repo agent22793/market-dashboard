@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T13:30:32.571558+00:00",
+  "updated_at": "2026-08-15T14:00:36.257437+00:00",
   "market": {
     "score": 81,
     "label": "Bullish",
@@ -8,7 +8,7 @@
       "trend": 85,
       "volatility": 89,
       "breadth": 70,
-      "sentiment": 74
+      "sentiment": 75
     }
   },
   "trend_strength": {
@@ -22,7 +22,7 @@
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 87% confidence.",
     "Volatility: VIX at 14.2 \u2014 very calm conditions.",
     "Breadth: 70.3% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (45 vs 55).",
-    "Sentiment: Fear & Greed at 74 (Greed)."
+    "Sentiment: Fear & Greed at 75 (Greed)."
   ],
   "sp500": {
     "price": 7785.759765625,
@@ -1396,12 +1396,12 @@
     ]
   },
   "fear_greed": {
-    "score": 74,
+    "score": 75,
     "rating": "Greed",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 71
+        "val": 72
       },
       {
         "name": "MOMENTUM",
@@ -1417,7 +1417,7 @@
       },
       {
         "name": "JUNK BONDS",
-        "val": 58
+        "val": 61
       }
     ]
   },
