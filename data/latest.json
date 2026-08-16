@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T00:00:36.705423+00:00",
+  "updated_at": "2026-08-16T00:30:33.796956+00:00",
   "market": {
     "score": 81,
     "label": "Bullish",
@@ -14,12 +14,12 @@
   "trend_strength": {
     "label": "Strong Uptrend",
     "arrow": "\u25b2",
-    "confidence": 87,
+    "confidence": 88,
     "relation": "EMA20 > EMA50 > EMA200"
   },
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 81/100.",
-    "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 87% confidence.",
+    "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 88% confidence.",
     "Volatility: VIX at 14.2 \u2014 very calm conditions.",
     "Breadth: 69.3% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (45 vs 55).",
     "Sentiment: Fear & Greed at 74 (Greed)."
@@ -27,12 +27,12 @@
   "sp500": {
     "price": 7785.759765625,
     "change_pct": -0.16964335577297485,
-    "sma50": 7512.38921875,
-    "sma200": 7074.9023046875,
+    "sma50": 7517.700009765625,
+    "sma200": 7064.439353027344,
     "off_52w_high_pct": -0.16964335577297485,
-    "ema20": 7638.332061126413,
-    "ema50": 7520.758342115604,
-    "ema200": 7102.215934987152
+    "ema20": 7636.41866024836,
+    "ema50": 7514.661716612843,
+    "ema200": 7089.548541933913
   },
   "nasdaq": {
     "price": 26729.16015625,
@@ -47,12 +47,12 @@
   "dow": {
     "price": 53732.41015625,
     "change_pct": -0.19981082543709672,
-    "sma50": 52343.3553125,
-    "sma200": 49411.8034375,
+    "sma50": 52266.265078125,
+    "sma200": 49334.5937890625,
     "off_52w_high_pct": -1.1347210867241109,
-    "ema20": 53239.64543782039,
-    "ema50": 52326.28176095975,
-    "ema200": 49544.28926594566
+    "ema20": 53226.0349448915,
+    "ema50": 52264.51862362567,
+    "ema200": 49455.7067921485
   },
   "russell": {
     "price": 3068.419921875,
@@ -1436,10 +1436,6 @@
     },
     {
       "time": "2026-08-13T00:01:02.071939+00:00",
-      "text": "\u2714 Market remains Bullish"
-    },
-    {
-      "time": "2026-08-12T00:00:42.277777+00:00",
       "text": "\u2714 Market remains Bullish"
     }
   ]
