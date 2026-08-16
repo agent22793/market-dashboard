@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T14:00:32.231144+00:00",
+  "updated_at": "2026-08-16T14:30:29.496879+00:00",
   "market": {
     "score": 81,
     "label": "Bullish",
@@ -143,7 +143,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 69
+        "rs_rating": 71
       },
       {
         "symbol": "SNPS",
@@ -182,7 +182,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 69
+        "rs_rating": 70
       },
       {
         "symbol": "BKR",
@@ -195,7 +195,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 71
+        "rs_rating": 72
       },
       {
         "symbol": "ADI",
@@ -221,7 +221,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 40
+        "rs_rating": 35
       },
       {
         "symbol": "MCHP",
@@ -247,7 +247,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 67
+        "rs_rating": 68
       },
       {
         "symbol": "FANG",
@@ -260,7 +260,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 68
+        "rs_rating": 69
       },
       {
         "symbol": "CEG",
@@ -364,7 +364,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 17
+        "rs_rating": 16
       },
       {
         "symbol": "WBD",
@@ -442,7 +442,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 29
+        "rs_rating": 30
       },
       {
         "symbol": "KHC",
@@ -468,7 +468,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 29
+        "rs_rating": 30
       },
       {
         "symbol": "DASH",
@@ -481,7 +481,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 61
+        "rs_rating": 62
       },
       {
         "symbol": "CDNS",
@@ -520,7 +520,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 38
+        "rs_rating": 39
       },
       {
         "symbol": "ARM",
@@ -546,7 +546,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 35
+        "rs_rating": 34
       },
       {
         "symbol": "AAPL",
@@ -559,7 +559,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 57
+        "rs_rating": 58
       },
       {
         "symbol": "AEP",
@@ -624,7 +624,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 33
+        "rs_rating": 34
       },
       {
         "symbol": "PEP",
@@ -650,7 +650,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 77
+        "rs_rating": 74
       },
       {
         "symbol": "CSX",
@@ -663,7 +663,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 70
+        "rs_rating": 71
       },
       {
         "symbol": "CMCSA",
@@ -715,7 +715,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 15
+        "rs_rating": 14
       },
       {
         "symbol": "NFLX",
@@ -728,7 +728,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 4
+        "rs_rating": 5
       },
       {
         "symbol": "GOOG",
@@ -741,7 +741,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 74
+        "rs_rating": 75
       },
       {
         "symbol": "GOOGL",
@@ -767,7 +767,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 43
+        "rs_rating": 47
       },
       {
         "symbol": "ASML",
@@ -793,7 +793,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 44
+        "rs_rating": 45
       },
       {
         "symbol": "MSFT",
@@ -819,7 +819,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 76
+        "rs_rating": 77
       },
       {
         "symbol": "CTAS",
@@ -858,7 +858,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 28
+        "rs_rating": 27
       },
       {
         "symbol": "TMUS",
@@ -884,7 +884,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 69
+        "rs_rating": 78
       },
       {
         "symbol": "ABNB",
@@ -910,7 +910,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 41
+        "rs_rating": 42
       },
       {
         "symbol": "BKNG",
@@ -923,7 +923,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 66
+        "rs_rating": 68
       },
       {
         "symbol": "FAST",
@@ -949,7 +949,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 86
+        "rs_rating": 85
       },
       {
         "symbol": "CTSH",
@@ -988,7 +988,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 45
+        "rs_rating": 46
       },
       {
         "symbol": "ADP",
@@ -1118,7 +1118,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 80
+        "rs_rating": 51
       },
       {
         "symbol": "VRTX",
@@ -1131,7 +1131,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 62
+        "rs_rating": 63
       },
       {
         "symbol": "ODFL",
@@ -1144,7 +1144,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 77
+        "rs_rating": 68
       },
       {
         "symbol": "TEAM",
@@ -1183,7 +1183,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 10
+        "rs_rating": 22
       },
       {
         "symbol": "ADBE",
@@ -1222,7 +1222,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 16
+        "rs_rating": 19
       },
       {
         "symbol": "SHOP",
@@ -1261,7 +1261,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 63
+        "rs_rating": 64
       },
       {
         "symbol": "PLTR",
