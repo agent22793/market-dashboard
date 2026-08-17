@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T20:00:30.868030+00:00",
+  "updated_at": "2026-08-17T20:30:31.461686+00:00",
   "market": {
     "score": 77,
     "label": "Bullish",
@@ -25,14 +25,14 @@
     "Sentiment: Fear & Greed at 70 (Greed)."
   ],
   "sp500": {
-    "price": 7745.43017578125,
-    "change_pct": -0.5179917061120975,
-    "sma50": 7515.61162109375,
-    "sma200": 7079.175004882813,
-    "off_52w_high_pct": -0.6867563233721952,
-    "ema20": 7648.531881569731,
-    "ema50": 7529.569003290245,
-    "ema200": 7108.7842118664585
+    "price": 7745.06005859375,
+    "change_pct": -0.5227454770816764,
+    "sma50": 7515.60421875,
+    "sma200": 7079.173154296875,
+    "off_52w_high_pct": -0.6915020298851826,
+    "ema20": 7648.496632313779,
+    "ema50": 7529.554488890735,
+    "ema200": 7108.780529108374
   },
   "nasdaq": {
     "price": 26644.91015625,
@@ -45,26 +45,26 @@
     "ema200": 24288.58100737174
   },
   "dow": {
-    "price": 53460.01953125,
-    "change_pct": -0.5069391531254741,
-    "sma50": 52381.317109375,
-    "sma200": 49440.5716796875,
-    "off_52w_high_pct": -1.6359078943822047,
-    "ema20": 53260.63344671845,
-    "ema50": 52370.742105954174,
-    "ema200": 49589.820841713285
+    "price": 53459.78125,
+    "change_pct": -0.507382612202234,
+    "sma50": 52381.31234375,
+    "sma200": 49440.57048828125,
+    "off_52w_high_pct": -1.6363463214353113,
+    "ema20": 53260.61075326607,
+    "ema50": 52370.73276159143,
+    "ema200": 49589.81847075557
   },
   "russell": {
-    "price": 3055.92431640625,
-    "change_pct": -0.40723257529609036,
-    "sma50": 2972.4596875,
-    "sma200": 2706.2190747070313,
-    "off_52w_high_pct": -0.40723257529609036,
-    "ema20": 3008.7005793211356,
-    "ema50": 2961.3584752710094,
-    "ema200": 2734.919714431786
+    "price": 3057.539794921875,
+    "change_pct": -0.35458402794088517,
+    "sma50": 2972.4919970703127,
+    "sma200": 2706.227152099609,
+    "off_52w_high_pct": -0.35458402794088517,
+    "ema20": 3008.8544344178617,
+    "ema50": 2961.421827369661,
+    "ema200": 2734.9357888448767
   },
-  "vix": 15.239999771118164,
+  "vix": 15.1899995803833,
   "breadth": {
     "sectors_above_200sma": 9,
     "sectors_total": 11
@@ -403,7 +403,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 55
+        "rs_rating": 56
       },
       {
         "symbol": "REGN",
@@ -572,7 +572,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 42
+        "rs_rating": 41
       },
       {
         "symbol": "CDNS",
@@ -611,7 +611,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 43
+        "rs_rating": 42
       },
       {
         "symbol": "GOOGL",
@@ -793,7 +793,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 84
+        "rs_rating": 85
       },
       {
         "symbol": "TMUS",
@@ -897,7 +897,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 40
+        "rs_rating": 47
       },
       {
         "symbol": "PEP",
@@ -910,7 +910,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 17
+        "rs_rating": 16
       },
       {
         "symbol": "CCEP",
@@ -1209,7 +1209,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 18
+        "rs_rating": 17
       },
       {
         "symbol": "CSGP",
@@ -1274,7 +1274,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 7
+        "rs_rating": 6
       },
       {
         "symbol": "SHOP",
@@ -1401,7 +1401,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 61
+        "val": 62
       },
       {
         "name": "MOMENTUM",
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 88
+        "val": 89
       },
       {
         "name": "SAFE HAVEN",
