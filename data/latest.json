@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T01:00:36.044326+00:00",
+  "updated_at": "2026-08-17T01:30:32.087960+00:00",
   "market": {
     "score": 81,
     "label": "Bullish",
@@ -8,7 +8,7 @@
       "trend": 85,
       "volatility": 89,
       "breadth": 70,
-      "sentiment": 75
+      "sentiment": 74
     }
   },
   "trend_strength": {
@@ -22,7 +22,7 @@
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 87% confidence.",
     "Volatility: VIX at 14.2 \u2014 very calm conditions.",
     "Breadth: 70.3% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (45 vs 55).",
-    "Sentiment: Fear & Greed at 75 (Greed)."
+    "Sentiment: Fear & Greed at 74 (Greed)."
   ],
   "sp500": {
     "price": 7785.759765625,
@@ -37,12 +37,12 @@
   "nasdaq": {
     "price": 26729.16015625,
     "change_pct": -0.2755999697154121,
-    "sma50": 25906.6169140625,
-    "sma200": 24178.910234375,
+    "sma50": 25989.2715234375,
+    "sma200": 24143.321083984374,
     "off_52w_high_pct": -1.3462079254606185,
-    "ema20": 26144.322518006593,
-    "ema50": 25857.028151476305,
-    "ema200": 24266.259569256745
+    "ema20": 26152.45402498002,
+    "ema50": 25858.60856154476,
+    "ema200": 24223.00800246563
   },
   "dow": {
     "price": 53732.41015625,
@@ -77,7 +77,7 @@
     "new_highs": 0,
     "new_lows": 0,
     "pct_above_sma20": 70.3,
-    "pct_above_sma50": 66.3,
+    "pct_above_sma50": 67.3,
     "pct_above_sma200": 70.3,
     "constituents": [
       {
@@ -104,7 +104,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 97
+        "rs_rating": 96
       },
       {
         "symbol": "STX",
@@ -143,7 +143,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 71
+        "rs_rating": 75
       },
       {
         "symbol": "SNPS",
@@ -182,7 +182,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 70
+        "rs_rating": 69
       },
       {
         "symbol": "BKR",
@@ -221,7 +221,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 35
+        "rs_rating": 34
       },
       {
         "symbol": "MCHP",
@@ -247,7 +247,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 68
+        "rs_rating": 67
       },
       {
         "symbol": "FANG",
@@ -260,7 +260,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 69
+        "rs_rating": 68
       },
       {
         "symbol": "CEG",
@@ -364,7 +364,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 16
+        "rs_rating": 17
       },
       {
         "symbol": "WBD",
@@ -481,7 +481,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 62
+        "rs_rating": 61
       },
       {
         "symbol": "CDNS",
@@ -520,7 +520,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 39
+        "rs_rating": 38
       },
       {
         "symbol": "ARM",
@@ -542,11 +542,11 @@
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
-        "above_sma50": false,
+        "above_sma50": true,
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 34
+        "rs_rating": 33
       },
       {
         "symbol": "AAPL",
@@ -559,7 +559,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 58
+        "rs_rating": 57
       },
       {
         "symbol": "AEP",
@@ -572,7 +572,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 35
+        "rs_rating": 37
       },
       {
         "symbol": "GILD",
@@ -585,7 +585,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 51
+        "rs_rating": 50
       },
       {
         "symbol": "ROST",
@@ -624,7 +624,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 34
+        "rs_rating": 33
       },
       {
         "symbol": "PEP",
@@ -715,7 +715,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 14
+        "rs_rating": 15
       },
       {
         "symbol": "NFLX",
@@ -741,7 +741,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 75
+        "rs_rating": 74
       },
       {
         "symbol": "GOOGL",
@@ -754,7 +754,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 76
+        "rs_rating": 75
       },
       {
         "symbol": "GEHC",
@@ -767,7 +767,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 47
+        "rs_rating": 43
       },
       {
         "symbol": "ASML",
@@ -819,7 +819,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 77
+        "rs_rating": 76
       },
       {
         "symbol": "CTAS",
@@ -832,7 +832,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 38
+        "rs_rating": 39
       },
       {
         "symbol": "ALAB",
@@ -884,7 +884,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 78
+        "rs_rating": 77
       },
       {
         "symbol": "ABNB",
@@ -910,7 +910,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 42
+        "rs_rating": 39
       },
       {
         "symbol": "BKNG",
@@ -923,7 +923,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 68
+        "rs_rating": 66
       },
       {
         "symbol": "FAST",
@@ -936,7 +936,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 50
+        "rs_rating": 53
       },
       {
         "symbol": "AMGN",
@@ -988,7 +988,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 46
+        "rs_rating": 45
       },
       {
         "symbol": "ADP",
@@ -1040,7 +1040,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 79
+        "rs_rating": 78
       },
       {
         "symbol": "ORLY",
@@ -1053,7 +1053,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 13
+        "rs_rating": 14
       },
       {
         "symbol": "ISRG",
@@ -1066,7 +1066,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 8
+        "rs_rating": 9
       },
       {
         "symbol": "DXCM",
@@ -1131,7 +1131,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 63
+        "rs_rating": 64
       },
       {
         "symbol": "ODFL",
@@ -1170,7 +1170,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 10
+        "rs_rating": 8
       },
       {
         "symbol": "TRI",
@@ -1183,7 +1183,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 22
+        "rs_rating": 10
       },
       {
         "symbol": "ADBE",
@@ -1396,12 +1396,12 @@
     ]
   },
   "fear_greed": {
-    "score": 75,
+    "score": 74,
     "rating": "Greed",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 72
+        "val": 71
       },
       {
         "name": "MOMENTUM",
