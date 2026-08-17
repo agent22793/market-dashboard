@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T21:00:39.383512+00:00",
+  "updated_at": "2026-08-17T21:30:29.309508+00:00",
   "market": {
     "score": 77,
     "label": "Bullish",
@@ -559,7 +559,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 93
+        "rs_rating": 94
       },
       {
         "symbol": "FER",
@@ -611,7 +611,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 43
+        "rs_rating": 42
       },
       {
         "symbol": "GOOGL",
@@ -897,7 +897,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 40
+        "rs_rating": 47
       },
       {
         "symbol": "PEP",
@@ -1209,7 +1209,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 18
+        "rs_rating": 17
       },
       {
         "symbol": "CSGP",
