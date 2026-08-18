@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T02:00:35.501831+00:00",
+  "updated_at": "2026-08-18T02:30:29.909534+00:00",
   "market": {
     "score": 77,
     "label": "Bullish",
@@ -247,7 +247,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 44
+        "rs_rating": 43
       },
       {
         "symbol": "TXN",
@@ -286,7 +286,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 80
+        "rs_rating": 79
       },
       {
         "symbol": "AMGN",
@@ -455,7 +455,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 45
+        "rs_rating": 44
       },
       {
         "symbol": "BKR",
@@ -520,7 +520,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 50
+        "rs_rating": 49
       },
       {
         "symbol": "AAPL",
@@ -559,7 +559,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 94
+        "rs_rating": 93
       },
       {
         "symbol": "FER",
@@ -663,7 +663,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 16
+        "rs_rating": 15
       },
       {
         "symbol": "WMT",
@@ -806,7 +806,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 7
+        "rs_rating": 8
       },
       {
         "symbol": "AXON",
@@ -975,7 +975,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 53
+        "rs_rating": 52
       },
       {
         "symbol": "TTWO",
@@ -1001,7 +1001,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 20
+        "rs_rating": 21
       },
       {
         "symbol": "PANW",
@@ -1144,7 +1144,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 53
+        "rs_rating": 52
       },
       {
         "symbol": "ARM",
@@ -1196,7 +1196,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 35
+        "rs_rating": 34
       },
       {
         "symbol": "MELI",
