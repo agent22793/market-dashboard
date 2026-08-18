@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T23:30:30.388326+00:00",
+  "updated_at": "2026-08-18T00:00:30.873924+00:00",
   "market": {
     "score": 77,
     "label": "Bullish",
@@ -559,7 +559,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 93
+        "rs_rating": 94
       },
       {
         "symbol": "FER",
@@ -1422,6 +1422,10 @@
     ]
   },
   "recent_alerts": [
+    {
+      "time": "2026-08-18T00:00:30.873924+00:00",
+      "text": "\u2714 Market remains Bullish"
+    },
     {
       "time": "2026-08-17T00:00:33.171167+00:00",
       "text": "\u2714 Market remains Bullish"
