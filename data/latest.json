@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T00:00:30.873924+00:00",
+  "updated_at": "2026-08-18T00:30:28.621868+00:00",
   "market": {
     "score": 77,
     "label": "Bullish",
@@ -559,7 +559,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 94
+        "rs_rating": 93
       },
       {
         "symbol": "FER",
@@ -572,7 +572,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 42
+        "rs_rating": 41
       },
       {
         "symbol": "CDNS",
@@ -663,7 +663,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 15
+        "rs_rating": 16
       },
       {
         "symbol": "WMT",
@@ -910,7 +910,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 16
+        "rs_rating": 17
       },
       {
         "symbol": "CCEP",
@@ -1209,7 +1209,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 17
+        "rs_rating": 18
       },
       {
         "symbol": "CSGP",
@@ -1436,10 +1436,6 @@
     },
     {
       "time": "2026-08-15T00:00:37.848768+00:00",
-      "text": "\u2714 Market remains Bullish"
-    },
-    {
-      "time": "2026-08-14T00:00:34.506631+00:00",
       "text": "\u2714 Market remains Bullish"
     }
   ]
