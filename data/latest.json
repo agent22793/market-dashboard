@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T08:00:34.834889+00:00",
+  "updated_at": "2026-08-19T08:30:42.572889+00:00",
   "market": {
     "score": 76,
     "label": "Bullish",
@@ -1401,7 +1401,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 56
+        "val": 55
       },
       {
         "name": "MOMENTUM",
