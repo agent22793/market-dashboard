@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T02:30:33.504836+00:00",
+  "updated_at": "2026-08-19T03:00:37.826605+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -37,22 +37,22 @@
   "nasdaq": {
     "price": 26289.7109375,
     "change_pct": -1.3330846929753393,
-    "sma50": 25914.5015234375,
-    "sma200": 24204.65353515625,
+    "sma50": 25964.3497265625,
+    "sma200": 24177.26083984375,
     "off_52w_high_pct": -2.9681568232356237,
-    "ema20": 26201.303569870473,
-    "ema50": 25903.681764410143,
-    "ema200": 24307.692216681255
+    "ema20": 26207.959973538065,
+    "ema50": 25905.14064957555,
+    "ema200": 24265.232109160996
   },
   "dow": {
     "price": 53343.3984375,
     "change_pct": -0.21770162499495926,
-    "sma50": 52430.8446875,
-    "sma200": 49469.12748046875,
+    "sma50": 52354.5953125,
+    "sma200": 49398.90103515625,
     "off_52w_high_pct": -1.8504855938979548,
-    "ema20": 53268.49529462168,
-    "ema50": 52408.876538423094,
-    "ema200": 49631.21807968673
+    "ema20": 53257.353825353355,
+    "ema50": 52351.862593145364,
+    "ema200": 49544.7110991419
   },
   "russell": {
     "price": 3017.886962890625,
@@ -104,7 +104,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 4
+        "rs_rating": 3
       },
       {
         "symbol": "ADBE",
@@ -182,7 +182,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 78
+        "rs_rating": 77
       },
       {
         "symbol": "CMCSA",
@@ -299,7 +299,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 64
+        "rs_rating": 65
       },
       {
         "symbol": "FANG",
@@ -338,7 +338,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 55
+        "rs_rating": 58
       },
       {
         "symbol": "BKNG",
@@ -364,7 +364,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 23
+        "rs_rating": 27
       },
       {
         "symbol": "TMUS",
@@ -429,7 +429,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 19
+        "rs_rating": 18
       },
       {
         "symbol": "IDXX",
@@ -468,7 +468,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 52
+        "rs_rating": 57
       },
       {
         "symbol": "ROP",
@@ -520,7 +520,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 35
+        "rs_rating": 40
       },
       {
         "symbol": "COST",
@@ -585,7 +585,7 @@
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 86
+        "rs_rating": 87
       },
       {
         "symbol": "ORLY",
@@ -650,7 +650,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 34
+        "rs_rating": 35
       },
       {
         "symbol": "KHC",
@@ -676,7 +676,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 37
+        "rs_rating": 36
       },
       {
         "symbol": "ISRG",
@@ -767,7 +767,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 74
+        "rs_rating": 73
       },
       {
         "symbol": "XEL",
@@ -806,7 +806,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 41
+        "rs_rating": 42
       },
       {
         "symbol": "WDAY",
@@ -988,7 +988,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 40
+        "rs_rating": 38
       },
       {
         "symbol": "CSCO",
@@ -1014,7 +1014,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 20
+        "rs_rating": 19
       },
       {
         "symbol": "SHOP",
@@ -1027,7 +1027,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 80
+        "rs_rating": 79
       },
       {
         "symbol": "APP",
@@ -1053,7 +1053,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 46
+        "rs_rating": 45
       },
       {
         "symbol": "NXPI",
@@ -1105,7 +1105,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 13
+        "rs_rating": 12
       },
       {
         "symbol": "PCAR",
@@ -1131,7 +1131,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 46
+        "rs_rating": 47
       },
       {
         "symbol": "MCHP",
@@ -1144,7 +1144,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 43
+        "rs_rating": 42
       },
       {
         "symbol": "AVGO",
@@ -1261,7 +1261,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 96
+        "rs_rating": 97
       },
       {
         "symbol": "ALAB",
