@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T10:00:34.603132+00:00",
+  "updated_at": "2026-08-20T10:30:36.510348+00:00",
   "market": {
     "score": 77,
     "label": "Bullish",
@@ -20,7 +20,7 @@
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 77/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 88% confidence.",
-    "Volatility: VIX at 15.2 \u2014 calm conditions.",
+    "Volatility: VIX at 15.1 \u2014 calm conditions.",
     "Breadth: 70.3% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (61 vs 39).",
     "Sentiment: Fear & Greed at 66 (Greed)."
   ],
@@ -64,7 +64,7 @@
     "ema50": 2963.905910053031,
     "ema200": 2735.096310481102
   },
-  "vix": 15.1899995803833,
+  "vix": 15.149999618530273,
   "breadth": {
     "sectors_above_200sma": 9,
     "sectors_total": 11
@@ -195,7 +195,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 13
+        "rs_rating": 21
       },
       {
         "symbol": "VRTX",
@@ -221,7 +221,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 9
+        "rs_rating": 14
       },
       {
         "symbol": "TSLA",
@@ -351,7 +351,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 37
+        "rs_rating": 36
       },
       {
         "symbol": "NFLX",
@@ -377,7 +377,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 56
+        "rs_rating": 51
       },
       {
         "symbol": "GILD",
@@ -390,7 +390,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 69
+        "rs_rating": 68
       },
       {
         "symbol": "CHTR",
@@ -520,7 +520,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 44
+        "rs_rating": 42
       },
       {
         "symbol": "ADSK",
@@ -598,7 +598,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 70
+        "rs_rating": 63
       },
       {
         "symbol": "ISRG",
@@ -611,7 +611,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 8
+        "rs_rating": 7
       },
       {
         "symbol": "IDXX",
@@ -650,7 +650,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 69
+        "rs_rating": 68
       },
       {
         "symbol": "APP",
@@ -689,7 +689,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 74
+        "rs_rating": 73
       },
       {
         "symbol": "KDP",
@@ -702,7 +702,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 21
+        "rs_rating": 22
       },
       {
         "symbol": "MAR",
@@ -741,7 +741,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 19
+        "rs_rating": 20
       },
       {
         "symbol": "ORLY",
@@ -1001,7 +1001,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 73
+        "rs_rating": 72
       },
       {
         "symbol": "ROST",
@@ -1027,7 +1027,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 63
+        "rs_rating": 64
       },
       {
         "symbol": "SNPS",
@@ -1131,7 +1131,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 63
+        "rs_rating": 67
       },
       {
         "symbol": "MCHP",
@@ -1170,7 +1170,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 62
+        "rs_rating": 63
       },
       {
         "symbol": "TTWO",
@@ -1183,7 +1183,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 26
+        "rs_rating": 25
       },
       {
         "symbol": "MPWR",
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 82
+        "val": 83
       },
       {
         "name": "SAFE HAVEN",
