@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T23:30:30.875069+00:00",
+  "updated_at": "2026-08-20T00:00:39.052295+00:00",
   "market": {
     "score": 78,
     "label": "Bullish",
@@ -8,7 +8,7 @@
       "trend": 83,
       "volatility": 86,
       "breadth": 70,
-      "sentiment": 69
+      "sentiment": 68
     }
   },
   "trend_strength": {
@@ -22,7 +22,7 @@
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 88% confidence.",
     "Volatility: VIX at 14.9 \u2014 very calm conditions.",
     "Breadth: 70.3% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (61 vs 39).",
-    "Sentiment: Fear & Greed at 69 (Greed)."
+    "Sentiment: Fear & Greed at 68 (Greed)."
   ],
   "sp500": {
     "price": 7707.97998046875,
@@ -37,12 +37,12 @@
   "nasdaq": {
     "price": 26331.08984375,
     "change_pct": 0.1573958205488557,
-    "sma50": 25922.5301171875,
-    "sma200": 24218.40328125,
+    "sma50": 25953.8919140625,
+    "sma200": 24190.728984375,
     "off_52w_high_pct": -2.815432757473879,
-    "ema20": 26213.66416738281,
-    "ema50": 25920.442917984656,
-    "ema200": 24336.37571138513
+    "ema20": 26219.686627843963,
+    "ema50": 25921.844598651925,
+    "ema200": 24294.59848659844
   },
   "dow": {
     "price": 53463.05078125,
@@ -77,7 +77,7 @@
     "new_highs": 4,
     "new_lows": 0,
     "pct_above_sma20": 60.4,
-    "pct_above_sma50": 61.4,
+    "pct_above_sma50": 60.4,
     "pct_above_sma200": 70.3,
     "constituents": [
       {
@@ -273,7 +273,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 12
+        "rs_rating": 19
       },
       {
         "symbol": "REGN",
@@ -351,7 +351,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 29
+        "rs_rating": 37
       },
       {
         "symbol": "NFLX",
@@ -455,7 +455,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 37
+        "rs_rating": 36
       },
       {
         "symbol": "BKNG",
@@ -481,7 +481,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 66
+        "rs_rating": 67
       },
       {
         "symbol": "PAYX",
@@ -494,7 +494,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 56
+        "rs_rating": 55
       },
       {
         "symbol": "PLTR",
@@ -546,7 +546,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 41
+        "rs_rating": 42
       },
       {
         "symbol": "DASH",
@@ -624,7 +624,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 13
+        "rs_rating": 14
       },
       {
         "symbol": "CMCSA",
@@ -689,7 +689,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 73
+        "rs_rating": 74
       },
       {
         "symbol": "KDP",
@@ -698,11 +698,11 @@
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
-        "above_sma50": true,
+        "above_sma50": false,
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 21
+        "rs_rating": 22
       },
       {
         "symbol": "MAR",
@@ -715,7 +715,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 61
+        "rs_rating": 60
       },
       {
         "symbol": "MSFT",
@@ -728,7 +728,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 39
+        "rs_rating": 38
       },
       {
         "symbol": "LIN",
@@ -741,7 +741,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 19
+        "rs_rating": 20
       },
       {
         "symbol": "ORLY",
@@ -832,7 +832,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 75
+        "rs_rating": 76
       },
       {
         "symbol": "GOOG",
@@ -845,7 +845,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 74
+        "rs_rating": 75
       },
       {
         "symbol": "MNST",
@@ -884,7 +884,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 80
+        "rs_rating": 81
       },
       {
         "symbol": "EXC",
@@ -949,7 +949,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 73
+        "rs_rating": 74
       },
       {
         "symbol": "COST",
@@ -1001,7 +1001,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 72
+        "rs_rating": 73
       },
       {
         "symbol": "ROST",
@@ -1066,7 +1066,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 74
+        "rs_rating": 75
       },
       {
         "symbol": "CSCO",
@@ -1131,7 +1131,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 67
+        "rs_rating": 63
       },
       {
         "symbol": "MCHP",
@@ -1183,7 +1183,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 26
+        "rs_rating": 25
       },
       {
         "symbol": "MPWR",
@@ -1209,7 +1209,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 28
+        "rs_rating": 27
       },
       {
         "symbol": "ASML",
@@ -1396,7 +1396,7 @@
     ]
   },
   "fear_greed": {
-    "score": 69,
+    "score": 68,
     "rating": "Greed",
     "components": [
       {
@@ -1417,11 +1417,15 @@
       },
       {
         "name": "JUNK BONDS",
-        "val": 59
+        "val": 53
       }
     ]
   },
   "recent_alerts": [
+    {
+      "time": "2026-08-20T00:00:39.052295+00:00",
+      "text": "\u2714 Market remains Bullish"
+    },
     {
       "time": "2026-08-19T00:00:32.018754+00:00",
       "text": "\u2714 Market remains Bullish"
