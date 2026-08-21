@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T08:00:34.910525+00:00",
+  "updated_at": "2026-08-21T08:30:31.995633+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -20,7 +20,7 @@
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 75/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 87% confidence.",
-    "Volatility: VIX at 15.8 \u2014 calm conditions.",
+    "Volatility: VIX at 15.9 \u2014 calm conditions.",
     "Breadth: 67.3% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (33 vs 68).",
     "Sentiment: Fear & Greed at 63 (Greed)."
   ],
@@ -64,7 +64,7 @@
     "ema50": 2967.376652376913,
     "ema200": 2744.5021372754277
   },
-  "vix": 15.800000190734863,
+  "vix": 15.869999885559082,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 79
+        "val": 78
       },
       {
         "name": "SAFE HAVEN",
