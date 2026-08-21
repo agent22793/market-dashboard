@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T00:00:46.262838+00:00",
+  "updated_at": "2026-08-21T00:30:33.960757+00:00",
   "market": {
     "score": 72,
     "label": "Bullish",
@@ -484,6 +484,19 @@
         "rs_rating": 3
       },
       {
+        "symbol": "AMAT",
+        "price": 496.21,
+        "change_pct": 0.11,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 96
+      },
+      {
         "symbol": "LIN",
         "price": 481.29,
         "change_pct": 0.03,
@@ -495,19 +508,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 21
-      },
-      {
-        "symbol": "AMAT",
-        "price": 496.21,
-        "change_pct": 0.01,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 96
       },
       {
         "symbol": "CTSH",
@@ -718,6 +718,19 @@
         "rs_rating": 11
       },
       {
+        "symbol": "MSFT",
+        "price": 481.15,
+        "change_pct": -0.47,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 39
+      },
+      {
         "symbol": "EXC",
         "price": 45.06,
         "change_pct": -0.53,
@@ -783,19 +796,6 @@
         "rs_rating": 5
       },
       {
-        "symbol": "MSFT",
-        "price": 481.15,
-        "change_pct": -0.65,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 38
-      },
-      {
         "symbol": "TXN",
         "price": 265.6,
         "change_pct": -0.69,
@@ -846,6 +846,19 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 19
+      },
+      {
+        "symbol": "MAR",
+        "price": 356.6,
+        "change_pct": -0.73,
+        "above_sma5": false,
+        "above_sma10": true,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 58
       },
       {
         "symbol": "ABNB",
@@ -950,19 +963,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 36
-      },
-      {
-        "symbol": "MAR",
-        "price": 356.6,
-        "change_pct": -0.93,
-        "above_sma5": false,
-        "above_sma10": true,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 58
       },
       {
         "symbol": "SBUX",
@@ -1415,10 +1415,6 @@
     },
     {
       "time": "2026-08-18T00:00:30.873924+00:00",
-      "text": "\u2714 Market remains Bullish"
-    },
-    {
-      "time": "2026-08-17T00:00:33.171167+00:00",
       "text": "\u2714 Market remains Bullish"
     }
   ]
