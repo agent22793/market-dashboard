@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T21:30:31.321389+00:00",
+  "updated_at": "2026-08-24T22:00:33.289284+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -221,7 +221,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 12
+        "rs_rating": 13
       },
       {
         "symbol": "META",
@@ -351,7 +351,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 59
+        "rs_rating": 58
       },
       {
         "symbol": "ROST",
