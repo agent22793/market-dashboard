@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-24T07:00:33.538779+00:00",
+  "updated_at": "2026-08-24T07:30:35.312052+00:00",
   "market": {
-    "score": 77,
+    "score": 76,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 83,
-      "volatility": 84,
+      "volatility": 81,
       "breadth": 67,
       "sentiment": 67
     }
@@ -18,9 +18,9 @@
     "relation": "EMA20 > EMA50 > EMA200"
   },
   "market_summary": [
-    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 77/100.",
+    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 76/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 87% confidence.",
-    "Volatility: VIX at 15.1 \u2014 calm conditions.",
+    "Volatility: VIX at 15.9 \u2014 calm conditions.",
     "Breadth: 67.3% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (67 vs 33).",
     "Sentiment: Fear & Greed at 67 (Greed)."
   ],
@@ -64,7 +64,7 @@
     "ema50": 2969.356789272584,
     "ema200": 2747.388697423683
   },
-  "vix": 15.130000114440918,
+  "vix": 15.890000343322754,
   "breadth": {
     "sectors_above_200sma": 9,
     "sectors_total": 11
