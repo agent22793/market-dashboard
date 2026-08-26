@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T01:30:32.752660+00:00",
+  "updated_at": "2026-08-26T02:00:32.318654+00:00",
   "market": {
     "score": 76,
     "label": "Bullish",
@@ -754,7 +754,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 61
+        "rs_rating": 60
       },
       {
         "symbol": "CSGP",
