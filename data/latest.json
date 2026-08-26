@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-08-26T02:30:34.495930+00:00",
+  "updated_at": "2026-08-26T03:00:37.635422+00:00",
   "market": {
-    "score": 76,
+    "score": 73,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 83,
       "volatility": 83,
       "breadth": 68,
-      "sentiment": 62
+      "sentiment": 50
     }
   },
   "trend_strength": {
@@ -18,11 +18,11 @@
     "relation": "EMA20 > EMA50 > EMA200"
   },
   "market_summary": [
-    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 76/100.",
+    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 73/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 87% confidence.",
     "Volatility: VIX at 15.4 \u2014 calm conditions.",
     "Breadth: 68.3% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (49 vs 52).",
-    "Sentiment: Fear & Greed at 62 (Greed)."
+    "Sentiment data unavailable this run."
   ],
   "sp500": {
     "price": 7677.27978515625,
@@ -1396,30 +1396,9 @@
     ]
   },
   "fear_greed": {
-    "score": 62,
-    "rating": "Greed",
-    "components": [
-      {
-        "name": "VOLATILITY",
-        "val": 53
-      },
-      {
-        "name": "MOMENTUM",
-        "val": 68
-      },
-      {
-        "name": "PUT/CALL",
-        "val": 73
-      },
-      {
-        "name": "SAFE HAVEN",
-        "val": 63
-      },
-      {
-        "name": "JUNK BONDS",
-        "val": 52
-      }
-    ]
+    "score": null,
+    "rating": null,
+    "components": []
   },
   "recent_alerts": [
     {
