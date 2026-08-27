@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27T00:30:31.241097+00:00",
+  "updated_at": "2026-08-27T01:00:32.030483+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -234,7 +234,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 21
+        "rs_rating": 20
       },
       {
         "symbol": "FAST",
