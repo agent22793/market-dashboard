@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T01:00:33.850537+00:00",
+  "updated_at": "2026-08-28T01:29:18.362388+00:00",
   "market": {
     "score": 78,
     "label": "Bullish",
@@ -1209,7 +1209,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 13
+        "rs_rating": 12
       },
       {
         "symbol": "ABNB",
