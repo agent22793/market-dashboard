@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27T23:30:29.496238+00:00",
+  "updated_at": "2026-08-28T00:00:36.818960+00:00",
   "market": {
     "score": 78,
     "label": "Bullish",
@@ -1422,6 +1422,10 @@
     ]
   },
   "recent_alerts": [
+    {
+      "time": "2026-08-28T00:00:36.818960+00:00",
+      "text": "\u2714 Market remains Bullish"
+    },
     {
       "time": "2026-08-27T00:00:34.180635+00:00",
       "text": "\u2714 Market remains Bullish"
