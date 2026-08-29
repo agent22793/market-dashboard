@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T03:30:30.734236+00:00",
+  "updated_at": "2026-08-29T16:30:31.356839+00:00",
   "market": {
     "score": 77,
     "label": "Bullish",
@@ -35,34 +35,34 @@
     "ema200": 7161.362770189278
   },
   "nasdaq": {
-    "price": 26402.423828125,
-    "change_pct": -0.5234314882048396,
-    "sma50": 25959.016796875,
-    "sma200": 24315.699638671875,
-    "off_52w_high_pct": -2.552148463420434,
-    "ema20": 26224.500954760377,
-    "ema50": 25993.231969629913,
-    "ema200": 24459.659586988568
+    "price": 26402.419921875,
+    "change_pct": -0.5234462058060774,
+    "sma50": 25959.01671875,
+    "sma200": 24315.699619140625,
+    "off_52w_high_pct": -2.552162880872133,
+    "ema20": 26224.500582736568,
+    "ema50": 25993.23181644364,
+    "ema200": 24459.65954812041
   },
   "dow": {
-    "price": 53560.0,
-    "change_pct": -0.017624612096289738,
-    "sma50": 52796.764375,
-    "sma200": 49714.13353515625,
-    "off_52w_high_pct": -1.451948215296428,
-    "ema20": 53351.78022305551,
-    "ema50": 52680.1956164061,
-    "ema200": 49958.68610622762
+    "price": 53559.98828125,
+    "change_pct": -0.017646487907740926,
+    "sma50": 52796.764140625,
+    "sma200": 49714.1334765625,
+    "off_52w_high_pct": -1.4519697772826468,
+    "ema20": 53351.77910698408,
+    "ema50": 52680.19515684727,
+    "ema200": 49958.68598962315
   },
   "russell": {
-    "price": 2972.371826171875,
-    "change_pct": -1.3922868851907966,
-    "sma50": 2992.0950390625,
-    "sma200": 2731.017412109375,
-    "off_52w_high_pct": -3.1302135349334237,
-    "ema20": 3006.0127707616575,
-    "ema50": 2974.7666490389247,
-    "ema200": 2759.8062974916243
+    "price": 2972.3701171875,
+    "change_pct": -1.3923435803322004,
+    "sma50": 2992.0950048828126,
+    "sma200": 2731.017403564453,
+    "off_52w_high_pct": -3.130269230842675,
+    "ema20": 3006.012608001241,
+    "ema50": 2974.76658201993,
+    "ema200": 2759.8062804868046
   },
   "vix": 14.430000305175781,
   "breadth": {
@@ -159,6 +159,19 @@
         "rs_rating": 92
       },
       {
+        "symbol": "TMUS",
+        "price": 181.37,
+        "change_pct": 2.63,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 8
+      },
+      {
         "symbol": "TEAM",
         "price": 190.41,
         "change_pct": 2.58,
@@ -222,19 +235,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 84
-      },
-      {
-        "symbol": "TMUS",
-        "price": 181.37,
-        "change_pct": 2.04,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 7
       },
       {
         "symbol": "MELI",
@@ -381,7 +381,7 @@
       },
       {
         "symbol": "TRI",
-        "price": 106.22,
+        "price": 106.23,
         "change_pct": 1.38,
         "above_sma5": true,
         "above_sma10": true,
@@ -910,7 +910,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 45
+        "rs_rating": 44
       },
       {
         "symbol": "AMGN",
@@ -1027,7 +1027,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 81
+        "rs_rating": 80
       },
       {
         "symbol": "CEG",
