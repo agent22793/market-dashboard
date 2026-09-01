@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T21:00:37.635537+00:00",
+  "updated_at": "2026-09-01T21:30:30.342236+00:00",
   "market": {
     "score": 71,
     "label": "Bullish",
@@ -247,7 +247,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 87
+        "rs_rating": 86
       },
       {
         "symbol": "WDAY",
@@ -416,7 +416,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 58
+        "rs_rating": 59
       },
       {
         "symbol": "CSGP",
@@ -637,7 +637,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 16
+        "rs_rating": 17
       },
       {
         "symbol": "PDD",
@@ -702,7 +702,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": null
+        "rs_rating": 45
       },
       {
         "symbol": "GEHC",
@@ -1014,7 +1014,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 17
+        "rs_rating": 16
       },
       {
         "symbol": "AMD",
