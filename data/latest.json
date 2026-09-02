@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T21:30:29.532705+00:00",
+  "updated_at": "2026-09-02T21:58:07.257116+00:00",
   "market": {
     "score": 74,
     "label": "Bullish",
@@ -403,7 +403,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 69
+        "rs_rating": 68
       },
       {
         "symbol": "INTC",
@@ -598,7 +598,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 30
+        "rs_rating": 29
       },
       {
         "symbol": "ODFL",
@@ -650,7 +650,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 24
+        "rs_rating": 23
       },
       {
         "symbol": "WBD",
@@ -676,7 +676,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 23
+        "rs_rating": 25
       },
       {
         "symbol": "GEHC",
@@ -715,7 +715,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 29
+        "rs_rating": 28
       },
       {
         "symbol": "LIN",
@@ -897,7 +897,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 41
+        "rs_rating": 42
       },
       {
         "symbol": "TRI",
@@ -1170,7 +1170,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 61
+        "rs_rating": 60
       },
       {
         "symbol": "MSTR",
@@ -1209,7 +1209,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 19
+        "rs_rating": 18
       },
       {
         "symbol": "MRVL",
@@ -1378,7 +1378,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 91
+        "rs_rating": 88
       },
       {
         "symbol": "PANW",
