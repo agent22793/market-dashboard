@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T08:00:32.397139+00:00",
+  "updated_at": "2026-09-02T08:30:29.454801+00:00",
   "market": {
     "score": 71,
     "label": "Bullish",
@@ -20,7 +20,7 @@
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 71/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 86% confidence.",
-    "Volatility: VIX at 16.5 \u2014 calm conditions.",
+    "Volatility: VIX at 16.4 \u2014 calm conditions.",
     "Breadth: 60.4% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (21 vs 80).",
     "Sentiment: Fear & Greed at 54 (Neutral)."
   ],
@@ -64,7 +64,7 @@
     "ema50": 2972.024129145632,
     "ema200": 2761.2267981704836
   },
-  "vix": 16.450000762939453,
+  "vix": 16.40999984741211,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -1401,7 +1401,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 38
+        "val": 39
       },
       {
         "name": "MOMENTUM",
