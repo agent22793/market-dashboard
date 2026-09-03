@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T20:00:36.232187+00:00",
+  "updated_at": "2026-09-03T20:30:33.386120+00:00",
   "market": {
     "score": 77,
     "label": "Bullish",
@@ -20,19 +20,19 @@
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 77/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 86% confidence.",
-    "Volatility: VIX at 14.4 \u2014 very calm conditions.",
+    "Volatility: VIX at 14.3 \u2014 very calm conditions.",
     "Breadth: 63.4% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (62 vs 39).",
     "Sentiment: Fear & Greed at 64 (Greed)."
   ],
   "sp500": {
-    "price": 7747.60009765625,
-    "change_pct": 1.056530912897924,
-    "sma50": 7584.4844140625,
-    "sma200": 7136.533408203125,
-    "off_52w_high_pct": -0.6589332102538314,
-    "ema20": 7676.459706635869,
-    "ema50": 7592.695492519145,
-    "ema200": 7182.317484393595
+    "price": 7747.7099609375,
+    "change_pct": 1.057963924661287,
+    "sma50": 7584.486611328125,
+    "sma200": 7136.533957519531,
+    "off_52w_high_pct": -0.6575245242836147,
+    "ema20": 7676.470169805512,
+    "ema50": 7592.699800883115,
+    "ema200": 7182.3185775605725
   },
   "nasdaq": {
     "price": 26584.060546875,
@@ -45,26 +45,26 @@
     "ema200": 24537.616161574857
   },
   "dow": {
-    "price": 53685.51953125,
-    "change_pct": 1.1751741533830629,
-    "sma50": 52914.90609375,
-    "sma200": 49823.6973046875,
-    "off_52w_high_pct": -1.2209977809122474,
-    "ema20": 53301.28966587524,
-    "ema50": 52754.729937272525,
-    "ema200": 50081.742469235585
+    "price": 53686.109375,
+    "change_pct": 1.17628576680604,
+    "sma50": 52914.917890625,
+    "sma200": 49823.70025390625,
+    "off_52w_high_pct": -1.2199124942726014,
+    "ema20": 53301.34584147048,
+    "ema50": 52754.75306839998,
+    "ema200": 50081.74833832762
   },
   "russell": {
-    "price": 2965.325439453125,
-    "change_pct": 0.41160914880262744,
-    "sma50": 2989.0709130859377,
-    "sma200": 2741.5913293457033,
-    "off_52w_high_pct": -3.359855725316685,
-    "ema20": 2987.3927948799146,
-    "ema50": 2970.967699915136,
-    "ema200": 2767.2808617195824
+    "price": 2968.27099609375,
+    "change_pct": 0.5113513484913845,
+    "sma50": 2989.12982421875,
+    "sma200": 2741.6060571289063,
+    "off_52w_high_pct": -3.263859847450501,
+    "ema20": 2987.6733240837834,
+    "ema50": 2971.083211940259,
+    "ema200": 2767.3101707408823
   },
-  "vix": 14.350000381469727,
+  "vix": 14.319999694824219,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -143,7 +143,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 25
+        "rs_rating": 26
       },
       {
         "symbol": "TSLA",
@@ -273,7 +273,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 66
+        "rs_rating": 65
       },
       {
         "symbol": "FAST",
@@ -1118,7 +1118,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 68
+        "rs_rating": 67
       },
       {
         "symbol": "TTWO",
