@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T09:00:39.976461+00:00",
+  "updated_at": "2026-09-04T09:30:36.556449+00:00",
   "market": {
     "score": 77,
     "label": "Bullish",
@@ -64,7 +64,7 @@
     "ema50": 2971.0831736436903,
     "ema200": 2767.3101610238423
   },
-  "vix": 14.1899995803833,
+  "vix": 14.239999771118164,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -104,7 +104,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 78
+        "rs_rating": 79
       },
       {
         "symbol": "AXON",
@@ -585,7 +585,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 81
+        "rs_rating": 82
       },
       {
         "symbol": "PANW",
