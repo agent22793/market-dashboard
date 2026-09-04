@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-04T06:30:46.854398+00:00",
+  "updated_at": "2026-09-04T08:30:35.817183+00:00",
   "market": {
     "score": 77,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 84,
-      "volatility": 88,
+      "volatility": 89,
       "breadth": 63,
-      "sentiment": 64
+      "sentiment": 65
     }
   },
   "trend_strength": {
@@ -20,9 +20,9 @@
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 77/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 86% confidence.",
-    "Volatility: VIX at 14.3 \u2014 very calm conditions.",
+    "Volatility: VIX at 14.2 \u2014 very calm conditions.",
     "Breadth: 63.4% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (62 vs 39).",
-    "Sentiment: Fear & Greed at 64 (Greed)."
+    "Sentiment: Fear & Greed at 65 (Greed)."
   ],
   "sp500": {
     "price": 7747.7099609375,
@@ -64,7 +64,7 @@
     "ema50": 2971.0831736436903,
     "ema200": 2767.3101610238423
   },
-  "vix": 14.319999694824219,
+  "vix": 14.180000305175781,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -104,7 +104,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 79
+        "rs_rating": 78
       },
       {
         "symbol": "AXON",
@@ -585,7 +585,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 82
+        "rs_rating": 81
       },
       {
         "symbol": "PANW",
@@ -1396,12 +1396,12 @@
     ]
   },
   "fear_greed": {
-    "score": 64,
+    "score": 65,
     "rating": "Greed",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 58
+        "val": 59
       },
       {
         "name": "MOMENTUM",
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 81
+        "val": 84
       },
       {
         "name": "SAFE HAVEN",
