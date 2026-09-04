@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-04T12:30:35.086421+00:00",
+  "updated_at": "2026-09-04T13:00:33.777838+00:00",
   "market": {
-    "score": 77,
+    "score": 78,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 84,
       "volatility": 89,
-      "breadth": 63,
+      "breadth": 64,
       "sentiment": 65
     }
   },
@@ -18,10 +18,10 @@
     "relation": "EMA20 > EMA50 > EMA200"
   },
   "market_summary": [
-    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 77/100.",
+    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 78/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 86% confidence.",
     "Volatility: VIX at 14.2 \u2014 very calm conditions.",
-    "Breadth: 63.4% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (62 vs 39).",
+    "Breadth: 64.4% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (62 vs 39).",
     "Sentiment: Fear & Greed at 65 (Greed)."
   ],
   "sp500": {
@@ -64,7 +64,7 @@
     "ema50": 2971.0831736436903,
     "ema200": 2767.3101610238423
   },
-  "vix": 14.239999771118164,
+  "vix": 14.1899995803833,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -75,10 +75,10 @@
     "decliners": 39,
     "unchanged": 0,
     "new_highs": 3,
-    "new_lows": 1,
+    "new_lows": 0,
     "pct_above_sma20": 39.6,
     "pct_above_sma50": 53.5,
-    "pct_above_sma200": 63.4,
+    "pct_above_sma200": 64.4,
     "constituents": [
       {
         "symbol": "MSTR",
@@ -143,7 +143,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 26
+        "rs_rating": 25
       },
       {
         "symbol": "TSLA",
@@ -325,7 +325,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 29
+        "rs_rating": 28
       },
       {
         "symbol": "ADBE",
@@ -442,7 +442,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 46
+        "rs_rating": 45
       },
       {
         "symbol": "LRCX",
@@ -520,7 +520,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 32
+        "rs_rating": 31
       },
       {
         "symbol": "FTNT",
@@ -624,7 +624,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 43
+        "rs_rating": 42
       },
       {
         "symbol": "KDP",
@@ -676,7 +676,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 59
+        "rs_rating": 58
       },
       {
         "symbol": "HON",
@@ -1014,7 +1014,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 10
+        "rs_rating": 9
       },
       {
         "symbol": "AMAT",
@@ -1092,7 +1092,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 36
+        "rs_rating": 35
       },
       {
         "symbol": "MNST",
@@ -1102,10 +1102,10 @@
         "above_sma10": false,
         "above_sma20": false,
         "above_sma50": false,
-        "above_sma200": false,
+        "above_sma200": true,
         "new_high": false,
-        "new_low": true,
-        "rs_rating": 3
+        "new_low": false,
+        "rs_rating": 65
       },
       {
         "symbol": "CSCO",
@@ -1183,7 +1183,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 4
+        "rs_rating": 3
       },
       {
         "symbol": "GEHC",
@@ -1287,7 +1287,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 31
+        "rs_rating": 30
       },
       {
         "symbol": "ADSK",
@@ -1300,7 +1300,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 9
+        "rs_rating": 8
       },
       {
         "symbol": "IDXX",
