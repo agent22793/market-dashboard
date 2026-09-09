@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T20:00:38.976635+00:00",
+  "updated_at": "2026-09-09T20:30:31.061790+00:00",
   "market": {
     "score": 69,
     "label": "Bullish",
@@ -20,19 +20,19 @@
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 69/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 86% confidence.",
-    "Volatility: VIX at 16.4 \u2014 calm conditions.",
+    "Volatility: VIX at 16.5 \u2014 calm conditions.",
     "Breadth: 53.5% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (24 vs 77).",
     "Sentiment: Fear & Greed at 53 (Neutral)."
   ],
   "sp500": {
-    "price": 7636.490234375,
-    "change_pct": -0.4825658245759312,
-    "sma50": 7602.020009765625,
-    "sma200": 7152.01755859375,
-    "off_52w_high_pct": -2.083603070609852,
-    "ema20": 7675.692854714232,
-    "ema50": 7602.019827512025,
-    "ema200": 7197.299592270363
+    "price": 7636.35986328125,
+    "change_pct": -0.48426479836394254,
+    "sma50": 7602.01740234375,
+    "sma200": 7152.016906738281,
+    "off_52w_high_pct": -2.0852747112945047,
+    "ema20": 7675.680438419589,
+    "ema50": 7602.014714920113,
+    "ema200": 7197.29829504555
   },
   "nasdaq": {
     "price": 26253.33984375,
@@ -45,26 +45,26 @@
     "ema200": 24593.679600954718
   },
   "dow": {
-    "price": 52381.078125,
-    "change_pct": -0.7672330694488139,
-    "sma50": 52966.956484375,
-    "sma200": 49922.503515625,
-    "off_52w_high_pct": -3.6211127781720864,
-    "ema20": 53178.10329794525,
-    "ema50": 52765.15310875702,
-    "ema200": 50169.80956678825
+    "price": 52380.66015625,
+    "change_pct": -0.7680248858267347,
+    "sma50": 52966.948125,
+    "sma200": 49922.50142578125,
+    "off_52w_high_pct": -3.621881822347206,
+    "ema20": 53178.06349139763,
+    "ema50": 52765.13671782565,
+    "ema200": 50169.80540789522
   },
   "russell": {
-    "price": 2919.3525390625,
-    "change_pct": -1.3798869259897262,
-    "sma50": 2985.666650390625,
-    "sma200": 2750.692015380859,
-    "off_52w_high_pct": -4.858115466849478,
-    "ema20": 2977.861831545547,
-    "ema50": 2968.8097853111694,
-    "ema200": 2773.2827409440524
+    "price": 2921.234375,
+    "change_pct": -1.3163156818663313,
+    "sma50": 2985.704287109375,
+    "sma200": 2750.701424560547,
+    "off_52w_high_pct": -4.796786314210221,
+    "ema20": 2978.041054015785,
+    "ema50": 2968.8835827989146,
+    "ema200": 2773.301465679749
   },
-  "vix": 16.3799991607666,
+  "vix": 16.459999084472656,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -143,7 +143,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 74
+        "rs_rating": 75
       },
       {
         "symbol": "AMD",
@@ -1014,7 +1014,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 58
+        "rs_rating": 59
       },
       {
         "symbol": "CPRT",
@@ -1144,7 +1144,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 68
+        "rs_rating": 69
       },
       {
         "symbol": "APP",
@@ -1378,7 +1378,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 23
+        "rs_rating": 24
       },
       {
         "symbol": "CHTR",
@@ -1401,7 +1401,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 39
+        "val": 37
       },
       {
         "name": "MOMENTUM",
@@ -1409,11 +1409,11 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 66
+        "val": 65
       },
       {
         "name": "SAFE HAVEN",
-        "val": 48
+        "val": 47
       },
       {
         "name": "JUNK BONDS",
