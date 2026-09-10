@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T02:30:32.293729+00:00",
+  "updated_at": "2026-09-10T03:00:36.682575+00:00",
   "market": {
     "score": 69,
     "label": "Bullish",
@@ -104,7 +104,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 34
+        "rs_rating": 35
       },
       {
         "symbol": "MRVL",
@@ -572,7 +572,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 36
+        "rs_rating": 37
       },
       {
         "symbol": "PCAR",
