@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T20:00:33.060360+00:00",
+  "updated_at": "2026-09-10T20:30:38.241415+00:00",
   "market": {
     "score": 56,
     "label": "Neutral",
@@ -8,7 +8,7 @@
       "trend": 51,
       "volatility": 71,
       "breadth": 54,
-      "sentiment": 48
+      "sentiment": 47
     }
   },
   "trend_strength": {
@@ -20,19 +20,19 @@
   "market_summary": [
     "\ud83d\udfe1 Overall market is Neutral with a Market Score of 56/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 85% confidence.",
-    "Volatility: VIX at 17.9 \u2014 calm conditions.",
+    "Volatility: VIX at 17.8 \u2014 calm conditions.",
     "Breadth: 53.5% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (34 vs 67).",
-    "Sentiment: Fear & Greed at 48 (Neutral)."
+    "Sentiment: Fear & Greed at 47 (Neutral)."
   ],
   "sp500": {
-    "price": 7591.7900390625,
-    "change_pct": -0.5836527483868315,
-    "sma50": 7603.866005859375,
-    "sma200": 7157.282058105468,
-    "off_52w_high_pct": -2.6567566965174483,
-    "ema20": 7667.690876576057,
-    "ema50": 7601.613749720009,
-    "ema200": 7201.628162145732
+    "price": 7591.7001953125,
+    "change_pct": -0.5848292742657635,
+    "sma50": 7603.864208984375,
+    "sma200": 7157.2816088867185,
+    "off_52w_high_pct": -2.657908688599764,
+    "ema20": 7667.682320028438,
+    "ema50": 7601.610226435695,
+    "ema200": 7201.62726817807
   },
   "nasdaq": {
     "price": 26081.724609375,
@@ -45,28 +45,28 @@
     "ema200": 24610.311297537868
   },
   "dow": {
-    "price": 52064.4609375,
-    "change_pct": -0.6036564216769791,
-    "sma50": 52961.853359375,
-    "sma200": 49954.062421875,
-    "off_52w_high_pct": -4.203674521818035,
-    "ema20": 53072.006105312146,
-    "ema50": 52737.6592221341,
-    "ema200": 50186.3563754818
+    "price": 52064.1015625,
+    "change_pct": -0.6043425050499818,
+    "sma50": 52961.846171875,
+    "sma200": 49954.060625,
+    "off_52w_high_pct": -4.204335756062061,
+    "ema20": 53071.971879121666,
+    "ema50": 52737.645128996846,
+    "ema200": 50186.35279961115
   },
   "russell": {
-    "price": 2891.49169921875,
-    "change_pct": -1.0183446452558753,
-    "sma50": 2983.0468310546876,
-    "sma200": 2753.633360595703,
-    "off_52w_high_pct": -5.766102005625607,
-    "ema20": 2969.798742173224,
-    "ema50": 2965.848817519017,
-    "ema200": 2774.310695816618
+    "price": 2890.947021484375,
+    "change_pct": -1.0369900744638727,
+    "sma50": 2983.0359375,
+    "sma200": 2753.630637207031,
+    "off_52w_high_pct": -5.7838530875584215,
+    "ema20": 2969.7468681032838,
+    "ema50": 2965.8274576078647,
+    "ema200": 2774.3052761376694
   },
-  "vix": 17.860000610351562,
+  "vix": 17.84000015258789,
   "breadth": {
-    "sectors_above_200sma": 8,
+    "sectors_above_200sma": 7,
     "sectors_total": 11
   },
   "internals": {
@@ -338,7 +338,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 60
+        "rs_rating": 61
       },
       {
         "symbol": "GOOG",
@@ -1396,12 +1396,12 @@
     ]
   },
   "fear_greed": {
-    "score": 48,
+    "score": 47,
     "rating": "Neutral",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 25
+        "val": 24
       },
       {
         "name": "MOMENTUM",
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 54
+        "val": 53
       },
       {
         "name": "SAFE HAVEN",
