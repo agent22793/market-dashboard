@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T00:00:37.909590+00:00",
+  "updated_at": "2026-09-11T00:30:28.994979+00:00",
   "market": {
     "score": 56,
     "label": "Neutral",
@@ -8,7 +8,7 @@
       "trend": 51,
       "volatility": 71,
       "breadth": 54,
-      "sentiment": 48
+      "sentiment": 47
     }
   },
   "trend_strength": {
@@ -22,7 +22,7 @@
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 85% confidence.",
     "Volatility: VIX at 17.8 \u2014 calm conditions.",
     "Breadth: 53.5% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (24 vs 77).",
-    "Sentiment: Fear & Greed at 48 (Neutral)."
+    "Sentiment: Fear & Greed at 47 (Neutral)."
   ],
   "sp500": {
     "price": 7591.7001953125,
@@ -1396,7 +1396,7 @@
     ]
   },
   "fear_greed": {
-    "score": 48,
+    "score": 47,
     "rating": "Neutral",
     "components": [
       {
@@ -1413,11 +1413,11 @@
       },
       {
         "name": "SAFE HAVEN",
-        "val": 49
+        "val": 47
       },
       {
         "name": "JUNK BONDS",
-        "val": 55
+        "val": 50
       }
     ]
   },
@@ -1437,10 +1437,6 @@
     {
       "time": "2026-09-10T16:00:35.640445+00:00",
       "text": "\u26a0 Market shifted to Neutral"
-    },
-    {
-      "time": "2026-09-10T15:00:35.437157+00:00",
-      "text": "\u2714 Market shifted to Bullish"
     }
   ]
 }
