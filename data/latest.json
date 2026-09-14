@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T21:55:55.382114+00:00",
+  "updated_at": "2026-09-14T22:00:34.117628+00:00",
   "market": {
     "score": 69,
     "label": "Bullish",
@@ -21,7 +21,7 @@
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 69/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 85% confidence.",
     "Volatility: VIX at 17.1 \u2014 calm conditions.",
-    "Breadth: 57.4% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (61 vs 40).",
+    "Breadth: 57.4% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (60 vs 41).",
     "Sentiment: Fear & Greed at 51 (Neutral)."
   ],
   "sp500": {
@@ -71,8 +71,8 @@
   },
   "internals": {
     "universe_size": 101,
-    "advancers": 61,
-    "decliners": 40,
+    "advancers": 60,
+    "decliners": 41,
     "unchanged": 0,
     "new_highs": 1,
     "new_lows": 1,
@@ -640,19 +640,6 @@
         "rs_rating": 10
       },
       {
-        "symbol": "KHC",
-        "price": 24.6,
-        "change_pct": 0.86,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 36
-      },
-      {
         "symbol": "BKNG",
         "price": 175.35,
         "change_pct": 0.82,
@@ -1015,6 +1002,19 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 21
+      },
+      {
+        "symbol": "KHC",
+        "price": 24.27,
+        "change_pct": -1.34,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 33
       },
       {
         "symbol": "CHTR",
