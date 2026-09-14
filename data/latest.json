@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-14T10:00:36.277018+00:00",
+  "updated_at": "2026-09-14T10:30:29.224231+00:00",
   "market": {
     "score": 66,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 82,
-      "volatility": 69,
+      "volatility": 70,
       "breadth": 55,
-      "sentiment": 45
+      "sentiment": 44
     }
   },
   "trend_strength": {
@@ -20,9 +20,9 @@
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 66/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 85% confidence.",
-    "Volatility: VIX at 18.1 \u2014 calm conditions.",
+    "Volatility: VIX at 18.0 \u2014 calm conditions.",
     "Breadth: 55.4% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (69 vs 32).",
-    "Sentiment: Fear & Greed at 45 (Neutral)."
+    "Sentiment: Fear & Greed at 44 (Neutral)."
   ],
   "sp500": {
     "price": 7656.97998046875,
@@ -64,7 +64,7 @@
     "ema50": 2963.400603494389,
     "ema200": 2775.093184376277
   },
-  "vix": 18.1299991607666,
+  "vix": 17.969999313354492,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -1396,12 +1396,12 @@
     ]
   },
   "fear_greed": {
-    "score": 45,
+    "score": 44,
     "rating": "Neutral",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 27
+        "val": 26
       },
       {
         "name": "MOMENTUM",
