@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T12:30:29.206030+00:00",
+  "updated_at": "2026-09-15T13:00:34.191690+00:00",
   "market": {
     "score": 69,
     "label": "Bullish",
@@ -8,7 +8,7 @@
       "trend": 82,
       "volatility": 75,
       "breadth": 57,
-      "sentiment": 51
+      "sentiment": 52
     }
   },
   "trend_strength": {
@@ -22,7 +22,7 @@
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 85% confidence.",
     "Volatility: VIX at 17.0 \u2014 calm conditions.",
     "Breadth: 57.4% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (61 vs 40).",
-    "Sentiment: Fear & Greed at 51 (Neutral)."
+    "Sentiment: Fear & Greed at 52 (Neutral)."
   ],
   "sp500": {
     "price": 7619.97998046875,
@@ -377,7 +377,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 63
+        "rs_rating": 62
       },
       {
         "symbol": "GOOG",
@@ -676,7 +676,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 59
+        "rs_rating": 58
       },
       {
         "symbol": "VRTX",
@@ -923,7 +923,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 53
+        "rs_rating": 52
       },
       {
         "symbol": "LIN",
@@ -1079,7 +1079,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 76
+        "rs_rating": 75
       },
       {
         "symbol": "FER",
@@ -1092,7 +1092,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": true,
-        "rs_rating": 16
+        "rs_rating": 17
       },
       {
         "symbol": "STX",
@@ -1222,7 +1222,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 71
+        "rs_rating": 70
       },
       {
         "symbol": "AVGO",
@@ -1396,12 +1396,12 @@
     ]
   },
   "fear_greed": {
-    "score": 51,
+    "score": 52,
     "rating": "Neutral",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 36
+        "val": 37
       },
       {
         "name": "MOMENTUM",
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 61
+        "val": 62
       },
       {
         "name": "SAFE HAVEN",
