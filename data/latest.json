@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T09:00:34.206274+00:00",
+  "updated_at": "2026-09-16T09:30:30.178928+00:00",
   "market": {
     "score": 58,
     "label": "Neutral",
@@ -1401,7 +1401,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 37
+        "val": 38
       },
       {
         "name": "MOMENTUM",
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 62
+        "val": 63
       },
       {
         "name": "SAFE HAVEN",
