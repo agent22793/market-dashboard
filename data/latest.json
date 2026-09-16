@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-16T20:17:12.456868+00:00",
+  "updated_at": "2026-09-16T20:30:33.535589+00:00",
   "market": {
     "score": 56,
     "label": "Neutral",
     "emoji": "\ud83d\udfe1",
     "components": {
       "trend": 50,
-      "volatility": 72,
+      "volatility": 71,
       "breadth": 54,
-      "sentiment": 49
+      "sentiment": 50
     }
   },
   "trend_strength": {
@@ -20,9 +20,9 @@
   "market_summary": [
     "\ud83d\udfe1 Overall market is Neutral with a Market Score of 56/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
-    "Volatility: VIX at 17.6 \u2014 calm conditions.",
+    "Volatility: VIX at 17.7 \u2014 calm conditions.",
     "Breadth: 54.5% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (45 vs 55).",
-    "Sentiment: Fear & Greed at 49 (Neutral)."
+    "Sentiment: Fear & Greed at 50 (Neutral)."
   ],
   "sp500": {
     "price": 7551.81005859375,
@@ -55,16 +55,16 @@
     "ema200": 50255.88907717644
   },
   "russell": {
-    "price": 2858.814453125,
-    "change_pct": -0.3998057959762158,
-    "sma50": 2973.527080078125,
-    "sma200": 2762.5772229003906,
-    "off_52w_high_pct": -6.831055529776309,
-    "ema20": 2939.9277594392734,
-    "ema50": 2953.214948073556,
-    "ema200": 2777.569578119056
+    "price": 2858.811279296875,
+    "change_pct": -0.39991637114743517,
+    "sma50": 2973.5270166015625,
+    "sma200": 2762.57720703125,
+    "off_52w_high_pct": -6.831158965036332,
+    "ema20": 2939.927457169928,
+    "ema50": 2953.2148236097078,
+    "ema200": 2777.5695465386766
   },
-  "vix": 17.610000610351562,
+  "vix": 17.709999084472656,
   "breadth": {
     "sectors_above_200sma": 7,
     "sectors_total": 11
@@ -1396,12 +1396,12 @@
     ]
   },
   "fear_greed": {
-    "score": 49,
+    "score": 50,
     "rating": "Neutral",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 31
+        "val": 33
       },
       {
         "name": "MOMENTUM",
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 57
+        "val": 58
       },
       {
         "name": "SAFE HAVEN",
