@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-16T20:00:34.181949+00:00",
+  "updated_at": "2026-09-16T20:17:12.456868+00:00",
   "market": {
     "score": 56,
     "label": "Neutral",
     "emoji": "\ud83d\udfe1",
     "components": {
       "trend": 50,
-      "volatility": 70,
+      "volatility": 72,
       "breadth": 54,
-      "sentiment": 48
+      "sentiment": 49
     }
   },
   "trend_strength": {
@@ -20,19 +20,19 @@
   "market_summary": [
     "\ud83d\udfe1 Overall market is Neutral with a Market Score of 56/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
-    "Volatility: VIX at 17.9 \u2014 calm conditions.",
+    "Volatility: VIX at 17.6 \u2014 calm conditions.",
     "Breadth: 54.5% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (45 vs 55).",
-    "Sentiment: Fear & Greed at 48 (Neutral)."
+    "Sentiment: Fear & Greed at 49 (Neutral)."
   ],
   "sp500": {
-    "price": 7552.25,
-    "change_pct": -0.44135476157142195,
-    "sma50": 7612.007998046875,
-    "sma200": 7174.923308105469,
-    "off_52w_high_pct": -3.1637459076107377,
-    "ema20": 7645.153269353093,
-    "ema50": 7601.666980207374,
-    "ema200": 7216.8145645522645
+    "price": 7551.81005859375,
+    "change_pct": -0.4471543537976519,
+    "sma50": 7611.99919921875,
+    "sma200": 7174.921108398437,
+    "off_52w_high_pct": -3.1693869123181284,
+    "ema20": 7645.111370171545,
+    "ema50": 7601.649727603207,
+    "ema200": 7216.810187025834
   },
   "nasdaq": {
     "price": 25978.423828125,
@@ -45,26 +45,26 @@
     "ema200": 24666.92742783545
   },
   "dow": {
-    "price": 51462.55078125,
-    "change_pct": -1.2104452994172954,
-    "sma50": 52909.121796875,
-    "sma200": 50060.6451171875,
-    "off_52w_high_pct": -5.311162819948434,
-    "ema20": 52748.436822361255,
-    "ema50": 52646.18485922003,
-    "ema200": 50255.89556815903
+    "price": 51461.8984375,
+    "change_pct": -1.2116975643671646,
+    "sma50": 52909.10875,
+    "sma200": 50060.64185546875,
+    "off_52w_high_pct": -5.312363103847916,
+    "ema20": 52748.374694385064,
+    "ema50": 52646.15927711219,
+    "ema200": 50255.88907717644
   },
   "russell": {
-    "price": 2846.21240234375,
-    "change_pct": -0.8388572719506215,
-    "sma50": 2973.2750390625,
-    "sma200": 2762.5142126464843,
-    "off_52w_high_pct": -7.241757164562634,
-    "ema20": 2938.7275641267734,
-    "ema50": 2952.720750003703,
-    "ema200": 2777.4441845789443
+    "price": 2858.814453125,
+    "change_pct": -0.3998057959762158,
+    "sma50": 2973.527080078125,
+    "sma200": 2762.5772229003906,
+    "off_52w_high_pct": -6.831055529776309,
+    "ema20": 2939.9277594392734,
+    "ema50": 2953.214948073556,
+    "ema200": 2777.569578119056
   },
-  "vix": 17.940000534057617,
+  "vix": 17.610000610351562,
   "breadth": {
     "sectors_above_200sma": 7,
     "sectors_total": 11
@@ -312,7 +312,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 13
+        "rs_rating": 12
       },
       {
         "symbol": "ARM",
@@ -559,7 +559,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 80
+        "rs_rating": 81
       },
       {
         "symbol": "ADI",
@@ -897,7 +897,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 52
+        "rs_rating": 53
       },
       {
         "symbol": "BKR",
@@ -1092,7 +1092,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 65
+        "rs_rating": 66
       },
       {
         "symbol": "APP",
@@ -1313,7 +1313,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 28
+        "rs_rating": 29
       },
       {
         "symbol": "INTU",
@@ -1396,12 +1396,12 @@
     ]
   },
   "fear_greed": {
-    "score": 48,
+    "score": 49,
     "rating": "Neutral",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 28
+        "val": 31
       },
       {
         "name": "MOMENTUM",
@@ -1409,11 +1409,11 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 54
+        "val": 57
       },
       {
         "name": "SAFE HAVEN",
-        "val": 51
+        "val": 52
       },
       {
         "name": "JUNK BONDS",
