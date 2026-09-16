@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T09:30:30.178928+00:00",
+  "updated_at": "2026-09-16T10:00:32.647728+00:00",
   "market": {
     "score": 58,
     "label": "Neutral",
@@ -64,7 +64,7 @@
     "ema50": 2957.068031815403,
     "ema200": 2777.119514947188
   },
-  "vix": 17.049999237060547,
+  "vix": 16.969999313354492,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -1401,7 +1401,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 38
+        "val": 37
       },
       {
         "name": "MOMENTUM",
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 63
+        "val": 62
       },
       {
         "name": "SAFE HAVEN",
