@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-17T12:30:36.112072+00:00",
+  "updated_at": "2026-09-17T13:00:34.041941+00:00",
   "market": {
-    "score": 61,
+    "score": 62,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 50,
-      "volatility": 82,
+      "volatility": 83,
       "breadth": 54,
-      "sentiment": 61
+      "sentiment": 62
     }
   },
   "trend_strength": {
@@ -18,11 +18,11 @@
     "relation": "EMA20 > EMA50 > EMA200"
   },
   "market_summary": [
-    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 61/100.",
+    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 62/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
-    "Volatility: VIX at 15.7 \u2014 calm conditions.",
+    "Volatility: VIX at 15.5 \u2014 calm conditions.",
     "Breadth: 54.5% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (45 vs 55).",
-    "Sentiment: Fear & Greed at 61 (Greed)."
+    "Sentiment: Fear & Greed at 62 (Greed)."
   ],
   "sp500": {
     "price": 7551.81005859375,
@@ -64,7 +64,7 @@
     "ema50": 2953.214775738997,
     "ema200": 2777.569534392377
   },
-  "vix": 15.6899995803833,
+  "vix": 15.489999771118164,
   "breadth": {
     "sectors_above_200sma": 7,
     "sectors_total": 11
@@ -442,7 +442,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 38
+        "rs_rating": 39
       },
       {
         "symbol": "MPWR",
@@ -507,7 +507,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 33
+        "rs_rating": 34
       },
       {
         "symbol": "CTAS",
@@ -949,7 +949,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 53
+        "rs_rating": 52
       },
       {
         "symbol": "COST",
@@ -1014,7 +1014,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 76
+        "rs_rating": 75
       },
       {
         "symbol": "ZS",
@@ -1040,7 +1040,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 67
+        "rs_rating": 66
       },
       {
         "symbol": "TRI",
@@ -1396,12 +1396,12 @@
     ]
   },
   "fear_greed": {
-    "score": 61,
+    "score": 62,
     "rating": "Greed",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 51
+        "val": 53
       },
       {
         "name": "MOMENTUM",
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 90
+        "val": 94
       },
       {
         "name": "SAFE HAVEN",
