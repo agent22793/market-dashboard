@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T00:00:35.525305+00:00",
+  "updated_at": "2026-09-17T00:30:31.432309+00:00",
   "market": {
     "score": 56,
     "label": "Neutral",
@@ -1405,7 +1405,7 @@
       },
       {
         "name": "MOMENTUM",
-        "val": 58
+        "val": 59
       },
       {
         "name": "PUT/CALL",
@@ -1413,11 +1413,11 @@
       },
       {
         "name": "SAFE HAVEN",
-        "val": 52
+        "val": 50
       },
       {
         "name": "JUNK BONDS",
-        "val": 53
+        "val": 50
       }
     ]
   },
@@ -1437,10 +1437,6 @@
     {
       "time": "2026-09-16T14:30:32.855665+00:00",
       "text": "\u26a0 Market shifted to Neutral"
-    },
-    {
-      "time": "2026-09-16T14:00:31.682613+00:00",
-      "text": "\u2714 Market shifted to Bullish"
     }
   ]
 }
