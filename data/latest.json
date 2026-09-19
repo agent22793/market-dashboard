@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T00:00:34.948849+00:00",
+  "updated_at": "2026-09-19T00:30:27.323501+00:00",
   "market": {
     "score": 73,
     "label": "Bullish",
@@ -1413,7 +1413,7 @@
       },
       {
         "name": "SAFE HAVEN",
-        "val": 51
+        "val": 52
       },
       {
         "name": "JUNK BONDS",
@@ -1437,10 +1437,6 @@
     {
       "time": "2026-09-17T00:00:35.525305+00:00",
       "text": "\u2714 Market remains Neutral"
-    },
-    {
-      "time": "2026-09-16T16:30:32.577973+00:00",
-      "text": "\u26a0 Market shifted to Neutral"
     }
   ]
 }
