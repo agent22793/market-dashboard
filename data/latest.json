@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T03:00:35.292124+00:00",
+  "updated_at": "2026-09-20T03:30:31.853048+00:00",
   "market": {
     "score": 73,
     "label": "Bullish",
@@ -455,7 +455,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 83
+        "rs_rating": 84
       },
       {
         "symbol": "CDNS",
@@ -494,7 +494,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 70
+        "rs_rating": 71
       },
       {
         "symbol": "MNST",
@@ -585,7 +585,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 23
+        "rs_rating": 24
       },
       {
         "symbol": "WMT",
@@ -832,7 +832,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 52
+        "rs_rating": 53
       },
       {
         "symbol": "CSGP",
@@ -858,7 +858,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 18
+        "rs_rating": 19
       },
       {
         "symbol": "ADSK",
@@ -1040,7 +1040,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 36
+        "rs_rating": 37
       },
       {
         "symbol": "KDP",
