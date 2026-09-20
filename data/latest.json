@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T03:30:31.853048+00:00",
+  "updated_at": "2026-09-20T04:00:36.615072+00:00",
   "market": {
     "score": 73,
     "label": "Bullish",
@@ -169,7 +169,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 60
+        "rs_rating": 61
       },
       {
         "symbol": "ARM",
@@ -455,7 +455,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 84
+        "rs_rating": 83
       },
       {
         "symbol": "CDNS",
@@ -507,7 +507,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 69
+        "rs_rating": 70
       },
       {
         "symbol": "LIN",
@@ -611,7 +611,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 46
+        "rs_rating": 47
       },
       {
         "symbol": "ZS",
@@ -910,7 +910,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 50
+        "rs_rating": 51
       },
       {
         "symbol": "PYPL",
