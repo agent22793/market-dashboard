@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T00:00:34.457873+00:00",
+  "updated_at": "2026-09-21T00:30:28.217834+00:00",
   "market": {
     "score": 73,
     "label": "Bullish",
@@ -1437,10 +1437,6 @@
     {
       "time": "2026-09-18T00:00:36.387499+00:00",
       "text": "\u2714 Market remains Bullish"
-    },
-    {
-      "time": "2026-09-17T08:00:32.137407+00:00",
-      "text": "\u2714 Market shifted to Bullish"
     }
   ]
 }
