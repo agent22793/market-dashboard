@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T20:18:28.796707+00:00",
+  "updated_at": "2026-09-22T20:30:30.463325+00:00",
   "market": {
     "score": 76,
     "label": "Bullish",
@@ -20,7 +20,7 @@
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 76/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
-    "Volatility: VIX at 14.3 \u2014 very calm conditions.",
+    "Volatility: VIX at 14.2 \u2014 very calm conditions.",
     "Breadth: 55.4% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (67 vs 34).",
     "Sentiment: Fear & Greed at 66 (Greed)."
   ],
@@ -55,16 +55,16 @@
     "ema200": 50322.78001524429
   },
   "russell": {
-    "price": 2889.91796875,
-    "change_pct": 0.5062969779175974,
-    "sma50": 2965.934951171875,
-    "sma200": 2770.345341796875,
-    "off_52w_high_pct": -5.817389981483501,
-    "ema20": 2918.7950100224566,
-    "ema50": 2941.7060020534145,
-    "ema200": 2781.867190820813
+    "price": 2889.9189453125,
+    "change_pct": 0.5063309410548555,
+    "sma50": 2965.934970703125,
+    "sma200": 2770.3453466796873,
+    "off_52w_high_pct": -5.817358155249641,
+    "ema20": 2918.795103028409,
+    "ema50": 2941.706040349983,
+    "ema200": 2781.8672005378526
   },
-  "vix": 14.270000457763672,
+  "vix": 14.210000038146973,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -156,7 +156,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 85
+        "rs_rating": 86
       },
       {
         "symbol": "WDC",
@@ -221,7 +221,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 60
+        "rs_rating": 61
       },
       {
         "symbol": "LRCX",
@@ -325,7 +325,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 89
+        "rs_rating": 90
       },
       {
         "symbol": "QCOM",
@@ -403,7 +403,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 58
+        "rs_rating": 59
       },
       {
         "symbol": "INTC",
@@ -455,7 +455,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 57
+        "rs_rating": 58
       },
       {
         "symbol": "MDLZ",
@@ -494,7 +494,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 84
+        "rs_rating": 85
       },
       {
         "symbol": "MCHP",
@@ -598,7 +598,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 91
+        "rs_rating": null
       },
       {
         "symbol": "DDOG",
@@ -637,7 +637,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 25
+        "rs_rating": 26
       },
       {
         "symbol": "FAST",
@@ -689,7 +689,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 89
+        "rs_rating": 90
       },
       {
         "symbol": "NVDA",
@@ -702,7 +702,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 75
+        "rs_rating": 76
       },
       {
         "symbol": "FER",
@@ -741,7 +741,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 82
+        "rs_rating": 83
       },
       {
         "symbol": "AVGO",
@@ -754,7 +754,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 39
+        "rs_rating": 40
       },
       {
         "symbol": "CEG",
@@ -793,7 +793,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 86
+        "rs_rating": 87
       },
       {
         "symbol": "ADSK",
@@ -910,7 +910,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 80
+        "rs_rating": 81
       },
       {
         "symbol": "ISRG",
@@ -1079,7 +1079,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 67
+        "rs_rating": 68
       },
       {
         "symbol": "MSTR",
@@ -1118,7 +1118,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 51
+        "rs_rating": 52
       },
       {
         "symbol": "DASH",
@@ -1157,7 +1157,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 69
+        "rs_rating": 70
       },
       {
         "symbol": "BKR",
