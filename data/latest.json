@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T20:00:32.852852+00:00",
+  "updated_at": "2026-09-23T20:30:32.827784+00:00",
   "market": {
     "score": 73,
     "label": "Bullish",
@@ -25,14 +25,14 @@
     "Sentiment: Fear & Greed at 61 (Greed)."
   ],
   "sp500": {
-    "price": 7706.39013671875,
-    "change_pct": -0.750963425850637,
-    "sma50": 7624.844599609375,
-    "sma200": 7192.01380859375,
-    "off_52w_high_pct": -1.1873344480943682,
-    "ema20": 7661.153697905302,
-    "ema50": 7614.924908991865,
-    "ema200": 7236.532583542943
+    "price": 7706.02978515625,
+    "change_pct": -0.7556043205849572,
+    "sma50": 7624.837392578125,
+    "sma200": 7192.012006835937,
+    "off_52w_high_pct": -1.191954938076667,
+    "ema20": 7661.119378708873,
+    "ema50": 7614.910777558041,
+    "ema200": 7236.528997955256
   },
   "nasdaq": {
     "price": 26936.037109375,
@@ -45,26 +45,26 @@
     "ema200": 24754.214234823627
   },
   "dow": {
-    "price": 51512.421875,
-    "change_pct": -1.0305827610792129,
-    "sma50": 52850.11828125,
-    "sma200": 50143.93595703125,
-    "off_52w_high_pct": -5.219402193932099,
-    "ema20": 52418.85641913648,
-    "ema50": 52514.119432125175,
-    "ema200": 50310.942786308
+    "price": 51511.58984375,
+    "change_pct": -1.032181320124581,
+    "sma50": 52850.101640625,
+    "sma200": 50143.931796875,
+    "off_52w_high_pct": -5.220933094953595,
+    "ema20": 52418.77717806505,
+    "ema50": 52514.08680344871,
+    "ema200": 50310.934507390084
   },
   "russell": {
-    "price": 2842.150146484375,
-    "change_pct": -1.1549844087972994,
-    "sma50": 2964.9795947265625,
-    "sma200": 2770.1065026855467,
-    "off_52w_high_pct": -7.3741463408424135,
-    "ema20": 2914.2456936162066,
-    "ema50": 2939.8327516997047,
-    "ema200": 2781.0085883173024
+    "price": 2838.660400390625,
+    "change_pct": -1.2763516797955399,
+    "sma50": 2964.9097998046873,
+    "sma200": 2770.0890539550783,
+    "off_52w_high_pct": -7.4878773875245,
+    "ema20": 2913.913336845373,
+    "ema50": 2939.6958989117143,
+    "ema200": 2780.9738644755735
   },
-  "vix": 15.220000267028809,
+  "vix": 15.180000305175781,
   "breadth": {
     "sectors_above_200sma": 5,
     "sectors_total": 11
@@ -234,7 +234,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 35
+        "rs_rating": 34
       },
       {
         "symbol": "SNPS",
@@ -1066,7 +1066,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 71
+        "rs_rating": 72
       },
       {
         "symbol": "DXCM",
@@ -1157,7 +1157,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 55
+        "rs_rating": 56
       },
       {
         "symbol": "PCAR",
@@ -1186,19 +1186,6 @@
         "rs_rating": 56
       },
       {
-        "symbol": "KHC",
-        "price": 23.8,
-        "change_pct": -2.34,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 43
-      },
-      {
         "symbol": "DASH",
         "price": 189.27,
         "change_pct": -2.35,
@@ -1210,6 +1197,19 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 21
+      },
+      {
+        "symbol": "KHC",
+        "price": 23.79,
+        "change_pct": -2.38,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 43
       },
       {
         "symbol": "CTAS",
@@ -1261,7 +1261,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": true,
-        "rs_rating": 23
+        "rs_rating": 22
       },
       {
         "symbol": "MSTR",
