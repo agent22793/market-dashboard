@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-24T20:00:31.346173+00:00",
+  "updated_at": "2026-09-24T20:30:31.598093+00:00",
   "market": {
-    "score": 73,
+    "score": 72,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 83,
-      "volatility": 83,
+      "volatility": 82,
       "breadth": 54,
       "sentiment": 60
     }
@@ -18,21 +18,21 @@
     "relation": "EMA20 > EMA50 > EMA200"
   },
   "market_summary": [
-    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 73/100.",
+    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 72/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
-    "Volatility: VIX at 15.4 \u2014 calm conditions.",
+    "Volatility: VIX at 15.7 \u2014 calm conditions.",
     "Breadth: 54.5% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (34 vs 67).",
     "Sentiment: Fear & Greed at 60 (Neutral)."
   ],
   "sp500": {
-    "price": 7704.22998046875,
-    "change_pct": -0.023355797183222116,
-    "sma50": 7628.0501953125,
-    "sma200": 7196.247556152343,
-    "off_52w_high_pct": -1.2150323446820432,
-    "ema20": 7665.225150305052,
-    "ema50": 7618.413479196683,
-    "ema200": 7239.251615600453
+    "price": 7704.1298828125,
+    "change_pct": -0.0246547495496241,
+    "sma50": 7628.048193359375,
+    "sma200": 7196.247055664063,
+    "off_52w_high_pct": -1.2163158141215713,
+    "ema20": 7665.215617194933,
+    "ema50": 7618.4095537983985,
+    "ema200": 7239.250619603873
   },
   "nasdaq": {
     "price": 26939.373046875,
@@ -45,26 +45,26 @@
     "ema200": 24767.848054993305
   },
   "dow": {
-    "price": 51349.890625,
-    "change_pct": -0.3139084218531818,
-    "sma50": 52826.9340625,
-    "sma200": 50161.42654296875,
-    "off_52w_high_pct": -5.518452568122401,
-    "ema20": 52316.97845872553,
-    "ema50": 52468.43196385387,
-    "ema200": 50307.42341895218
+    "price": 51349.98046875,
+    "change_pct": -0.3137340072209227,
+    "sma50": 52826.935859375,
+    "sma200": 50161.4269921875,
+    "off_52w_high_pct": -5.518287259561394,
+    "ema20": 52316.987015273146,
+    "ema50": 52468.43548713819,
+    "ema200": 50307.424312919844
   },
   "russell": {
-    "price": 2836.400146484375,
-    "change_pct": -0.07960677555490792,
-    "sma50": 2962.3425927734374,
-    "sma200": 2771.6152526855467,
-    "off_52w_high_pct": -7.561539205782697,
-    "ema20": 2906.5310861654425,
-    "ema50": 2935.645058934093,
-    "ema200": 2780.297211763261
+    "price": 2835.57421875,
+    "change_pct": -0.10870246718219789,
+    "sma50": 2962.32607421875,
+    "sma200": 2771.611123046875,
+    "off_52w_high_pct": -7.588456243065855,
+    "ema20": 2906.4524263812164,
+    "ema50": 2935.6126696111764,
+    "ema200": 2780.2889935768494
   },
-  "vix": 15.449999809265137,
+  "vix": 15.670000076293945,
   "breadth": {
     "sectors_above_200sma": 5,
     "sectors_total": 11
@@ -130,7 +130,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 56
+        "rs_rating": 55
       },
       {
         "symbol": "SNPS",
@@ -433,8 +433,8 @@
       },
       {
         "symbol": "KHC",
-        "price": 23.85,
-        "change_pct": 0.27,
+        "price": 23.86,
+        "change_pct": 0.29,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -1001,7 +1001,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": true,
-        "rs_rating": 22
+        "rs_rating": 23
       },
       {
         "symbol": "AXON",
@@ -1118,7 +1118,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 72
+        "rs_rating": 71
       },
       {
         "symbol": "QCOM",
@@ -1144,7 +1144,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": true,
-        "rs_rating": 24
+        "rs_rating": 25
       },
       {
         "symbol": "XEL",
@@ -1157,7 +1157,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": true,
-        "rs_rating": 25
+        "rs_rating": 26
       },
       {
         "symbol": "ODFL",
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 73
+        "val": 72
       },
       {
         "name": "SAFE HAVEN",
