@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T00:00:34.473790+00:00",
+  "updated_at": "2026-09-25T00:30:29.191827+00:00",
   "market": {
     "score": 73,
     "label": "Bullish",
@@ -7,7 +7,7 @@
     "components": {
       "trend": 83,
       "volatility": 82,
-      "breadth": 55,
+      "breadth": 56,
       "sentiment": 60
     }
   },
@@ -21,7 +21,7 @@
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 73/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
     "Volatility: VIX at 15.7 \u2014 calm conditions.",
-    "Breadth: 55.4% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (49 vs 52).",
+    "Breadth: 56.0% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (48 vs 52).",
     "Sentiment: Fear & Greed at 60 (Neutral)."
   ],
   "sp500": {
@@ -70,15 +70,15 @@
     "sectors_total": 11
   },
   "internals": {
-    "universe_size": 101,
-    "advancers": 49,
+    "universe_size": 100,
+    "advancers": 48,
     "decliners": 52,
     "unchanged": 0,
     "new_highs": 2,
     "new_lows": 2,
-    "pct_above_sma20": 41.6,
-    "pct_above_sma50": 40.6,
-    "pct_above_sma200": 55.4,
+    "pct_above_sma20": 42.0,
+    "pct_above_sma50": 41.0,
+    "pct_above_sma200": 56.0,
     "constituents": [
       {
         "symbol": "MPWR",
@@ -404,19 +404,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 50
-      },
-      {
-        "symbol": "IDXX",
-        "price": 522.02,
-        "change_pct": 1.3,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 15
       },
       {
         "symbol": "NXPI",
@@ -1405,7 +1392,7 @@
       },
       {
         "name": "MOMENTUM",
-        "val": 61
+        "val": 62
       },
       {
         "name": "PUT/CALL",
@@ -1413,11 +1400,11 @@
       },
       {
         "name": "SAFE HAVEN",
-        "val": 62
+        "val": 61
       },
       {
         "name": "JUNK BONDS",
-        "val": 57
+        "val": 54
       }
     ]
   },
@@ -1436,10 +1423,6 @@
     },
     {
       "time": "2026-09-22T00:00:36.208000+00:00",
-      "text": "\u2714 Market remains Bullish"
-    },
-    {
-      "time": "2026-09-21T00:00:34.457873+00:00",
       "text": "\u2714 Market remains Bullish"
     }
   ]
