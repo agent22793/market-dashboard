@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-25T11:30:29.868856+00:00",
+  "updated_at": "2026-09-25T12:00:41.409940+00:00",
   "market": {
     "score": 74,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 83,
-      "volatility": 84,
+      "volatility": 85,
       "breadth": 54,
-      "sentiment": 63
+      "sentiment": 64
     }
   },
   "trend_strength": {
@@ -22,7 +22,7 @@
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
     "Volatility: VIX at 15.1 \u2014 calm conditions.",
     "Breadth: 54.5% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (34 vs 67).",
-    "Sentiment: Fear & Greed at 63 (Greed)."
+    "Sentiment: Fear & Greed at 64 (Greed)."
   ],
   "sp500": {
     "price": 7704.1298828125,
@@ -64,7 +64,7 @@
     "ema50": 2935.61250685076,
     "ema200": 2780.2889522794303
   },
-  "vix": 15.109999656677246,
+  "vix": 15.0600004196167,
   "breadth": {
     "sectors_above_200sma": 5,
     "sectors_total": 11
@@ -130,7 +130,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 55
+        "rs_rating": 56
       },
       {
         "symbol": "SNPS",
@@ -572,7 +572,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 93
+        "rs_rating": 92
       },
       {
         "symbol": "MAR",
@@ -923,7 +923,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 29
+        "rs_rating": 30
       },
       {
         "symbol": "DASH",
@@ -1092,7 +1092,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 37
+        "rs_rating": 38
       },
       {
         "symbol": "CSGP",
@@ -1144,7 +1144,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": true,
-        "rs_rating": 24
+        "rs_rating": 25
       },
       {
         "symbol": "XEL",
@@ -1157,7 +1157,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": true,
-        "rs_rating": 25
+        "rs_rating": 26
       },
       {
         "symbol": "ODFL",
@@ -1170,7 +1170,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 50
+        "rs_rating": 51
       },
       {
         "symbol": "TTWO",
@@ -1274,7 +1274,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 38
+        "rs_rating": 39
       },
       {
         "symbol": "ADSK",
@@ -1326,7 +1326,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 64
+        "rs_rating": 65
       },
       {
         "symbol": "CPRT",
@@ -1396,12 +1396,12 @@
     ]
   },
   "fear_greed": {
-    "score": 63,
+    "score": 64,
     "rating": "Greed",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 54
+        "val": 56
       },
       {
         "name": "MOMENTUM",
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 80
+        "val": 83
       },
       {
         "name": "SAFE HAVEN",
