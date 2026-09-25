@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T01:00:32.305271+00:00",
+  "updated_at": "2026-09-25T01:30:29.526793+00:00",
   "market": {
     "score": 73,
     "label": "Bullish",
@@ -108,7 +108,7 @@
       },
       {
         "symbol": "STX",
-        "price": 923.86,
+        "price": 923.12,
         "change_pct": 5.3,
         "above_sma5": true,
         "above_sma10": true,
@@ -455,7 +455,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 75
+        "rs_rating": 74
       },
       {
         "symbol": "ADBE",
@@ -481,7 +481,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 72
+        "rs_rating": 83
       },
       {
         "symbol": "MCHP",
@@ -546,7 +546,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 81
+        "rs_rating": 80
       },
       {
         "symbol": "ADI",
@@ -598,7 +598,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 78
+        "rs_rating": 77
       },
       {
         "symbol": "PEP",
