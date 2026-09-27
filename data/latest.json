@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T10:30:28.771011+00:00",
+  "updated_at": "2026-09-27T11:00:32.162060+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -221,7 +221,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 34
+        "rs_rating": 35
       },
       {
         "symbol": "ADI",
@@ -585,7 +585,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 39
+        "rs_rating": 34
       },
       {
         "symbol": "CEG",
