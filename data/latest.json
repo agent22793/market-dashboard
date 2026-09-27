@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T21:00:30.695005+00:00",
+  "updated_at": "2026-09-27T21:30:29.792887+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -1183,7 +1183,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 23
+        "rs_rating": 24
       },
       {
         "symbol": "ROP",
