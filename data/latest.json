@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T13:30:25.174223+00:00",
+  "updated_at": "2026-09-27T14:00:30.901079+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -624,7 +624,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 47
+        "rs_rating": 50
       },
       {
         "symbol": "GOOGL",
