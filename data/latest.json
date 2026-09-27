@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T23:00:30.737158+00:00",
+  "updated_at": "2026-09-27T23:30:35.282106+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -741,7 +741,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 20
+        "rs_rating": 17
       },
       {
         "symbol": "VRSK",
@@ -1196,7 +1196,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 17
+        "rs_rating": 18
       },
       {
         "symbol": "PLTR",
