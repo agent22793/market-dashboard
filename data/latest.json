@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T23:30:35.282106+00:00",
+  "updated_at": "2026-09-28T00:00:29.303471+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -741,7 +741,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 17
+        "rs_rating": 20
       },
       {
         "symbol": "VRSK",
@@ -1196,7 +1196,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 18
+        "rs_rating": 17
       },
       {
         "symbol": "PLTR",
@@ -1422,6 +1422,10 @@
     ]
   },
   "recent_alerts": [
+    {
+      "time": "2026-09-28T00:00:29.303471+00:00",
+      "text": "\u2714 Market remains Bullish"
+    },
     {
       "time": "2026-09-27T00:00:39.824788+00:00",
       "text": "\u2714 Market remains Bullish"
