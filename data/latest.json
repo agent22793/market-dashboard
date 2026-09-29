@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T20:30:31.681782+00:00",
+  "updated_at": "2026-09-29T21:00:34.627438+00:00",
   "market": {
     "score": 71,
     "label": "Bullish",
@@ -598,7 +598,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 46
+        "rs_rating": 49
       },
       {
         "symbol": "NXPI",
@@ -949,7 +949,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 22
+        "rs_rating": 21
       },
       {
         "symbol": "GILD",
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 60
+        "val": 61
       },
       {
         "name": "SAFE HAVEN",
