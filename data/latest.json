@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T02:30:36.870857+00:00",
+  "updated_at": "2026-09-29T03:00:30.377529+00:00",
   "market": {
     "score": 71,
     "label": "Bullish",
@@ -663,7 +663,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 35
+        "rs_rating": 39
       },
       {
         "symbol": "INSM",
@@ -715,7 +715,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 36
+        "rs_rating": 35
       },
       {
         "symbol": "GOOGL",
@@ -754,7 +754,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 38
+        "rs_rating": 37
       },
       {
         "symbol": "CMCSA",
