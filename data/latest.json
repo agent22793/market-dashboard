@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-29T20:00:33.311055+00:00",
+  "updated_at": "2026-09-29T20:30:31.681782+00:00",
   "market": {
     "score": 71,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 83,
-      "volatility": 79,
+      "volatility": 80,
       "breadth": 54,
       "sentiment": 56
     }
@@ -20,19 +20,19 @@
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 71/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
-    "Volatility: VIX at 16.2 \u2014 calm conditions.",
+    "Volatility: VIX at 16.0 \u2014 calm conditions.",
     "Breadth: 53.5% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (43 vs 57).",
     "Sentiment: Fear & Greed at 56 (Neutral)."
   ],
   "sp500": {
-    "price": 7671.2001953125,
-    "change_pct": -0.16254880388190118,
-    "sma50": 7645.164208984375,
-    "sma200": 7213.341259765625,
-    "off_52w_high_pct": -1.6385459555937065,
-    "ema20": 7679.723947960304,
-    "ema50": 7632.391098749626,
-    "ema200": 7256.876648678671
+    "price": 7670.83984375,
+    "change_pct": -0.16723862824035152,
+    "sma50": 7645.157001953125,
+    "sma200": 7213.339458007813,
+    "off_52w_high_pct": -1.6431664455760164,
+    "ema20": 7679.689628763876,
+    "ema50": 7632.376967315802,
+    "ema200": 7256.873063090984
   },
   "nasdaq": {
     "price": 26797.541015625,
@@ -45,26 +45,26 @@
     "ema200": 24846.47369885322
   },
   "dow": {
-    "price": 51350.98828125,
-    "change_pct": -0.2535345858005633,
-    "sma50": 52773.48625,
-    "sma200": 50237.48931640625,
-    "off_52w_high_pct": -5.516432928746617,
-    "ema20": 52077.35749075359,
-    "ema50": 52342.07197816174,
-    "ema200": 50359.20779763024
+    "price": 51349.921875,
+    "change_pct": -0.25560602118464004,
+    "sma50": 52773.464921875,
+    "sma200": 50237.483984375,
+    "off_52w_high_pct": -5.518395069492488,
+    "ema20": 52077.25592825359,
+    "ema50": 52342.03015830879,
+    "ema200": 50359.197186622776
   },
   "russell": {
-    "price": 2805.821044921875,
-    "change_pct": -0.4290011946638361,
-    "sma50": 2952.24041015625,
-    "sma200": 2777.725556640625,
-    "off_52w_high_pct": -8.558114066495182,
-    "ema20": 2882.02417458381,
-    "ema50": 2920.807459084719,
-    "ema200": 2782.140384848343
+    "price": 2807.922119140625,
+    "change_pct": -0.3544397542955324,
+    "sma50": 2952.282431640625,
+    "sma200": 2777.736062011719,
+    "off_52w_high_pct": -8.489639924355409,
+    "ema20": 2882.224276890357,
+    "ema50": 2920.889854152121,
+    "ema200": 2782.161291059475
   },
-  "vix": 16.170000076293945,
+  "vix": 16.040000915527344,
   "breadth": {
     "sectors_above_200sma": 4,
     "sectors_total": 11
@@ -390,7 +390,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 24
+        "rs_rating": 25
       },
       {
         "symbol": "MELI",
@@ -546,7 +546,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 40
+        "rs_rating": 41
       },
       {
         "symbol": "SBUX",
@@ -598,7 +598,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 49
+        "rs_rating": 46
       },
       {
         "symbol": "NXPI",
@@ -823,8 +823,8 @@
       },
       {
         "symbol": "KHC",
-        "price": 23.46,
-        "change_pct": -0.42,
+        "price": 23.45,
+        "change_pct": -0.47,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -845,7 +845,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 36
+        "rs_rating": 37
       },
       {
         "symbol": "ALNY",
@@ -923,7 +923,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 71
+        "rs_rating": 72
       },
       {
         "symbol": "CCEP",
@@ -949,7 +949,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 21
+        "rs_rating": 22
       },
       {
         "symbol": "GILD",
@@ -1027,7 +1027,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 76
+        "rs_rating": 77
       },
       {
         "symbol": "PYPL",
@@ -1401,7 +1401,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 46
+        "val": 47
       },
       {
         "name": "MOMENTUM",
