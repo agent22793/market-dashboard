@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T20:30:33.722821+00:00",
+  "updated_at": "2026-09-30T21:00:34.953010+00:00",
   "market": {
     "score": 70,
     "label": "Bullish",
@@ -8,7 +8,7 @@
       "trend": 82,
       "volatility": 78,
       "breadth": 52,
-      "sentiment": 55
+      "sentiment": 56
     }
   },
   "trend_strength": {
@@ -22,7 +22,7 @@
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
     "Volatility: VIX at 16.3 \u2014 calm conditions.",
     "Breadth: 52.5% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (48 vs 53).",
-    "Sentiment: Fear & Greed at 55 (Neutral)."
+    "Sentiment: Fear & Greed at 56 (Neutral)."
   ],
   "sp500": {
     "price": 7651.5400390625,
@@ -55,14 +55,14 @@
     "ema200": 50361.092340097806
   },
   "russell": {
-    "price": 2796.864501953125,
-    "change_pct": -0.39372276380633675,
-    "sma50": 2948.4716796875,
-    "sma200": 2778.767322998047,
-    "off_52w_high_pct": -8.8500083702995,
-    "ema20": 2874.094585181837,
-    "ema50": 2916.026028186718,
-    "ema200": 2781.6755182117327
+    "price": 2796.864013671875,
+    "change_pct": -0.3937401532356555,
+    "sma50": 2948.471669921875,
+    "sma200": 2778.7673205566407,
+    "off_52w_high_pct": -8.850024283416435,
+    "ema20": 2874.0945386788608,
+    "ema50": 2916.0260090384336,
+    "ema200": 2781.675513353213
   },
   "vix": 16.34000015258789,
   "breadth": {
@@ -1396,12 +1396,12 @@
     ]
   },
   "fear_greed": {
-    "score": 55,
+    "score": 56,
     "rating": "Neutral",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 44
+        "val": 45
       },
       {
         "name": "MOMENTUM",
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 59
+        "val": 60
       },
       {
         "name": "SAFE HAVEN",
