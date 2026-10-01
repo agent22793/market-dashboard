@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-01T12:30:30.385785+00:00",
+  "updated_at": "2026-10-01T13:00:28.814749+00:00",
   "market": {
     "score": 70,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 82,
-      "volatility": 78,
+      "volatility": 79,
       "breadth": 52,
-      "sentiment": 56
+      "sentiment": 57
     }
   },
   "trend_strength": {
@@ -22,7 +22,7 @@
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
     "Volatility: VIX at 16.3 \u2014 calm conditions.",
     "Breadth: 52.5% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (48 vs 53).",
-    "Sentiment: Fear & Greed at 56 (Neutral)."
+    "Sentiment: Fear & Greed at 57 (Neutral)."
   ],
   "sp500": {
     "price": 7651.5400390625,
@@ -64,7 +64,7 @@
     "ema50": 2916.025855852159,
     "ema200": 2781.6754744850537
   },
-  "vix": 16.309999465942383,
+  "vix": 16.299999237060547,
   "breadth": {
     "sectors_above_200sma": 4,
     "sectors_total": 11
@@ -1396,12 +1396,12 @@
     ]
   },
   "fear_greed": {
-    "score": 56,
+    "score": 57,
     "rating": "Neutral",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 46
+        "val": 47
       },
       {
         "name": "MOMENTUM",
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 60
+        "val": 62
       },
       {
         "name": "SAFE HAVEN",
