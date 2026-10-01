@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T02:30:28.439339+00:00",
+  "updated_at": "2026-10-01T03:00:30.148003+00:00",
   "market": {
     "score": 70,
     "label": "Bullish",
@@ -1092,7 +1092,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 44
+        "rs_rating": 43
       },
       {
         "symbol": "CTAS",
