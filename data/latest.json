@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T01:00:33.466413+00:00",
+  "updated_at": "2026-10-01T01:30:26.735592+00:00",
   "market": {
     "score": 70,
     "label": "Bullish",
@@ -446,7 +446,7 @@
       },
       {
         "symbol": "MPWR",
-        "price": 1355.99,
+        "price": 1353.99,
         "change_pct": 0.35,
         "above_sma5": true,
         "above_sma10": true,
@@ -1252,7 +1252,7 @@
       },
       {
         "symbol": "MDLZ",
-        "price": 59.32,
+        "price": 58.8,
         "change_pct": -1.43,
         "above_sma5": false,
         "above_sma10": false,
