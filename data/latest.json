@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T11:30:28.931615+00:00",
+  "updated_at": "2026-10-04T12:00:30.473052+00:00",
   "market": {
     "score": 74,
     "label": "Bullish",
@@ -403,7 +403,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 66
+        "rs_rating": 67
       },
       {
         "symbol": "CRWD",
@@ -715,7 +715,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 25
+        "rs_rating": 24
       },
       {
         "symbol": "CDNS",
