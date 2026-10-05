@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T22:00:36.551987+00:00",
+  "updated_at": "2026-10-05T22:30:31.426394+00:00",
   "market": {
     "score": 74,
     "label": "Bullish",
@@ -325,7 +325,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 26
+        "rs_rating": 25
       },
       {
         "symbol": "NVDA",
@@ -351,7 +351,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 53
+        "rs_rating": 54
       },
       {
         "symbol": "META",
@@ -819,7 +819,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 25
+        "rs_rating": 24
       },
       {
         "symbol": "MCHP",
@@ -1066,7 +1066,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 61
+        "rs_rating": 62
       },
       {
         "symbol": "SBUX",
@@ -1079,7 +1079,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 48
+        "rs_rating": 49
       },
       {
         "symbol": "AMD",
