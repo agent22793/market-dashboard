@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T22:30:29.342615+00:00",
+  "updated_at": "2026-10-06T22:47:42.961900+00:00",
   "market": {
     "score": 76,
     "label": "Bullish",
@@ -35,14 +35,14 @@
     "ema200": 7277.822152737427
   },
   "nasdaq": {
-    "price": 27599.791015625,
-    "change_pct": 0.44575129920758627,
-    "sma50": 26409.8561328125,
-    "sma200": 24775.952900390625,
+    "price": 27599.88671875,
+    "change_pct": 0.4460995979424176,
+    "sma50": 26409.858046875,
+    "sma200": 24775.95337890625,
     "off_52w_high_pct": 0.0,
-    "ema20": 26862.96064312692,
-    "ema50": 26488.178621366384,
-    "ema200": 24952.306059820632
+    "ema20": 26862.969757710256,
+    "ema50": 26488.18237443011,
+    "ema200": 24952.307012090532
   },
   "dow": {
     "price": 51521.28125,
@@ -390,7 +390,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 76
+        "rs_rating": 75
       },
       {
         "symbol": "AXON",
@@ -442,7 +442,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 71
+        "rs_rating": 70
       },
       {
         "symbol": "ORLY",
@@ -546,7 +546,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 46
+        "rs_rating": 45
       },
       {
         "symbol": "DASH",
@@ -728,7 +728,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 75
+        "rs_rating": 74
       },
       {
         "symbol": "ADI",
@@ -871,7 +871,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 22
+        "rs_rating": 21
       },
       {
         "symbol": "WBD",
@@ -1014,7 +1014,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 63
+        "rs_rating": 62
       },
       {
         "symbol": "ROP",
@@ -1053,7 +1053,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 32
+        "rs_rating": 31
       },
       {
         "symbol": "MPWR",
@@ -1079,7 +1079,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 62
+        "rs_rating": 61
       },
       {
         "symbol": "BKNG",
@@ -1144,7 +1144,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": true,
-        "rs_rating": 16
+        "rs_rating": 15
       },
       {
         "symbol": "ODFL",
@@ -1313,7 +1313,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": true,
-        "rs_rating": 6
+        "rs_rating": 5
       },
       {
         "symbol": "INTC",
@@ -1339,7 +1339,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 93
+        "rs_rating": 92
       },
       {
         "symbol": "DXCM",
