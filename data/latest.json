@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T00:00:33.193008+00:00",
+  "updated_at": "2026-10-07T00:30:28.724813+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -351,7 +351,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 54
+        "rs_rating": 53
       },
       {
         "symbol": "META",
@@ -1027,7 +1027,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 63
+        "rs_rating": 62
       },
       {
         "symbol": "DDOG",
@@ -1079,7 +1079,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 49
+        "rs_rating": 48
       },
       {
         "symbol": "AMD",
@@ -1413,11 +1413,11 @@
       },
       {
         "name": "SAFE HAVEN",
-        "val": 73
+        "val": 72
       },
       {
         "name": "JUNK BONDS",
-        "val": 57
+        "val": 56
       }
     ]
   },
@@ -1436,10 +1436,6 @@
     },
     {
       "time": "2026-10-04T00:00:30.952333+00:00",
-      "text": "\u2714 Market remains Bullish"
-    },
-    {
-      "time": "2026-10-03T00:00:39.537973+00:00",
       "text": "\u2714 Market remains Bullish"
     }
   ]
