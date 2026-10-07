@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T07:30:33.761522+00:00",
+  "updated_at": "2026-10-07T08:00:30.099649+00:00",
   "market": {
     "score": 76,
     "label": "Bullish",
@@ -8,7 +8,7 @@
       "trend": 85,
       "volatility": 84,
       "breadth": 62,
-      "sentiment": 64
+      "sentiment": 63
     }
   },
   "trend_strength": {
@@ -21,8 +21,8 @@
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 76/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
     "Volatility: VIX at 15.2 \u2014 calm conditions.",
-    "Breadth: 62.0% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (60 vs 39).",
-    "Sentiment: Fear & Greed at 64 (Greed)."
+    "Breadth: 62.4% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (61 vs 39).",
+    "Sentiment: Fear & Greed at 63 (Greed)."
   ],
   "sp500": {
     "price": 7818.93017578125,
@@ -64,21 +64,21 @@
     "ema50": 2903.254540470207,
     "ema200": 2782.845665619894
   },
-  "vix": 15.210000038146973,
+  "vix": 15.229999542236328,
   "breadth": {
     "sectors_above_200sma": 4,
     "sectors_total": 11
   },
   "internals": {
-    "universe_size": 100,
-    "advancers": 60,
+    "universe_size": 101,
+    "advancers": 61,
     "decliners": 39,
     "unchanged": 1,
     "new_highs": 6,
     "new_lows": 3,
-    "pct_above_sma20": 56.0,
-    "pct_above_sma50": 44.0,
-    "pct_above_sma200": 62.0,
+    "pct_above_sma20": 56.4,
+    "pct_above_sma50": 44.6,
+    "pct_above_sma200": 62.4,
     "constituents": [
       {
         "symbol": "CEG",
@@ -770,6 +770,19 @@
         "rs_rating": 58
       },
       {
+        "symbol": "FAST",
+        "price": 50.81,
+        "change_pct": 0.24,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 61
+      },
+      {
         "symbol": "GOOG",
         "price": 344.59,
         "change_pct": 0.22,
@@ -1383,12 +1396,12 @@
     ]
   },
   "fear_greed": {
-    "score": 64,
+    "score": 63,
     "rating": "Greed",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 58
+        "val": 56
       },
       {
         "name": "MOMENTUM",
@@ -1396,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 72
+        "val": 68
       },
       {
         "name": "SAFE HAVEN",
