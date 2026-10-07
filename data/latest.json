@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T23:30:29.088440+00:00",
+  "updated_at": "2026-10-07T23:33:42.959485+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -130,7 +130,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 42
+        "rs_rating": 43
       },
       {
         "symbol": "VRSK",
@@ -962,7 +962,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 69
+        "rs_rating": 68
       },
       {
         "symbol": "ODFL",
@@ -1352,7 +1352,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 56
+        "rs_rating": 57
       },
       {
         "symbol": "CRWD",
