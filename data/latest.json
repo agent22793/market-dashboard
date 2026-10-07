@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T12:30:32.379815+00:00",
+  "updated_at": "2026-10-07T13:00:35.159291+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -64,7 +64,7 @@
     "ema50": 2903.254540470207,
     "ema200": 2782.845665619894
   },
-  "vix": 15.770000457763672,
+  "vix": 15.75,
   "breadth": {
     "sectors_above_200sma": 4,
     "sectors_total": 11
@@ -1409,7 +1409,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 58
+        "val": 59
       },
       {
         "name": "SAFE HAVEN",
