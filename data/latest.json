@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-08T20:00:35.565161+00:00",
+  "updated_at": "2026-10-08T20:30:25.987285+00:00",
   "market": {
-    "score": 73,
+    "score": 74,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 84,
-      "volatility": 82,
+      "volatility": 83,
       "breadth": 58,
       "sentiment": 59
     }
@@ -18,21 +18,21 @@
     "relation": "EMA20 > EMA50 > EMA200"
   },
   "market_summary": [
-    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 73/100.",
+    "\ud83d\udfe2 Overall market is Bullish with a Market Score of 74/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
-    "Volatility: VIX at 15.6 \u2014 calm conditions.",
+    "Volatility: VIX at 15.4 \u2014 calm conditions.",
     "Breadth: 58.0% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (51 vs 49).",
     "Sentiment: Fear & Greed at 59 (Neutral)."
   ],
   "sp500": {
-    "price": 7765.47998046875,
-    "change_pct": -0.4651513563159404,
-    "sma50": 7689.442822265625,
-    "sma200": 7245.964313964843,
-    "off_52w_high_pct": -0.6835998545946742,
-    "ema20": 7716.3948449139125,
-    "ema50": 7660.360378107345,
-    "ema200": 7286.528427404058
+    "price": 7765.35986328125,
+    "change_pct": -0.4666909708803235,
+    "sma50": 7689.440419921875,
+    "sma200": 7245.9637133789065,
+    "off_52w_high_pct": -0.6851360901767745,
+    "ema20": 7716.383405181769,
+    "ema50": 7660.355667629404,
+    "ema200": 7286.527232208162
   },
   "nasdaq": {
     "price": 27193.33984375,
@@ -45,26 +45,26 @@
     "ema200": 24993.642592098688
   },
   "dow": {
-    "price": 51231.69921875,
-    "change_pct": 0.10126661887259747,
-    "sma50": 52644.598203125,
-    "sma200": 50340.2076171875,
-    "off_52w_high_pct": -5.735919573791404,
-    "ema20": 51633.883909749675,
-    "ema50": 52058.955679004925,
-    "ema200": 50403.22081285915
+    "price": 51231.640625,
+    "change_pct": 0.10115213294532577,
+    "sma50": 52644.59703125,
+    "sma200": 50340.20732421875,
+    "off_52w_high_pct": -5.736027383722497,
+    "ema20": 51633.87832939253,
+    "ema50": 52058.95338121081,
+    "ema200": 50403.22022983676
   },
   "russell": {
-    "price": 2790.958984375,
-    "change_pct": -0.08022937262098795,
-    "sma50": 2933.7291650390625,
-    "sma200": 2787.617794189453,
-    "off_52w_high_pct": -9.042469562981248,
-    "ema20": 2847.366145593919,
-    "ema50": 2894.704173895011,
-    "ema200": 2782.571809168602
+    "price": 2794.128173828125,
+    "change_pct": 0.033231514838760745,
+    "sma50": 2933.792548828125,
+    "sma200": 2787.633640136719,
+    "off_52w_high_pct": -8.939185477562184,
+    "ema20": 2847.6679731608833,
+    "ema50": 2894.8284558343494,
+    "ema200": 2782.603343392016
   },
-  "vix": 15.550000190734863,
+  "vix": 15.40999984741211,
   "breadth": {
     "sectors_above_200sma": 5,
     "sectors_total": 11
@@ -286,7 +286,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 50
+        "rs_rating": 49
       },
       {
         "symbol": "ADP",
@@ -354,6 +354,19 @@
         "rs_rating": 26
       },
       {
+        "symbol": "KHC",
+        "price": 22.48,
+        "change_pct": 2.27,
+        "above_sma5": true,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 25
+      },
+      {
         "symbol": "INTU",
         "price": 303.88,
         "change_pct": 2.23,
@@ -365,19 +378,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 7
-      },
-      {
-        "symbol": "KHC",
-        "price": 22.47,
-        "change_pct": 2.23,
-        "above_sma5": true,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 25
       },
       {
         "symbol": "WMT",
@@ -637,7 +637,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 53
+        "rs_rating": 54
       },
       {
         "symbol": "EXC",
@@ -1404,7 +1404,7 @@
       },
       {
         "name": "JUNK BONDS",
-        "val": 50
+        "val": 49
       }
     ]
   },
