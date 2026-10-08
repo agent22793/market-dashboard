@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T04:30:28.279697+00:00",
+  "updated_at": "2026-10-08T05:00:29.628102+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -117,7 +117,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 5
+        "rs_rating": 6
       },
       {
         "symbol": "ISRG",
@@ -169,7 +169,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 24
+        "rs_rating": 25
       },
       {
         "symbol": "NFLX",
@@ -182,7 +182,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 6
+        "rs_rating": 7
       },
       {
         "symbol": "AMZN",
@@ -195,7 +195,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 65
+        "rs_rating": 66
       },
       {
         "symbol": "TRI",
@@ -546,7 +546,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 51
+        "rs_rating": 52
       },
       {
         "symbol": "ABNB",
@@ -702,7 +702,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 25
+        "rs_rating": 26
       },
       {
         "symbol": "EXC",
@@ -1040,7 +1040,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": true,
-        "rs_rating": 23
+        "rs_rating": 24
       },
       {
         "symbol": "ASML",
@@ -1274,7 +1274,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 4
+        "rs_rating": 5
       },
       {
         "symbol": "BKR",
