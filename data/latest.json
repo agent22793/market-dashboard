@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T09:00:37.768514+00:00",
+  "updated_at": "2026-10-09T09:30:32.058874+00:00",
   "market": {
     "score": 74,
     "label": "Bullish",
@@ -21,7 +21,7 @@
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 74/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
     "Volatility: VIX at 15.2 \u2014 calm conditions.",
-    "Breadth: 58.0% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (51 vs 49).",
+    "Breadth: 58.4% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (51 vs 49).",
     "Sentiment: Fear & Greed at 61 (Greed)."
   ],
   "sp500": {
@@ -64,21 +64,21 @@
     "ema50": 2894.8285228533446,
     "ema200": 2782.603360396836
   },
-  "vix": 15.210000038146973,
+  "vix": 15.220000267028809,
   "breadth": {
     "sectors_above_200sma": 5,
     "sectors_total": 11
   },
   "internals": {
-    "universe_size": 100,
+    "universe_size": 101,
     "advancers": 51,
     "decliners": 49,
-    "unchanged": 0,
-    "new_highs": 1,
+    "unchanged": 1,
+    "new_highs": 2,
     "new_lows": 1,
-    "pct_above_sma20": 65.0,
-    "pct_above_sma50": 48.0,
-    "pct_above_sma200": 58.0,
+    "pct_above_sma20": 65.3,
+    "pct_above_sma50": 48.5,
+    "pct_above_sma200": 58.4,
     "constituents": [
       {
         "symbol": "CSGP",
@@ -182,7 +182,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 57
+        "rs_rating": 56
       },
       {
         "symbol": "CPRT",
@@ -260,7 +260,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 8
+        "rs_rating": 7
       },
       {
         "symbol": "BKNG",
@@ -390,7 +390,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 51
+        "rs_rating": 50
       },
       {
         "symbol": "TMUS",
@@ -468,7 +468,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 21
+        "rs_rating": 20
       },
       {
         "symbol": "ABNB",
@@ -676,7 +676,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 47
+        "rs_rating": 46
       },
       {
         "symbol": "AEP",
@@ -744,6 +744,19 @@
         "rs_rating": 2
       },
       {
+        "symbol": "WBD",
+        "price": 30.95,
+        "change_pct": 0.0,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": true,
+        "new_low": false,
+        "rs_rating": 91
+      },
+      {
         "symbol": "KLAC",
         "price": 196.72,
         "change_pct": -0.06,
@@ -754,7 +767,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 87
+        "rs_rating": 86
       },
       {
         "symbol": "META",
@@ -949,7 +962,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 26
+        "rs_rating": 25
       },
       {
         "symbol": "GOOG",
@@ -1079,7 +1092,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 65
+        "rs_rating": 64
       },
       {
         "symbol": "MSFT",
@@ -1092,7 +1105,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 81
+        "rs_rating": 80
       },
       {
         "symbol": "AMGN",
@@ -1131,7 +1144,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 38
+        "rs_rating": 37
       },
       {
         "symbol": "ASML",
@@ -1196,7 +1209,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 61
+        "rs_rating": 60
       },
       {
         "symbol": "LRCX",
@@ -1365,7 +1378,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 92
+        "rs_rating": 93
       },
       {
         "symbol": "ALAB",
