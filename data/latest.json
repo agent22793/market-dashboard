@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T00:00:30.957809+00:00",
+  "updated_at": "2026-10-09T00:30:32.218430+00:00",
   "market": {
     "score": 74,
     "label": "Bullish",
@@ -8,7 +8,7 @@
       "trend": 84,
       "volatility": 83,
       "breadth": 59,
-      "sentiment": 60
+      "sentiment": 62
     }
   },
   "trend_strength": {
@@ -21,8 +21,8 @@
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 74/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
     "Volatility: VIX at 15.4 \u2014 calm conditions.",
-    "Breadth: 59.4% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (39 vs 61).",
-    "Sentiment: Fear & Greed at 60 (Neutral)."
+    "Breadth: 59.0% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (39 vs 61).",
+    "Sentiment: Fear & Greed at 62 (Greed)."
   ],
   "sp500": {
     "price": 7765.35986328125,
@@ -70,15 +70,15 @@
     "sectors_total": 11
   },
   "internals": {
-    "universe_size": 101,
+    "universe_size": 100,
     "advancers": 39,
     "decliners": 61,
-    "unchanged": 1,
-    "new_highs": 1,
+    "unchanged": 0,
+    "new_highs": 0,
     "new_lows": 5,
-    "pct_above_sma20": 50.5,
-    "pct_above_sma50": 46.5,
-    "pct_above_sma200": 59.4,
+    "pct_above_sma20": 50.0,
+    "pct_above_sma50": 46.0,
+    "pct_above_sma200": 59.0,
     "constituents": [
       {
         "symbol": "MU",
@@ -104,7 +104,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 86
+        "rs_rating": 87
       },
       {
         "symbol": "INTU",
@@ -169,7 +169,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 24
+        "rs_rating": 25
       },
       {
         "symbol": "NFLX",
@@ -195,7 +195,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 65
+        "rs_rating": 66
       },
       {
         "symbol": "TRI",
@@ -546,7 +546,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 51
+        "rs_rating": 52
       },
       {
         "symbol": "ABNB",
@@ -586,19 +586,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 84
-      },
-      {
-        "symbol": "WBD",
-        "price": 30.95,
-        "change_pct": 0.0,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": true,
-        "new_low": false,
-        "rs_rating": 92
       },
       {
         "symbol": "CSGP",
@@ -715,7 +702,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 25
+        "rs_rating": 26
       },
       {
         "symbol": "EXC",
@@ -962,7 +949,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 93
+        "rs_rating": 92
       },
       {
         "symbol": "MAR",
@@ -1287,7 +1274,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 5
+        "rs_rating": 4
       },
       {
         "symbol": "BKR",
@@ -1396,8 +1383,8 @@
     ]
   },
   "fear_greed": {
-    "score": 60,
-    "rating": "Neutral",
+    "score": 62,
+    "rating": "Greed",
     "components": [
       {
         "name": "VOLATILITY",
@@ -1405,7 +1392,7 @@
       },
       {
         "name": "MOMENTUM",
-        "val": 60
+        "val": 61
       },
       {
         "name": "PUT/CALL",
@@ -1413,11 +1400,11 @@
       },
       {
         "name": "SAFE HAVEN",
-        "val": 65
+        "val": 71
       },
       {
         "name": "JUNK BONDS",
-        "val": 49
+        "val": 53
       }
     ]
   },
@@ -1436,10 +1423,6 @@
     },
     {
       "time": "2026-10-06T00:00:30.545202+00:00",
-      "text": "\u2714 Market remains Bullish"
-    },
-    {
-      "time": "2026-10-05T00:00:31.249670+00:00",
       "text": "\u2714 Market remains Bullish"
     }
   ]
