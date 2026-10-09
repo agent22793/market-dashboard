@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T20:00:33.826232+00:00",
+  "updated_at": "2026-10-09T20:30:31.002900+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -20,19 +20,19 @@
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 75/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
-    "Volatility: VIX at 14.9 \u2014 very calm conditions.",
+    "Volatility: VIX at 14.8 \u2014 very calm conditions.",
     "Breadth: 58.0% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (63 vs 37).",
     "Sentiment: Fear & Greed at 63 (Greed)."
   ],
   "sp500": {
-    "price": 7811.52001953125,
-    "change_pct": 0.5944367944655138,
-    "sma50": 7696.91822265625,
-    "sma200": 7250.628862304688,
-    "off_52w_high_pct": -0.09477199672344172,
-    "ema20": 7725.444035119815,
-    "ema50": 7666.283663951823,
-    "ema200": 7288.9004875179735
+    "price": 7811.5400390625,
+    "change_pct": 0.5946946000482844,
+    "sma50": 7696.918623046875,
+    "sma200": 7250.628962402344,
+    "off_52w_high_pct": -0.09451595745976205,
+    "ema20": 7725.445941741839,
+    "ema50": 7666.284449031479,
+    "ema200": 7288.900686717289
   },
   "nasdaq": {
     "price": 27366.169921875,
@@ -45,26 +45,26 @@
     "ema200": 25003.91831290717
   },
   "dow": {
-    "price": 51655.1796875,
-    "change_pct": 0.8267138380364969,
-    "sma50": 52633.539453125,
-    "sma200": 50356.66982421875,
-    "off_52w_high_pct": -4.956734077820801,
-    "ema20": 51635.90703016467,
-    "ema50": 52043.119018768644,
-    "ema200": 50399.37701953909
+    "price": 51654.94921875,
+    "change_pct": 0.8262639817617545,
+    "sma50": 52633.53484375,
+    "sma200": 50356.668671875,
+    "off_52w_high_pct": -4.957158130216433,
+    "ema20": 51635.88508075991,
+    "ema50": 52043.10998077845,
+    "ema200": 50399.3747263177
   },
   "russell": {
-    "price": 2809.109375,
-    "change_pct": 0.5361057937801395,
-    "sma50": 2931.0527685546876,
-    "sma200": 2788.8852954101562,
-    "off_52w_high_pct": -8.450947180545764,
-    "ema20": 2843.995872976414,
-    "ema50": 2891.4669813088276,
-    "ema200": 2781.833950459408
+    "price": 2806.9814453125,
+    "change_pct": 0.4599486437281808,
+    "sma50": 2931.0102099609376,
+    "sma200": 2788.8746557617187,
+    "off_52w_high_pct": -8.520296544116569,
+    "ema20": 2843.793213006176,
+    "ema50": 2891.3835330857883,
+    "ema200": 2781.8127770296815
   },
-  "vix": 14.859999656677246,
+  "vix": 14.84000015258789,
   "breadth": {
     "sectors_above_200sma": 5,
     "sectors_total": 11
@@ -416,7 +416,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 70
+        "rs_rating": 69
       },
       {
         "symbol": "TEAM",
@@ -1396,7 +1396,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 77
+        "val": 78
       },
       {
         "name": "SAFE HAVEN",
@@ -1404,7 +1404,7 @@
       },
       {
         "name": "JUNK BONDS",
-        "val": 52
+        "val": 51
       }
     ]
   },
