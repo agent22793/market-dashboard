@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T00:30:32.218430+00:00",
+  "updated_at": "2026-10-09T01:00:25.572158+00:00",
   "market": {
     "score": 74,
     "label": "Bullish",
@@ -21,7 +21,7 @@
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 74/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
     "Volatility: VIX at 15.4 \u2014 calm conditions.",
-    "Breadth: 59.0% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (39 vs 61).",
+    "Breadth: 59.4% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (39 vs 61).",
     "Sentiment: Fear & Greed at 62 (Greed)."
   ],
   "sp500": {
@@ -70,15 +70,15 @@
     "sectors_total": 11
   },
   "internals": {
-    "universe_size": 100,
+    "universe_size": 101,
     "advancers": 39,
     "decliners": 61,
-    "unchanged": 0,
-    "new_highs": 0,
+    "unchanged": 1,
+    "new_highs": 1,
     "new_lows": 5,
-    "pct_above_sma20": 50.0,
-    "pct_above_sma50": 46.0,
-    "pct_above_sma200": 59.0,
+    "pct_above_sma20": 50.5,
+    "pct_above_sma50": 46.5,
+    "pct_above_sma200": 59.4,
     "constituents": [
       {
         "symbol": "MU",
@@ -104,7 +104,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 87
+        "rs_rating": 86
       },
       {
         "symbol": "INTU",
@@ -169,7 +169,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 25
+        "rs_rating": 24
       },
       {
         "symbol": "NFLX",
@@ -195,7 +195,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 66
+        "rs_rating": 65
       },
       {
         "symbol": "TRI",
@@ -546,7 +546,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 52
+        "rs_rating": 51
       },
       {
         "symbol": "ABNB",
@@ -586,6 +586,19 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 84
+      },
+      {
+        "symbol": "WBD",
+        "price": 30.95,
+        "change_pct": 0.0,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": true,
+        "new_low": false,
+        "rs_rating": 92
       },
       {
         "symbol": "CSGP",
@@ -702,7 +715,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 26
+        "rs_rating": 25
       },
       {
         "symbol": "EXC",
@@ -949,7 +962,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 92
+        "rs_rating": 93
       },
       {
         "symbol": "MAR",
@@ -1274,7 +1287,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 4
+        "rs_rating": 5
       },
       {
         "symbol": "BKR",
