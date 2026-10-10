@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T00:00:32.906224+00:00",
+  "updated_at": "2026-10-10T00:30:30.664826+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -1400,11 +1400,11 @@
       },
       {
         "name": "SAFE HAVEN",
-        "val": 68
+        "val": 65
       },
       {
         "name": "JUNK BONDS",
-        "val": 51
+        "val": 49
       }
     ]
   },
@@ -1423,10 +1423,6 @@
     },
     {
       "time": "2026-10-07T00:00:33.193008+00:00",
-      "text": "\u2714 Market remains Bullish"
-    },
-    {
-      "time": "2026-10-06T00:00:30.545202+00:00",
       "text": "\u2714 Market remains Bullish"
     }
   ]
