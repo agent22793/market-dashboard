@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T11:00:38.553738+00:00",
+  "updated_at": "2026-10-12T11:30:31.138013+00:00",
   "market": {
     "score": 74,
     "label": "Bullish",
@@ -1396,7 +1396,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 65
+        "val": 66
       },
       {
         "name": "SAFE HAVEN",
