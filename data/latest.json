@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T09:00:31.110791+00:00",
+  "updated_at": "2026-10-13T09:30:28.588536+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -143,7 +143,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 51
+        "rs_rating": 52
       },
       {
         "symbol": "TMUS",
@@ -169,7 +169,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 85
+        "rs_rating": 86
       },
       {
         "symbol": "DXCM",
@@ -234,7 +234,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 82
+        "rs_rating": 83
       },
       {
         "symbol": "FAST",
@@ -299,7 +299,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 41
+        "rs_rating": 42
       },
       {
         "symbol": "IDXX",
@@ -637,7 +637,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 77
+        "rs_rating": 78
       },
       {
         "symbol": "MNST",
@@ -897,7 +897,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 60
+        "rs_rating": 61
       },
       {
         "symbol": "AMZN",
@@ -923,7 +923,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 16
+        "rs_rating": 17
       },
       {
         "symbol": "BKNG",
@@ -1235,7 +1235,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 93
+        "rs_rating": 92
       },
       {
         "symbol": "CPRT",
@@ -1274,7 +1274,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 81
+        "rs_rating": 82
       },
       {
         "symbol": "MRVL",
@@ -1339,7 +1339,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 88
+        "rs_rating": 89
       },
       {
         "symbol": "CRWD",
