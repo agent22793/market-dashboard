@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T00:00:31.379233+00:00",
+  "updated_at": "2026-10-13T00:30:31.015232+00:00",
   "market": {
     "score": 74,
     "label": "Bullish",
@@ -1392,7 +1392,7 @@
       },
       {
         "name": "MOMENTUM",
-        "val": 61
+        "val": 62
       },
       {
         "name": "PUT/CALL",
@@ -1404,7 +1404,7 @@
       },
       {
         "name": "JUNK BONDS",
-        "val": 52
+        "val": 51
       }
     ]
   },
@@ -1423,10 +1423,6 @@
     },
     {
       "time": "2026-10-10T00:00:32.906224+00:00",
-      "text": "\u2714 Market remains Bullish"
-    },
-    {
-      "time": "2026-10-09T00:00:30.957809+00:00",
       "text": "\u2714 Market remains Bullish"
     }
   ]
