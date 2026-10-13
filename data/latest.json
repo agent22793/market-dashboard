@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T12:00:31.658660+00:00",
+  "updated_at": "2026-10-13T12:30:32.883527+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -64,7 +64,7 @@
     "ema50": 2887.5833390829366,
     "ema200": 2782.021588710356
   },
-  "vix": 15.430000305175781,
+  "vix": 15.390000343322754,
   "breadth": {
     "sectors_above_200sma": 5,
     "sectors_total": 11
@@ -1388,7 +1388,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 51
+        "val": 50
       },
       {
         "name": "MOMENTUM",
