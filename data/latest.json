@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T11:00:32.056193+00:00",
+  "updated_at": "2026-10-14T11:30:30.805038+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -1388,7 +1388,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 51
+        "val": 50
       },
       {
         "name": "MOMENTUM",
@@ -1396,7 +1396,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 72
+        "val": 71
       },
       {
         "name": "SAFE HAVEN",
