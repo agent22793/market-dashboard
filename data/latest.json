@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T02:30:36.644842+00:00",
+  "updated_at": "2026-10-14T03:00:32.411304+00:00",
   "market": {
     "score": 75,
     "label": "Bullish",
@@ -1066,7 +1066,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 54
+        "rs_rating": 53
       },
       {
         "symbol": "HON",
