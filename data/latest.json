@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T20:00:34.107252+00:00",
+  "updated_at": "2026-10-15T20:28:16.002695+00:00",
   "market": {
     "score": 71,
     "label": "Bullish",
@@ -20,19 +20,19 @@
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 71/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
-    "Volatility: VIX at 16.4 \u2014 calm conditions.",
+    "Volatility: VIX at 16.5 \u2014 calm conditions.",
     "Breadth: 60.0% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (66 vs 34).",
     "Sentiment: Fear & Greed at 52 (Neutral)."
   ],
   "sp500": {
-    "price": 7744.10009765625,
-    "change_pct": 0.32595351746467216,
-    "sma50": 7707.427431640625,
-    "sma200": 7267.620014648437,
-    "off_52w_high_pct": -0.9570372984885167,
-    "ema20": 7738.668638669576,
-    "ema50": 7681.260357918869,
-    "ema200": 7308.183468065989
+    "price": 7744.06005859375,
+    "change_pct": 0.3254348055326872,
+    "sma50": 7707.426630859375,
+    "sma200": 7267.619814453125,
+    "off_52w_high_pct": -0.9575493770158761,
+    "ema20": 7738.664825425528,
+    "ema50": 7681.258787759555,
+    "ema200": 7308.183069667357
   },
   "nasdaq": {
     "price": 26713.025390625,
@@ -45,26 +45,26 @@
     "ema200": 25085.910432258403
   },
   "dow": {
-    "price": 52177.80859375,
-    "change_pct": 1.0777066444980887,
-    "sma50": 52497.96484375,
-    "sma200": 50421.53603515625,
-    "off_52w_high_pct": -3.9951198037859292,
-    "ema20": 51704.06495023305,
-    "ema50": 52012.3058302513,
-    "ema200": 50448.146284894916
+    "price": 52177.69140625,
+    "change_pct": 1.0774796314428015,
+    "sma50": 52497.9625,
+    "sma200": 50421.53544921875,
+    "off_52w_high_pct": -3.9953354236481053,
+    "ema20": 51704.053789518766,
+    "ema50": 52012.301234663064,
+    "ema200": 50448.14511885014
   },
   "russell": {
-    "price": 2767.23095703125,
-    "change_pct": 1.3812241422413107,
-    "sma50": 2913.11400390625,
-    "sma200": 2793.5309521484373,
-    "off_52w_high_pct": -9.81576748008155,
-    "ema20": 2818.4666226376453,
-    "ema50": 2873.135991502317,
-    "ema200": 2781.7510344579537
+    "price": 2767.269287109375,
+    "change_pct": 1.382628416153442,
+    "sma50": 2913.1147705078124,
+    "sma200": 2793.531143798828,
+    "off_52w_high_pct": -9.81451830040273,
+    "ema20": 2818.470273121276,
+    "ema50": 2873.137494642636,
+    "ema200": 2781.751415851766
   },
-  "vix": 16.43000030517578,
+  "vix": 16.479999542236328,
   "breadth": {
     "sectors_above_200sma": 6,
     "sectors_total": 11
@@ -221,7 +221,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 36
+        "rs_rating": 35
       },
       {
         "symbol": "CHTR",
@@ -484,6 +484,19 @@
         "rs_rating": 17
       },
       {
+        "symbol": "KHC",
+        "price": 23.28,
+        "change_pct": 2.56,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 26
+      },
+      {
         "symbol": "MNST",
         "price": 45.34,
         "change_pct": 2.53,
@@ -495,19 +508,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 63
-      },
-      {
-        "symbol": "KHC",
-        "price": 23.27,
-        "change_pct": 2.51,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 26
       },
       {
         "symbol": "GILD",
@@ -1388,7 +1388,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 40
+        "val": 41
       },
       {
         "name": "MOMENTUM",
@@ -1396,7 +1396,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 59
+        "val": 60
       },
       {
         "name": "SAFE HAVEN",
