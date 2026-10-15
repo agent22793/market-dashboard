@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T02:30:24.976856+00:00",
+  "updated_at": "2026-10-15T03:00:32.092204+00:00",
   "market": {
     "score": 70,
     "label": "Bullish",
@@ -520,7 +520,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 58
+        "rs_rating": 59
       },
       {
         "symbol": "EXC",
@@ -1079,7 +1079,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 56
+        "rs_rating": 57
       },
       {
         "symbol": "ZS",
