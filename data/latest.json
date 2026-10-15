@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T00:30:27.720753+00:00",
+  "updated_at": "2026-10-15T01:00:32.324291+00:00",
   "market": {
     "score": 71,
     "label": "Bullish",
@@ -8,7 +8,7 @@
       "trend": 83,
       "volatility": 76,
       "breadth": 61,
-      "sentiment": 53
+      "sentiment": 52
     }
   },
   "trend_strength": {
@@ -21,8 +21,8 @@
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 71/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
     "Volatility: VIX at 16.9 \u2014 calm conditions.",
-    "Breadth: 61.0% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (48 vs 52).",
-    "Sentiment: Fear & Greed at 53 (Neutral)."
+    "Breadth: 61.0% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (58 vs 42).",
+    "Sentiment: Fear & Greed at 52 (Neutral)."
   ],
   "sp500": {
     "price": 7718.93994140625,
@@ -66,37 +66,63 @@
   },
   "vix": 16.8700008392334,
   "breadth": {
-    "sectors_above_200sma": 0,
+    "sectors_above_200sma": 5,
     "sectors_total": 11
   },
   "internals": {
     "universe_size": 100,
-    "advancers": 48,
-    "decliners": 52,
+    "advancers": 58,
+    "decliners": 42,
     "unchanged": 0,
     "new_highs": 3,
     "new_lows": 1,
-    "pct_above_sma20": 59.0,
-    "pct_above_sma50": 49.0,
+    "pct_above_sma20": 61.0,
+    "pct_above_sma50": 45.0,
     "pct_above_sma200": 61.0,
     "constituents": [
       {
-        "symbol": "CHTR",
-        "price": 106.95,
-        "change_pct": 4.36,
+        "symbol": "GILD",
+        "price": 153.54,
+        "change_pct": 3.8,
         "above_sma5": true,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": true,
+        "new_low": false,
+        "rs_rating": 79
+      },
+      {
+        "symbol": "WMT",
+        "price": 116.16,
+        "change_pct": 3.46,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 1
+        "rs_rating": 57
       },
       {
-        "symbol": "CTSH",
-        "price": 61.33,
-        "change_pct": 2.76,
+        "symbol": "REGN",
+        "price": 778.36,
+        "change_pct": 3.35,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 85
+      },
+      {
+        "symbol": "AMGN",
+        "price": 426.11,
+        "change_pct": 3.21,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
@@ -104,12 +130,12 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 85
+        "rs_rating": 87
       },
       {
-        "symbol": "CSGP",
-        "price": 30.0,
-        "change_pct": 2.7,
+        "symbol": "INTU",
+        "price": 310.44,
+        "change_pct": 2.98,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
@@ -117,7 +143,46 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 3
+        "rs_rating": 6
+      },
+      {
+        "symbol": "COST",
+        "price": 982.0,
+        "change_pct": 2.87,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 49
+      },
+      {
+        "symbol": "VRTX",
+        "price": 498.5,
+        "change_pct": 2.74,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 64
+      },
+      {
+        "symbol": "TMUS",
+        "price": 157.79,
+        "change_pct": 2.64,
+        "above_sma5": true,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 7
       },
       {
         "symbol": "META",
@@ -130,25 +195,90 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 59
+        "rs_rating": 61
       },
       {
-        "symbol": "TXN",
-        "price": 287.85,
+        "symbol": "VRSK",
+        "price": 180.58,
+        "change_pct": 2.22,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 12
+      },
+      {
+        "symbol": "ROST",
+        "price": 230.57,
         "change_pct": 2.17,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
-        "above_sma50": true,
+        "above_sma50": false,
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 85
+        "rs_rating": 79
       },
       {
-        "symbol": "ADI",
-        "price": 414.7,
-        "change_pct": 2.08,
+        "symbol": "MNST",
+        "price": 44.22,
+        "change_pct": 2.1,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 63
+      },
+      {
+        "symbol": "BKNG",
+        "price": 160.68,
+        "change_pct": 2.01,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 11
+      },
+      {
+        "symbol": "PAYX",
+        "price": 108.37,
+        "change_pct": 2.0,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 27
+      },
+      {
+        "symbol": "ADBE",
+        "price": 240.68,
+        "change_pct": 1.86,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 14
+      },
+      {
+        "symbol": "CTSH",
+        "price": 62.47,
+        "change_pct": 1.86,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
@@ -156,20 +286,59 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 90
+        "rs_rating": 86
       },
       {
-        "symbol": "AMD",
-        "price": 605.53,
-        "change_pct": 1.9,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
+        "symbol": "CCEP",
+        "price": 107.22,
+        "change_pct": 1.75,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
         "above_sma50": true,
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 97
+        "rs_rating": 64
+      },
+      {
+        "symbol": "MDLZ",
+        "price": 62.57,
+        "change_pct": 1.74,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 48
+      },
+      {
+        "symbol": "IDXX",
+        "price": 529.01,
+        "change_pct": 1.67,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 17
+      },
+      {
+        "symbol": "ADP",
+        "price": 280.32,
+        "change_pct": 1.6,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 60
       },
       {
         "symbol": "FANG",
@@ -182,7 +351,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 78
+        "rs_rating": 79
       },
       {
         "symbol": "GEHC",
@@ -195,46 +364,46 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 48
+        "rs_rating": 51
       },
       {
-        "symbol": "PAYX",
-        "price": 106.25,
-        "change_pct": 1.54,
+        "symbol": "PEP",
+        "price": 129.27,
+        "change_pct": 1.55,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
         "above_sma50": false,
-        "above_sma200": true,
+        "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 25
+        "rs_rating": 21
       },
       {
-        "symbol": "INTC",
-        "price": 102.81,
-        "change_pct": 1.44,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 94
-      },
-      {
-        "symbol": "QCOM",
-        "price": 176.86,
-        "change_pct": 1.39,
+        "symbol": "KDP",
+        "price": 33.12,
+        "change_pct": 1.41,
         "above_sma5": true,
-        "above_sma10": false,
-        "above_sma20": false,
+        "above_sma10": true,
+        "above_sma20": true,
         "above_sma50": true,
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 62
+        "rs_rating": 72
+      },
+      {
+        "symbol": "SBUX",
+        "price": 93.25,
+        "change_pct": 1.36,
+        "above_sma5": true,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 45
       },
       {
         "symbol": "PDD",
@@ -247,7 +416,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 8
+        "rs_rating": 9
       },
       {
         "symbol": "ZS",
@@ -260,7 +429,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 84
+        "rs_rating": 86
       },
       {
         "symbol": "ABNB",
@@ -273,12 +442,64 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 79
+        "rs_rating": 81
       },
       {
-        "symbol": "TMUS",
-        "price": 153.73,
-        "change_pct": 1.22,
+        "symbol": "ROP",
+        "price": 372.69,
+        "change_pct": 1.16,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 16
+      },
+      {
+        "symbol": "FAST",
+        "price": 52.0,
+        "change_pct": 1.11,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 73
+      },
+      {
+        "symbol": "CTAS",
+        "price": 208.63,
+        "change_pct": 1.09,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 55
+      },
+      {
+        "symbol": "CSX",
+        "price": 48.28,
+        "change_pct": 1.09,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 69
+      },
+      {
+        "symbol": "INSM",
+        "price": 97.79,
+        "change_pct": 1.03,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -286,12 +507,12 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 5
+        "rs_rating": 6
       },
       {
-        "symbol": "AEP",
-        "price": 125.65,
-        "change_pct": 1.14,
+        "symbol": "XEL",
+        "price": 75.36,
+        "change_pct": 0.96,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
@@ -299,40 +520,14 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 43
-      },
-      {
-        "symbol": "MRVL",
-        "price": 268.73,
-        "change_pct": 1.08,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 97
-      },
-      {
-        "symbol": "LIN",
-        "price": 492.11,
-        "change_pct": 0.98,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 43
+        "rs_rating": 29
       },
       {
         "symbol": "CMCSA",
-        "price": 20.88,
-        "change_pct": 0.97,
+        "price": 21.05,
+        "change_pct": 0.81,
         "above_sma5": true,
-        "above_sma10": false,
+        "above_sma10": true,
         "above_sma20": false,
         "above_sma50": false,
         "above_sma200": false,
@@ -341,61 +536,22 @@
         "rs_rating": 13
       },
       {
-        "symbol": "NVDA",
-        "price": 228.52,
-        "change_pct": 0.97,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 67
-      },
-      {
-        "symbol": "TRI",
-        "price": 105.14,
-        "change_pct": 0.85,
+        "symbol": "ORLY",
+        "price": 86.69,
+        "change_pct": 0.77,
         "above_sma5": true,
         "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 21
-      },
-      {
-        "symbol": "ADP",
-        "price": 275.9,
-        "change_pct": 0.76,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 57
-      },
-      {
-        "symbol": "AVGO",
-        "price": 357.31,
-        "change_pct": 0.73,
-        "above_sma5": false,
-        "above_sma10": false,
         "above_sma20": true,
         "above_sma50": false,
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 38
+        "rs_rating": 21
       },
       {
         "symbol": "ODFL",
-        "price": 183.17,
-        "change_pct": 0.69,
+        "price": 184.37,
+        "change_pct": 0.66,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
@@ -416,46 +572,33 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 31
+        "rs_rating": 33
       },
       {
-        "symbol": "XEL",
-        "price": 74.64,
-        "change_pct": 0.63,
+        "symbol": "EXC",
+        "price": 42.6,
+        "change_pct": 0.61,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
-        "above_sma50": true,
+        "above_sma50": false,
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 25
+        "rs_rating": 23
       },
       {
-        "symbol": "MAR",
-        "price": 371.5,
-        "change_pct": 0.6,
+        "symbol": "PCAR",
+        "price": 108.56,
+        "change_pct": 0.54,
         "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 75
-      },
-      {
-        "symbol": "CTAS",
-        "price": 206.38,
-        "change_pct": 0.56,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 57
+        "rs_rating": 47
       },
       {
         "symbol": "APP",
@@ -468,63 +611,24 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 1
+        "rs_rating": 2
       },
       {
-        "symbol": "EXC",
-        "price": 42.34,
-        "change_pct": 0.52,
+        "symbol": "AAPL",
+        "price": 342.96,
+        "change_pct": 0.5,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": true,
         "new_low": false,
-        "rs_rating": 22
+        "rs_rating": 75
       },
       {
-        "symbol": "NXPI",
-        "price": 226.32,
-        "change_pct": 0.49,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 37
-      },
-      {
-        "symbol": "PEP",
-        "price": 127.3,
-        "change_pct": 0.49,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 19
-      },
-      {
-        "symbol": "BKR",
-        "price": 56.45,
-        "change_pct": 0.48,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 65
-      },
-      {
-        "symbol": "MCHP",
-        "price": 74.16,
+        "symbol": "TTWO",
+        "price": 201.23,
         "change_pct": 0.45,
         "above_sma5": false,
         "above_sma10": false,
@@ -533,7 +637,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 52
+        "rs_rating": 11
       },
       {
         "symbol": "FER",
@@ -546,20 +650,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 12
-      },
-      {
-        "symbol": "MSFT",
-        "price": 543.45,
-        "change_pct": 0.43,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": true,
-        "new_low": false,
-        "rs_rating": 82
+        "rs_rating": 13
       },
       {
         "symbol": "ALAB",
@@ -575,9 +666,9 @@
         "rs_rating": 90
       },
       {
-        "symbol": "GOOGL",
-        "price": 353.78,
-        "change_pct": 0.3,
+        "symbol": "AEP",
+        "price": 126.13,
+        "change_pct": 0.38,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
@@ -585,25 +676,51 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 76
+        "rs_rating": 46
       },
       {
-        "symbol": "ROP",
-        "price": 368.41,
-        "change_pct": 0.3,
+        "symbol": "CSGP",
+        "price": 30.11,
+        "change_pct": 0.37,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
         "above_sma50": false,
-        "above_sma200": true,
+        "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 16
+        "rs_rating": 3
       },
       {
-        "symbol": "CCEP",
-        "price": 105.38,
+        "symbol": "ADSK",
+        "price": 231.14,
+        "change_pct": 0.31,
+        "above_sma5": false,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 18
+      },
+      {
+        "symbol": "ALNY",
+        "price": 224.47,
         "change_pct": 0.29,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 2
+      },
+      {
+        "symbol": "TRI",
+        "price": 105.4,
+        "change_pct": 0.25,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
@@ -611,7 +728,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 60
+        "rs_rating": 19
       },
       {
         "symbol": "PYPL",
@@ -624,7 +741,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 20
+        "rs_rating": 22
       },
       {
         "symbol": "GOOG",
@@ -637,7 +754,33 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 75
+        "rs_rating": 76
+      },
+      {
+        "symbol": "NFLX",
+        "price": 70.57,
+        "change_pct": 0.16,
+        "above_sma5": false,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 8
+      },
+      {
+        "symbol": "HON",
+        "price": 207.61,
+        "change_pct": 0.15,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 35
       },
       {
         "symbol": "TEAM",
@@ -653,17 +796,30 @@
         "rs_rating": 98
       },
       {
-        "symbol": "AAPL",
-        "price": 341.27,
+        "symbol": "LIN",
+        "price": 492.7,
+        "change_pct": 0.12,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 43
+      },
+      {
+        "symbol": "MAR",
+        "price": 371.82,
         "change_pct": 0.09,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
         "above_sma50": true,
         "above_sma200": true,
-        "new_high": true,
+        "new_high": false,
         "new_low": false,
-        "rs_rating": 75
+        "rs_rating": 74
       },
       {
         "symbol": "ARM",
@@ -676,46 +832,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 89
-      },
-      {
-        "symbol": "CSX",
-        "price": 47.76,
-        "change_pct": 0.02,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 68
-      },
-      {
-        "symbol": "MPWR",
-        "price": 1319.55,
-        "change_pct": 0.02,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 76
-      },
-      {
-        "symbol": "ROST",
-        "price": 225.68,
-        "change_pct": -0.07,
-        "above_sma5": true,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 79
+        "rs_rating": 90
       },
       {
         "symbol": "KHC",
@@ -728,33 +845,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 21
-      },
-      {
-        "symbol": "FAST",
-        "price": 51.43,
-        "change_pct": -0.12,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 66
-      },
-      {
-        "symbol": "PCAR",
-        "price": 107.98,
-        "change_pct": -0.14,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 46
+        "rs_rating": 23
       },
       {
         "symbol": "PLTR",
@@ -767,103 +858,12 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 92
-      },
-      {
-        "symbol": "NFLX",
-        "price": 70.46,
-        "change_pct": -0.21,
-        "above_sma5": false,
-        "above_sma10": true,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 7
-      },
-      {
-        "symbol": "CSCO",
-        "price": 115.07,
-        "change_pct": -0.23,
-        "above_sma5": false,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 87
-      },
-      {
-        "symbol": "AXON",
-        "price": 413.35,
-        "change_pct": -0.26,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 5
-      },
-      {
-        "symbol": "KDP",
-        "price": 32.66,
-        "change_pct": -0.27,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 72
-      },
-      {
-        "symbol": "SBUX",
-        "price": 92.0,
-        "change_pct": -0.31,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 46
-      },
-      {
-        "symbol": "MSTR",
-        "price": 152.18,
-        "change_pct": -0.33,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 59
-      },
-      {
-        "symbol": "AMZN",
-        "price": 258.58,
-        "change_pct": -0.37,
-        "above_sma5": false,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 58
+        "rs_rating": 93
       },
       {
         "symbol": "CPRT",
-        "price": 26.37,
-        "change_pct": -0.42,
+        "price": 26.27,
+        "change_pct": -0.38,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -874,56 +874,17 @@
         "rs_rating": 6
       },
       {
-        "symbol": "MDLZ",
-        "price": 61.5,
-        "change_pct": -0.47,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 47
-      },
-      {
-        "symbol": "VRSK",
-        "price": 176.65,
-        "change_pct": -0.47,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 11
-      },
-      {
-        "symbol": "COST",
-        "price": 954.63,
-        "change_pct": -0.5,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 44
-      },
-      {
-        "symbol": "BKNG",
-        "price": 157.51,
-        "change_pct": -0.58,
+        "symbol": "ISRG",
+        "price": 420.24,
+        "change_pct": -0.43,
         "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 10
+        "rs_rating": 45
       },
       {
         "symbol": "DASH",
@@ -936,7 +897,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 16
+        "rs_rating": 17
       },
       {
         "symbol": "CRWD",
@@ -949,163 +910,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 95
-      },
-      {
-        "symbol": "IDXX",
-        "price": 520.31,
-        "change_pct": -0.69,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 17
-      },
-      {
-        "symbol": "WMT",
-        "price": 112.28,
-        "change_pct": -0.71,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 49
-      },
-      {
-        "symbol": "ORLY",
-        "price": 86.03,
-        "change_pct": -0.72,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 22
-      },
-      {
-        "symbol": "TSLA",
-        "price": 375.23,
-        "change_pct": -0.74,
-        "above_sma5": false,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 22
-      },
-      {
-        "symbol": "ADBE",
-        "price": 236.28,
-        "change_pct": -0.78,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 15
-      },
-      {
-        "symbol": "STX",
-        "price": 747.2,
-        "change_pct": -0.8,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
         "rs_rating": 96
-      },
-      {
-        "symbol": "MELI",
-        "price": 1876.04,
-        "change_pct": -0.87,
-        "above_sma5": false,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 24
-      },
-      {
-        "symbol": "DXCM",
-        "price": 85.06,
-        "change_pct": -1.0,
-        "above_sma5": true,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 78
-      },
-      {
-        "symbol": "MNST",
-        "price": 43.31,
-        "change_pct": -1.03,
-        "above_sma5": false,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 53
-      },
-      {
-        "symbol": "HON",
-        "price": 207.29,
-        "change_pct": -1.12,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 36
-      },
-      {
-        "symbol": "AMGN",
-        "price": 412.84,
-        "change_pct": -1.13,
-        "above_sma5": false,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 84
-      },
-      {
-        "symbol": "FTNT",
-        "price": 190.76,
-        "change_pct": -1.13,
-        "above_sma5": false,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 95
       },
       {
         "symbol": "WDAY",
@@ -1118,46 +923,33 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 66
+        "rs_rating": 67
       },
       {
-        "symbol": "REGN",
-        "price": 753.12,
-        "change_pct": -1.27,
-        "above_sma5": true,
-        "above_sma10": true,
+        "symbol": "AXON",
+        "price": 408.42,
+        "change_pct": -1.19,
+        "above_sma5": false,
+        "above_sma10": false,
         "above_sma20": false,
         "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 5
+      },
+      {
+        "symbol": "CSCO",
+        "price": 113.64,
+        "change_pct": -1.24,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": true,
+        "above_sma50": true,
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 81
-      },
-      {
-        "symbol": "ISRG",
-        "price": 422.06,
-        "change_pct": -1.3,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 53
-      },
-      {
-        "symbol": "ADSK",
-        "price": 230.43,
-        "change_pct": -1.33,
-        "above_sma5": false,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 20
+        "rs_rating": 88
       },
       {
         "symbol": "DDOG",
@@ -1170,33 +962,20 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 94
+        "rs_rating": 95
       },
       {
-        "symbol": "ALNY",
-        "price": 223.82,
-        "change_pct": -1.41,
+        "symbol": "CDNS",
+        "price": 329.46,
+        "change_pct": -1.42,
         "above_sma5": false,
         "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 2
-      },
-      {
-        "symbol": "INTU",
-        "price": 301.45,
-        "change_pct": -1.48,
-        "above_sma5": false,
-        "above_sma10": true,
         "above_sma20": true,
-        "above_sma50": false,
-        "above_sma200": false,
+        "above_sma50": true,
+        "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 7
+        "rs_rating": 29
       },
       {
         "symbol": "SHOP",
@@ -1209,46 +988,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 89
-      },
-      {
-        "symbol": "SNPS",
-        "price": 494.51,
-        "change_pct": -1.59,
-        "above_sma5": false,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 70
-      },
-      {
-        "symbol": "WDC",
-        "price": 380.71,
-        "change_pct": -1.61,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 95
-      },
-      {
-        "symbol": "GILD",
-        "price": 147.92,
-        "change_pct": -1.67,
-        "above_sma5": false,
-        "above_sma10": true,
-        "above_sma20": false,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 75
+        "rs_rating": 90
       },
       {
         "symbol": "PANW",
@@ -1264,9 +1004,9 @@
         "rs_rating": 94
       },
       {
-        "symbol": "INSM",
-        "price": 96.79,
-        "change_pct": -1.8,
+        "symbol": "CHTR",
+        "price": 105.14,
+        "change_pct": -1.69,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -1274,12 +1014,51 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 4
+        "rs_rating": 2
       },
       {
-        "symbol": "ASML",
-        "price": 1717.76,
-        "change_pct": -1.86,
+        "symbol": "GOOGL",
+        "price": 347.64,
+        "change_pct": -1.74,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 75
+      },
+      {
+        "symbol": "AMZN",
+        "price": 254.08,
+        "change_pct": -1.74,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": true,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 56
+      },
+      {
+        "symbol": "MSFT",
+        "price": 533.69,
+        "change_pct": -1.8,
+        "above_sma5": false,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 78
+      },
+      {
+        "symbol": "DXCM",
+        "price": 83.47,
+        "change_pct": -1.87,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -1287,12 +1066,51 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 88
+        "rs_rating": 73
       },
       {
-        "symbol": "LRCX",
-        "price": 301.11,
-        "change_pct": -2.73,
+        "symbol": "BKR",
+        "price": 55.37,
+        "change_pct": -1.91,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 62
+      },
+      {
+        "symbol": "MELI",
+        "price": 1839.11,
+        "change_pct": -1.97,
+        "above_sma5": false,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 19
+      },
+      {
+        "symbol": "TSLA",
+        "price": 367.16,
+        "change_pct": -2.15,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": true,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 17
+      },
+      {
+        "symbol": "QCOM",
+        "price": 172.62,
+        "change_pct": -2.4,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -1300,12 +1118,90 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 93
+        "rs_rating": 56
+      },
+      {
+        "symbol": "NXPI",
+        "price": 220.83,
+        "change_pct": -2.43,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 30
+      },
+      {
+        "symbol": "TXN",
+        "price": 280.65,
+        "change_pct": -2.5,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 84
+      },
+      {
+        "symbol": "ADI",
+        "price": 403.57,
+        "change_pct": -2.68,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 89
       },
       {
         "symbol": "KLAC",
-        "price": 184.0,
-        "change_pct": -3.22,
+        "price": 178.81,
+        "change_pct": -2.82,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 82
+      },
+      {
+        "symbol": "SNPS",
+        "price": 479.93,
+        "change_pct": -2.95,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 65
+      },
+      {
+        "symbol": "AVGO",
+        "price": 346.25,
+        "change_pct": -3.1,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 28
+      },
+      {
+        "symbol": "NVDA",
+        "price": 221.3,
+        "change_pct": -3.16,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -1313,12 +1209,64 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 86
+        "rs_rating": 63
+      },
+      {
+        "symbol": "FTNT",
+        "price": 184.05,
+        "change_pct": -3.52,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 95
+      },
+      {
+        "symbol": "AMAT",
+        "price": 446.63,
+        "change_pct": -3.79,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 90
+      },
+      {
+        "symbol": "MCHP",
+        "price": 71.25,
+        "change_pct": -3.92,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 40
+      },
+      {
+        "symbol": "ASML",
+        "price": 1650.0,
+        "change_pct": -3.94,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 83
       },
       {
         "symbol": "MU",
-        "price": 953.04,
-        "change_pct": -3.62,
+        "price": 914.13,
+        "change_pct": -4.08,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -1329,9 +1277,9 @@
         "rs_rating": 98
       },
       {
-        "symbol": "TTWO",
-        "price": 200.32,
-        "change_pct": -4.07,
+        "symbol": "WDC",
+        "price": 364.1,
+        "change_pct": -4.36,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -1339,25 +1287,12 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 11
+        "rs_rating": 95
       },
       {
-        "symbol": "CDNS",
-        "price": 334.2,
-        "change_pct": -4.08,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 30
-      },
-      {
-        "symbol": "VRTX",
-        "price": 485.22,
-        "change_pct": -4.3,
+        "symbol": "STX",
+        "price": 713.54,
+        "change_pct": -4.5,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -1365,12 +1300,25 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 58
+        "rs_rating": 96
       },
       {
-        "symbol": "AMAT",
-        "price": 464.24,
-        "change_pct": -6.69,
+        "symbol": "INTC",
+        "price": 98.12,
+        "change_pct": -4.56,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 94
+      },
+      {
+        "symbol": "LRCX",
+        "price": 286.92,
+        "change_pct": -4.71,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -1379,11 +1327,63 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 92
+      },
+      {
+        "symbol": "AMD",
+        "price": 570.82,
+        "change_pct": -5.73,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 96
+      },
+      {
+        "symbol": "MPWR",
+        "price": 1243.11,
+        "change_pct": -5.79,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 65
+      },
+      {
+        "symbol": "MSTR",
+        "price": 143.24,
+        "change_pct": -5.87,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 46
+      },
+      {
+        "symbol": "MRVL",
+        "price": 245.28,
+        "change_pct": -8.73,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 97
       }
     ]
   },
   "fear_greed": {
-    "score": 53,
+    "score": 52,
     "rating": "Neutral",
     "components": [
       {
@@ -1392,7 +1392,7 @@
       },
       {
         "name": "MOMENTUM",
-        "val": 58
+        "val": 57
       },
       {
         "name": "PUT/CALL",
@@ -1400,11 +1400,11 @@
       },
       {
         "name": "SAFE HAVEN",
-        "val": 69
+        "val": 63
       },
       {
         "name": "JUNK BONDS",
-        "val": 51
+        "val": 50
       }
     ]
   },
