@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T00:00:29.220551+00:00",
+  "updated_at": "2026-10-16T00:30:30.290619+00:00",
   "market": {
     "score": 71,
     "label": "Bullish",
@@ -8,7 +8,7 @@
       "trend": 84,
       "volatility": 78,
       "breadth": 59,
-      "sentiment": 52
+      "sentiment": 53
     }
   },
   "trend_strength": {
@@ -22,7 +22,7 @@
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 84% confidence.",
     "Volatility: VIX at 16.5 \u2014 calm conditions.",
     "Breadth: 59.0% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (47 vs 53).",
-    "Sentiment: Fear & Greed at 52 (Neutral)."
+    "Sentiment: Fear & Greed at 53 (Neutral)."
   ],
   "sp500": {
     "price": 7744.06005859375,
@@ -143,7 +143,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 6
+        "rs_rating": 5
       },
       {
         "symbol": "COST",
@@ -182,7 +182,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 8
+        "rs_rating": 7
       },
       {
         "symbol": "VRSK",
@@ -221,7 +221,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 64
+        "rs_rating": 63
       },
       {
         "symbol": "BKNG",
@@ -325,7 +325,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 61
+        "rs_rating": 60
       },
       {
         "symbol": "PEP",
@@ -481,7 +481,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 82
+        "rs_rating": 83
       },
       {
         "symbol": "CMCSA",
@@ -520,7 +520,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 59
+        "rs_rating": 58
       },
       {
         "symbol": "EXC",
@@ -598,7 +598,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 3
+        "rs_rating": 4
       },
       {
         "symbol": "ADSK",
@@ -637,7 +637,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 20
+        "rs_rating": 19
       },
       {
         "symbol": "NFLX",
@@ -689,7 +689,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 75
+        "rs_rating": 74
       },
       {
         "symbol": "PYPL",
@@ -754,7 +754,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 41
+        "rs_rating": 40
       },
       {
         "symbol": "PDD",
@@ -767,7 +767,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 7
+        "rs_rating": 8
       },
       {
         "symbol": "FER",
@@ -793,7 +793,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 5
+        "rs_rating": 6
       },
       {
         "symbol": "CSCO",
@@ -923,7 +923,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 63
+        "rs_rating": 62
       },
       {
         "symbol": "MELI",
@@ -988,7 +988,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 30
+        "rs_rating": 38
       },
       {
         "symbol": "TXN",
@@ -1079,7 +1079,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 57
+        "rs_rating": 56
       },
       {
         "symbol": "ZS",
@@ -1170,7 +1170,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 84
+        "rs_rating": 86
       },
       {
         "symbol": "MU",
@@ -1326,7 +1326,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 66
+        "rs_rating": 68
       },
       {
         "symbol": "MSTR",
@@ -1383,7 +1383,7 @@
     ]
   },
   "fear_greed": {
-    "score": 52,
+    "score": 53,
     "rating": "Neutral",
     "components": [
       {
@@ -1400,11 +1400,11 @@
       },
       {
         "name": "SAFE HAVEN",
-        "val": 59
+        "val": 63
       },
       {
         "name": "JUNK BONDS",
-        "val": 45
+        "val": 50
       }
     ]
   },
@@ -1424,10 +1424,6 @@
     {
       "time": "2026-10-15T00:00:34.210424+00:00",
       "text": "\u2714 Market remains Bullish"
-    },
-    {
-      "time": "2026-10-14T19:30:32.741662+00:00",
-      "text": "\u2714 Market shifted to Bullish"
     }
   ]
 }
