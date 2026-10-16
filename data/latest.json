@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-16T11:30:33.712893+00:00",
+  "updated_at": "2026-10-16T12:00:34.468682+00:00",
   "market": {
     "score": 72,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 84,
-      "volatility": 80,
+      "volatility": 79,
       "breadth": 60,
       "sentiment": 54
     }
@@ -64,7 +64,7 @@
     "ema50": 2873.1375233650624,
     "ema200": 2781.7514231395458
   },
-  "vix": 16.09000015258789,
+  "vix": 16.110000610351562,
   "breadth": {
     "sectors_above_200sma": 6,
     "sectors_total": 11
