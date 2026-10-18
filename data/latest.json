@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T17:30:30.551178+00:00",
+  "updated_at": "2026-10-18T18:00:30.072315+00:00",
   "market": {
     "score": 52,
     "label": "Neutral",
@@ -208,7 +208,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 29
+        "rs_rating": 28
       },
       {
         "symbol": "MDLZ",
@@ -364,7 +364,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 27
+        "rs_rating": 26
       },
       {
         "symbol": "MNST",
@@ -481,7 +481,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 38
+        "rs_rating": 37
       },
       {
         "symbol": "CTSH",
@@ -572,7 +572,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 66
+        "rs_rating": 65
       },
       {
         "symbol": "ABNB",
@@ -611,7 +611,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 47
+        "rs_rating": 46
       },
       {
         "symbol": "ODFL",
@@ -663,7 +663,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 32
+        "rs_rating": 31
       },
       {
         "symbol": "PYPL",
@@ -741,7 +741,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 24
+        "rs_rating": 23
       },
       {
         "symbol": "CEG",
@@ -767,7 +767,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 12
+        "rs_rating": 13
       },
       {
         "symbol": "NVDA",
@@ -780,7 +780,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 62
+        "rs_rating": 61
       },
       {
         "symbol": "CDNS",
@@ -858,7 +858,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 79
+        "rs_rating": 78
       },
       {
         "symbol": "MSFT",
@@ -1001,7 +1001,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 8
+        "rs_rating": 9
       },
       {
         "symbol": "SNPS",
@@ -1040,7 +1040,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 63
+        "rs_rating": 62
       },
       {
         "symbol": "MPWR",
@@ -1157,7 +1157,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 88
+        "rs_rating": 87
       },
       {
         "symbol": "KLAC",
@@ -1170,7 +1170,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 72
+        "rs_rating": 71
       },
       {
         "symbol": "ALAB",
@@ -1235,7 +1235,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 60
+        "rs_rating": 59
       },
       {
         "symbol": "AMD",
