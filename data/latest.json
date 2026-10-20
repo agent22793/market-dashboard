@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T02:30:32.284004+00:00",
+  "updated_at": "2026-10-20T03:00:32.779446+00:00",
   "market": {
     "score": 56,
     "label": "Neutral",
@@ -1313,7 +1313,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 42
+        "rs_rating": 41
       },
       {
         "symbol": "GILD",
