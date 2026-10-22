@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-22T20:00:35.247967+00:00",
+  "updated_at": "2026-10-22T20:30:32.755381+00:00",
   "market": {
-    "score": 53,
+    "score": 54,
     "label": "Neutral",
     "emoji": "\ud83d\udfe1",
     "components": {
       "trend": 52,
-      "volatility": 62,
+      "volatility": 65,
       "breadth": 59,
-      "sentiment": 36
+      "sentiment": 39
     }
   },
   "trend_strength": {
@@ -18,21 +18,21 @@
     "relation": "EMA20 > EMA50 > EMA200"
   },
   "market_summary": [
-    "\ud83d\udfe1 Overall market is Neutral with a Market Score of 53/100.",
+    "\ud83d\udfe1 Overall market is Neutral with a Market Score of 54/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 83% confidence.",
-    "Volatility: VIX at 19.7 \u2014 calm conditions.",
+    "Volatility: VIX at 19.0 \u2014 calm conditions.",
     "Breadth: 59.0% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (55 vs 45).",
-    "Sentiment: Fear & Greed at 36 (Fear)."
+    "Sentiment: Fear & Greed at 39 (Fear)."
   ],
   "sp500": {
-    "price": 7663.39990234375,
-    "change_pct": -1.2088173970099758,
-    "sma50": 7703.144619140625,
-    "sma200": 7287.800961914062,
-    "off_52w_high_pct": -1.9891503049771053,
-    "ema20": 7722.619696879568,
-    "ema50": 7684.152375963853,
-    "ema200": 7327.64789590855
+    "price": 7663.43017578125,
+    "change_pct": -1.208427133063139,
+    "sma50": 7703.145224609375,
+    "sma200": 7287.80111328125,
+    "off_52w_high_pct": -1.988763123651538,
+    "ema20": 7722.622580064092,
+    "ema50": 7684.153563157481,
+    "ema200": 7327.648197136784
   },
   "nasdaq": {
     "price": 26008.859375,
@@ -45,26 +45,26 @@
     "ema200": 25147.742223333942
   },
   "dow": {
-    "price": 52866.8515625,
-    "change_pct": 0.020360414063569365,
-    "sma50": 52352.505078125,
-    "sma200": 50516.21177734375,
-    "off_52w_high_pct": -2.7273109507937487,
-    "ema20": 52013.31627233269,
-    "ema50": 52093.17098266107,
-    "ema200": 50554.27661070187
+    "price": 52867.98046875,
+    "change_pct": 0.022496225194013064,
+    "sma50": 52352.52765625,
+    "sma200": 50516.217421875,
+    "off_52w_high_pct": -2.7252338127880527,
+    "ema20": 52013.423787213644,
+    "ema50": 52093.2152534944,
+    "ema200": 50554.28784359988
   },
   "russell": {
-    "price": 2776.251708984375,
-    "change_pct": -0.17145905147704088,
-    "sma50": 2886.201220703125,
-    "sma200": 2799.3252575683596,
-    "off_52w_high_pct": -9.521780601401241,
-    "ema20": 2795.153214747332,
-    "ema50": 2852.1483877107394,
-    "ema200": 2780.7340953895477
+    "price": 2784.026123046875,
+    "change_pct": 0.10809355900041062,
+    "sma50": 2886.356708984375,
+    "sma200": 2799.364129638672,
+    "off_52w_high_pct": -9.268411953678823,
+    "ema20": 2795.8936351342372,
+    "ema50": 2852.4532666935825,
+    "ema200": 2780.8114527434036
   },
-  "vix": 19.690000534057617,
+  "vix": 19.030000686645508,
   "breadth": {
     "sectors_above_200sma": 6,
     "sectors_total": 11
@@ -120,6 +120,19 @@
         "rs_rating": 63
       },
       {
+        "symbol": "KHC",
+        "price": 25.09,
+        "change_pct": 6.77,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 37
+      },
+      {
         "symbol": "CSX",
         "price": 51.67,
         "change_pct": 6.76,
@@ -131,19 +144,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 76
-      },
-      {
-        "symbol": "KHC",
-        "price": 25.08,
-        "change_pct": 6.7,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 37
       },
       {
         "symbol": "ADBE",
@@ -264,8 +264,8 @@
       },
       {
         "symbol": "ADSK",
-        "price": 254.99,
-        "change_pct": 4.15,
+        "price": 254.95,
+        "change_pct": 4.13,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
@@ -432,19 +432,6 @@
         "rs_rating": 56
       },
       {
-        "symbol": "XEL",
-        "price": 78.97,
-        "change_pct": 2.85,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 30
-      },
-      {
         "symbol": "WMT",
         "price": 121.12,
         "change_pct": 2.82,
@@ -469,6 +456,19 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 90
+      },
+      {
+        "symbol": "XEL",
+        "price": 78.9,
+        "change_pct": 2.76,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 30
       },
       {
         "symbol": "AEP",
@@ -706,8 +706,8 @@
       },
       {
         "symbol": "ALNY",
-        "price": 227.35,
-        "change_pct": 1.0,
+        "price": 227.28,
+        "change_pct": 0.97,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -862,8 +862,8 @@
       },
       {
         "symbol": "APP",
-        "price": 264.3,
-        "change_pct": -1.34,
+        "price": 264.28,
+        "change_pct": -1.35,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -940,8 +940,8 @@
       },
       {
         "symbol": "CSCO",
-        "price": 104.93,
-        "change_pct": -2.17,
+        "price": 104.89,
+        "change_pct": -2.21,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -1122,7 +1122,7 @@
       },
       {
         "symbol": "ADI",
-        "price": 385.75,
+        "price": 385.76,
         "change_pct": -4.98,
         "above_sma5": false,
         "above_sma10": false,
@@ -1209,7 +1209,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 39
+        "rs_rating": 40
       },
       {
         "symbol": "WDC",
@@ -1383,12 +1383,12 @@
     ]
   },
   "fear_greed": {
-    "score": 36,
+    "score": 39,
     "rating": "Fear",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 19
+        "val": 25
       },
       {
         "name": "MOMENTUM",
@@ -1396,7 +1396,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 37
+        "val": 41
       },
       {
         "name": "SAFE HAVEN",
