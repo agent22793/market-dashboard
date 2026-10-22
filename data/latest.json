@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:30:32.755381+00:00",
+  "updated_at": "2026-10-22T20:49:49.978561+00:00",
   "market": {
     "score": 54,
     "label": "Neutral",
@@ -1396,7 +1396,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 41
+        "val": 42
       },
       {
         "name": "SAFE HAVEN",
