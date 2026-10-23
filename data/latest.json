@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-23T20:00:36.261720+00:00",
+  "updated_at": "2026-10-23T20:30:33.586959+00:00",
   "market": {
-    "score": 52,
+    "score": 53,
     "label": "Neutral",
     "emoji": "\ud83d\udfe1",
     "components": {
       "trend": 51,
-      "volatility": 61,
+      "volatility": 63,
       "breadth": 58,
       "sentiment": 37
     }
@@ -18,21 +18,21 @@
     "relation": "EMA20 > EMA50 > EMA200"
   },
   "market_summary": [
-    "\ud83d\udfe1 Overall market is Neutral with a Market Score of 52/100.",
+    "\ud83d\udfe1 Overall market is Neutral with a Market Score of 53/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 82% confidence.",
-    "Volatility: VIX at 19.8 \u2014 calm conditions.",
+    "Volatility: VIX at 19.5 \u2014 calm conditions.",
     "Breadth: 58.0% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (30 vs 69).",
     "Sentiment: Fear & Greed at 37 (Fear)."
   ],
   "sp500": {
-    "price": 7623.6298828125,
-    "change_pct": -0.5193535017064654,
-    "sma50": 7699.638017578125,
-    "sma200": 7291.314611816406,
-    "off_52w_high_pct": -2.4977879144346793,
-    "ema20": 7713.194704135369,
-    "ema50": 7681.780096727519,
-    "ema200": 7332.424970231091
+    "price": 7623.68017578125,
+    "change_pct": -0.5186972294159098,
+    "sma50": 7699.6390234375,
+    "sma200": 7291.31486328125,
+    "off_52w_high_pct": -2.497144693845421,
+    "ema20": 7713.199493941916,
+    "ema50": 7681.782069000803,
+    "ema200": 7332.42547065864
   },
   "nasdaq": {
     "price": 25955.341796875,
@@ -45,26 +45,26 @@
     "ema200": 25163.187184391936
   },
   "dow": {
-    "price": 52214.62890625,
-    "change_pct": -1.2358171367756188,
-    "sma50": 52320.02046875,
-    "sma200": 50532.31017578125,
-    "off_52w_high_pct": -3.92737204308804,
-    "ema20": 52032.58617950282,
-    "ema50": 52097.9766403594,
-    "ema200": 50581.7604648131
+    "price": 52215.16015625,
+    "change_pct": -1.2348122752407376,
+    "sma50": 52320.03109375,
+    "sma200": 50532.31283203125,
+    "off_52w_high_pct": -3.9263945663794764,
+    "ema20": 52032.63677474092,
+    "ema50": 52097.997473692725,
+    "ema200": 50581.765750882754
   },
   "russell": {
-    "price": 2776.70947265625,
-    "change_pct": -0.2629481924975474,
-    "sma50": 2880.833974609375,
-    "sma200": 2800.370596923828,
-    "off_52w_high_pct": -9.506862054281552,
-    "ema20": 2794.066908634066,
-    "ema50": 2849.4830748926056,
-    "ema200": 2781.7303812004834
+    "price": 2775.898681640625,
+    "change_pct": -0.2920711188702074,
+    "sma50": 2880.8177587890623,
+    "sma200": 2800.36654296875,
+    "off_52w_high_pct": -9.533285784939949,
+    "ema20": 2793.989690442101,
+    "ema50": 2849.451279166503,
+    "ema200": 2781.7223136281887
   },
-  "vix": 19.760000228881836,
+  "vix": 19.450000762939453,
   "breadth": {
     "sectors_above_200sma": 6,
     "sectors_total": 11
@@ -624,7 +624,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 58
+        "rs_rating": 57
       },
       {
         "symbol": "NVDA",
@@ -874,6 +874,19 @@
         "rs_rating": 24
       },
       {
+        "symbol": "KHC",
+        "price": 24.8,
+        "change_pct": -1.16,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 35
+      },
+      {
         "symbol": "NXPI",
         "price": 234.92,
         "change_pct": -1.21,
@@ -911,19 +924,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 65
-      },
-      {
-        "symbol": "KHC",
-        "price": 24.78,
-        "change_pct": -1.24,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 35
       },
       {
         "symbol": "ALNY",
@@ -1170,7 +1170,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 20
+        "rs_rating": 21
       },
       {
         "symbol": "MNST",
@@ -1196,7 +1196,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 48
+        "rs_rating": 49
       },
       {
         "symbol": "PCAR",
@@ -1388,7 +1388,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 21
+        "val": 22
       },
       {
         "name": "MOMENTUM",
