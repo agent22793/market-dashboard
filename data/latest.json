@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T02:00:39.991333+00:00",
+  "updated_at": "2026-10-24T02:30:29.319877+00:00",
   "market": {
     "score": 53,
     "label": "Neutral",
@@ -897,7 +897,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 33
+        "rs_rating": 32
       },
       {
         "symbol": "ADP",
