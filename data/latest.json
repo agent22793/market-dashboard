@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T17:30:31.095624+00:00",
+  "updated_at": "2026-10-24T18:00:32.097816+00:00",
   "market": {
     "score": 53,
     "label": "Neutral",
@@ -247,7 +247,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 87
+        "rs_rating": 88
       },
       {
         "symbol": "SNPS",
@@ -442,7 +442,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 78
+        "rs_rating": 79
       },
       {
         "symbol": "GEHC",
@@ -546,7 +546,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 73
+        "rs_rating": 74
       },
       {
         "symbol": "PDD",
@@ -663,7 +663,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": null
+        "rs_rating": 43
       },
       {
         "symbol": "PAYX",
@@ -689,7 +689,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 22
+        "rs_rating": 21
       },
       {
         "symbol": "CEG",
@@ -806,7 +806,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 60
+        "rs_rating": 61
       },
       {
         "symbol": "GOOG",
@@ -845,7 +845,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 31
+        "rs_rating": 30
       },
       {
         "symbol": "SBUX",
@@ -858,7 +858,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 55
+        "rs_rating": 56
       },
       {
         "symbol": "IDXX",
@@ -884,7 +884,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 36
+        "rs_rating": 35
       },
       {
         "symbol": "NXPI",
