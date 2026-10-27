@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-27T20:00:37.368458+00:00",
+  "updated_at": "2026-10-27T20:30:37.276639+00:00",
   "market": {
     "score": 69,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 83,
-      "volatility": 73,
+      "volatility": 72,
       "breadth": 62,
-      "sentiment": 47
+      "sentiment": 48
     }
   },
   "trend_strength": {
@@ -22,17 +22,17 @@
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 82% confidence.",
     "Volatility: VIX at 17.5 \u2014 calm conditions.",
     "Breadth: 62.0% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (55 vs 45).",
-    "Sentiment: Fear & Greed at 47 (Neutral)."
+    "Sentiment: Fear & Greed at 48 (Neutral)."
   ],
   "sp500": {
-    "price": 7722.669921875,
-    "change_pct": 0.597906440169127,
-    "sma50": 7697.01142578125,
-    "sma200": 7298.873364257813,
-    "off_52w_high_pct": -1.2311179629716063,
-    "ema20": 7710.962391777708,
-    "ema50": 7683.196664875,
-    "ema200": 7338.684970197967
+    "price": 7722.60009765625,
+    "change_pct": 0.5969968881235133,
+    "sma50": 7697.010029296875,
+    "sma200": 7298.873015136719,
+    "off_52w_high_pct": -1.2320109779644484,
+    "ema20": 7710.955741852113,
+    "ema50": 7683.193926670343,
+    "ema200": 7338.684275429621
   },
   "nasdaq": {
     "price": 26477.810546875,
@@ -45,26 +45,26 @@
     "ema200": 25180.861588061314
   },
   "dow": {
-    "price": 52378.3984375,
-    "change_pct": 0.03212338722839991,
-    "sma50": 52270.986796875,
-    "sma200": 50562.16181640625,
-    "off_52w_high_pct": -3.6260432856873304,
-    "ema20": 52093.91060953849,
-    "ema50": 52118.924718808914,
-    "ema200": 50614.8212390224
+    "price": 52377.5703125,
+    "change_pct": 0.030541836347675044,
+    "sma50": 52270.970234375,
+    "sma200": 50562.15767578125,
+    "off_52w_high_pct": -3.627566999380094,
+    "ema20": 52093.831740490874,
+    "ema50": 52118.89224331872,
+    "ema200": 50614.81299897265
   },
   "russell": {
-    "price": 2820.755859375,
-    "change_pct": 1.232259977415584,
-    "sma50": 2870.442099609375,
-    "sma200": 2802.261778564453,
-    "off_52w_high_pct": -8.071387515586903,
-    "ema20": 2795.886674248378,
-    "ema50": 2845.951124949372,
-    "ema200": 2781.508451962281
+    "price": 2818.8701171875,
+    "change_pct": 1.164583810851605,
+    "sma50": 2870.404384765625,
+    "sma200": 2802.2523498535156,
+    "off_52w_high_pct": -8.132843973161574,
+    "ema20": 2795.70707975433,
+    "ema50": 2845.8771742753524,
+    "ema200": 2781.489688358425
   },
-  "vix": 17.479999542236328,
+  "vix": 17.520000457763672,
   "breadth": {
     "sectors_above_200sma": 7,
     "sectors_total": 11
@@ -104,7 +104,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 13
+        "rs_rating": 14
       },
       {
         "symbol": "WDC",
@@ -221,7 +221,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 76
+        "rs_rating": 77
       },
       {
         "symbol": "AVGO",
@@ -780,7 +780,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 93
+        "rs_rating": 94
       },
       {
         "symbol": "LIN",
@@ -858,7 +858,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 31
+        "rs_rating": 30
       },
       {
         "symbol": "MSFT",
@@ -1066,7 +1066,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 44
+        "rs_rating": 45
       },
       {
         "symbol": "ORLY",
@@ -1238,19 +1238,6 @@
         "rs_rating": 4
       },
       {
-        "symbol": "KHC",
-        "price": 24.09,
-        "change_pct": -2.59,
-        "above_sma5": false,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 28
-      },
-      {
         "symbol": "ADP",
         "price": 293.11,
         "change_pct": -2.66,
@@ -1262,6 +1249,19 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 62
+      },
+      {
+        "symbol": "KHC",
+        "price": 24.06,
+        "change_pct": -2.71,
+        "above_sma5": false,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 27
       },
       {
         "symbol": "ADSK",
@@ -1287,7 +1287,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 4
+        "rs_rating": 3
       },
       {
         "symbol": "ADBE",
@@ -1383,7 +1383,7 @@
     ]
   },
   "fear_greed": {
-    "score": 47,
+    "score": 48,
     "rating": "Neutral",
     "components": [
       {
@@ -1396,7 +1396,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 57
+        "val": 58
       },
       {
         "name": "SAFE HAVEN",
