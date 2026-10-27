@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T07:30:32.099574+00:00",
+  "updated_at": "2026-10-27T08:00:33.641236+00:00",
   "market": {
     "score": 56,
     "label": "Neutral",
@@ -20,7 +20,7 @@
   "market_summary": [
     "\ud83d\udfe1 Overall market is Neutral with a Market Score of 56/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 82% confidence.",
-    "Volatility: VIX at 18.4 \u2014 calm conditions.",
+    "Volatility: VIX at 18.5 \u2014 calm conditions.",
     "Breadth: 62.0% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (61 vs 39).",
     "Sentiment: Fear & Greed at 43 (Neutral)."
   ],
@@ -64,7 +64,7 @@
     "ema50": 2846.979505654797,
     "ema200": 2781.5126576270864
   },
-  "vix": 18.43000030517578,
+  "vix": 18.450000762939453,
   "breadth": {
     "sectors_above_200sma": 7,
     "sectors_total": 11
@@ -1388,7 +1388,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 34
+        "val": 35
       },
       {
         "name": "MOMENTUM",
