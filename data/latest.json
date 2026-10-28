@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T22:30:28.140963+00:00",
+  "updated_at": "2026-10-28T22:51:01.815187+00:00",
   "market": {
     "score": 71,
     "label": "Bullish",
@@ -455,7 +455,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 7
+        "rs_rating": 8
       },
       {
         "symbol": "PYPL",
@@ -871,7 +871,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 63
+        "rs_rating": 62
       },
       {
         "symbol": "CRWD",
@@ -1014,7 +1014,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 67
+        "rs_rating": 66
       },
       {
         "symbol": "KHC",
@@ -1313,7 +1313,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 54
+        "rs_rating": 53
       },
       {
         "symbol": "TTWO",
