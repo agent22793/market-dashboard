@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T20:00:34.129221+00:00",
+  "updated_at": "2026-10-28T20:30:28.450376+00:00",
   "market": {
     "score": 71,
     "label": "Bullish",
@@ -8,7 +8,7 @@
       "trend": 84,
       "volatility": 75,
       "breadth": 63,
-      "sentiment": 51
+      "sentiment": 52
     }
   },
   "trend_strength": {
@@ -22,17 +22,17 @@
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 82% confidence.",
     "Volatility: VIX at 16.9 \u2014 calm conditions.",
     "Breadth: 63.0% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (49 vs 51).",
-    "Sentiment: Fear & Greed at 51 (Neutral)."
+    "Sentiment: Fear & Greed at 52 (Neutral)."
   ],
   "sp500": {
-    "price": 7744.3798828125,
-    "change_pct": 0.2820265827679025,
-    "sma50": 7698.062431640625,
-    "sma200": 7302.708564453125,
-    "off_52w_high_pct": -0.9534589936570304,
-    "ema20": 7714.138993372149,
-    "ema50": 7685.593373809545,
-    "ema200": 7342.375074252499
+    "price": 7743.97998046875,
+    "change_pct": 0.27684824466034375,
+    "sma50": 7698.05443359375,
+    "sma200": 7302.706564941406,
+    "off_52w_high_pct": -0.958573534070617,
+    "ema20": 7714.100907434649,
+    "ema50": 7685.577691364691,
+    "ema200": 7342.3710951247
   },
   "nasdaq": {
     "price": 26549.8515625,
@@ -45,26 +45,26 @@
     "ema200": 25192.743630014436
   },
   "dow": {
-    "price": 52479.62109375,
-    "change_pct": 0.1948367987310906,
-    "sma50": 52253.6946875,
-    "sma200": 50576.60478515625,
-    "off_52w_high_pct": -3.4397980360624247,
-    "ema20": 52130.573583658406,
-    "ema50": 52133.03845533154,
-    "ema200": 50630.52782851036
+    "price": 52475.1015625,
+    "change_pct": 0.1862080455777182,
+    "sma50": 52253.604296875,
+    "sma200": 50576.5821875,
+    "off_52w_high_pct": -3.4481137754139413,
+    "ema20": 52130.14315211079,
+    "ema50": 52132.86121881193,
+    "ema200": 50630.48285805016
   },
   "russell": {
-    "price": 2823.235595703125,
-    "change_pct": 0.1548662525813871,
-    "sma50": 2866.511298828125,
-    "sma200": 2803.190078125,
-    "off_52w_high_pct": -7.990572751269709,
-    "ema20": 2798.3288431780247,
-    "ema50": 2844.98926832033,
-    "ema200": 2781.7561670152754
+    "price": 2830.50927734375,
+    "change_pct": 0.41290161207792053,
+    "sma50": 2866.6567724609376,
+    "sma200": 2803.226446533203,
+    "off_52w_high_pct": -7.7535230049566195,
+    "ema20": 2799.0215747628463,
+    "ema50": 2845.27451073761,
+    "ema200": 2781.8285419569734
   },
-  "vix": 16.940000534057617,
+  "vix": 16.90999984741211,
   "breadth": {
     "sectors_above_200sma": 7,
     "sectors_total": 11
@@ -117,7 +117,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 82
+        "rs_rating": 83
       },
       {
         "symbol": "AMAT",
@@ -299,7 +299,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 84
+        "rs_rating": 85
       },
       {
         "symbol": "VRTX",
@@ -429,7 +429,7 @@
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 89
+        "rs_rating": 90
       },
       {
         "symbol": "FANG",
@@ -991,19 +991,6 @@
         "rs_rating": 59
       },
       {
-        "symbol": "KHC",
-        "price": 23.88,
-        "change_pct": -0.75,
-        "above_sma5": false,
-        "above_sma10": false,
-        "above_sma20": true,
-        "above_sma50": false,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 28
-      },
-      {
         "symbol": "MDLZ",
         "price": 61.87,
         "change_pct": -0.77,
@@ -1028,6 +1015,19 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 67
+      },
+      {
+        "symbol": "KHC",
+        "price": 23.86,
+        "change_pct": -0.83,
+        "above_sma5": false,
+        "above_sma10": false,
+        "above_sma20": true,
+        "above_sma50": false,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 27
       },
       {
         "symbol": "NFLX",
@@ -1274,7 +1274,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 73
+        "rs_rating": 74
       },
       {
         "symbol": "ZS",
@@ -1383,12 +1383,12 @@
     ]
   },
   "fear_greed": {
-    "score": 51,
+    "score": 52,
     "rating": "Neutral",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 48
+        "val": 49
       },
       {
         "name": "MOMENTUM",
@@ -1396,7 +1396,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 62
+        "val": 64
       },
       {
         "name": "SAFE HAVEN",
@@ -1404,7 +1404,7 @@
       },
       {
         "name": "JUNK BONDS",
-        "val": 42
+        "val": 41
       }
     ]
   },
