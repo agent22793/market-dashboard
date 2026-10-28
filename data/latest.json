@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T01:00:35.165574+00:00",
+  "updated_at": "2026-10-28T01:30:25.883883+00:00",
   "market": {
     "score": 69,
     "label": "Bullish",
@@ -563,7 +563,7 @@
       },
       {
         "symbol": "ASML",
-        "price": 1590.9,
+        "price": 1588.79,
         "change_pct": 1.22,
         "above_sma5": false,
         "above_sma10": false,
