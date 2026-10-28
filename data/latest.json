@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-28T07:30:32.432843+00:00",
+  "updated_at": "2026-10-28T08:00:32.570892+00:00",
   "market": {
     "score": 69,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 83,
-      "volatility": 73,
+      "volatility": 72,
       "breadth": 62,
       "sentiment": 48
     }
@@ -64,7 +64,7 @@
     "ema50": 2845.8771742753524,
     "ema200": 2781.489688358425
   },
-  "vix": 17.479999542236328,
+  "vix": 17.510000228881836,
   "breadth": {
     "sectors_above_200sma": 7,
     "sectors_total": 11
@@ -1388,7 +1388,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 43
+        "val": 44
       },
       {
         "name": "MOMENTUM",
