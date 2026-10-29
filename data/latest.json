@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T01:00:35.157293+00:00",
+  "updated_at": "2026-10-29T01:30:33.287765+00:00",
   "market": {
     "score": 71,
     "label": "Bullish",
@@ -1174,7 +1174,7 @@
       },
       {
         "symbol": "FAST",
-        "price": 51.55,
+        "price": 51.29,
         "change_pct": -1.75,
         "above_sma5": false,
         "above_sma10": false,
