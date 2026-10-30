@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T02:30:32.765298+00:00",
+  "updated_at": "2026-10-30T03:00:38.870460+00:00",
   "market": {
     "score": 70,
     "label": "Bullish",
@@ -377,7 +377,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 25
+        "rs_rating": 26
       },
       {
         "symbol": "VRTX",
@@ -585,7 +585,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 22
+        "rs_rating": 23
       },
       {
         "symbol": "KDP",
