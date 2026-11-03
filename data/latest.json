@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-03T11:30:33.267059+00:00",
+  "updated_at": "2026-11-03T12:00:37.770934+00:00",
   "market": {
-    "score": 49,
+    "score": 48,
     "label": "Neutral",
     "emoji": "\ud83d\udfe1",
     "components": {
       "trend": 50,
-      "volatility": 54,
+      "volatility": 53,
       "breadth": 58,
-      "sentiment": 31
+      "sentiment": 30
     }
   },
   "trend_strength": {
@@ -18,11 +18,11 @@
     "relation": "EMA20 > EMA50 > EMA200"
   },
   "market_summary": [
-    "\ud83d\udfe1 Overall market is Neutral with a Market Score of 49/100.",
+    "\ud83d\udfe1 Overall market is Neutral with a Market Score of 48/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 81% confidence.",
-    "Volatility: VIX at 21.3 \u2014 moderate conditions.",
+    "Volatility: VIX at 21.4 \u2014 moderate conditions.",
     "Breadth: 58.0% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (55 vs 45).",
-    "Sentiment: Fear & Greed at 31 (Fear)."
+    "Sentiment: Fear & Greed at 30 (Fear)."
   ],
   "sp500": {
     "price": 7541.39990234375,
@@ -64,7 +64,7 @@
     "ema50": 2842.9747364197033,
     "ema200": 2782.156669765489
   },
-  "vix": 21.290000915527344,
+  "vix": 21.40999984741211,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -1383,12 +1383,12 @@
     ]
   },
   "fear_greed": {
-    "score": 31,
+    "score": 30,
     "rating": "Fear",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 19
+        "val": 17
       },
       {
         "name": "MOMENTUM",
@@ -1396,7 +1396,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 30
+        "val": 27
       },
       {
         "name": "SAFE HAVEN",
