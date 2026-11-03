@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T02:30:34.609363+00:00",
+  "updated_at": "2026-11-03T03:00:31.668352+00:00",
   "market": {
     "score": 49,
     "label": "Neutral",
@@ -1400,11 +1400,11 @@
       },
       {
         "name": "SAFE HAVEN",
-        "val": 24
+        "val": 22
       },
       {
         "name": "JUNK BONDS",
-        "val": 36
+        "val": 34
       }
     ]
   },
