@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-04T21:00:34.706597+00:00",
+  "updated_at": "2026-11-04T21:30:32.102182+00:00",
   "market": {
     "score": 60,
     "label": "Bullish",
     "emoji": "\ud83d\udfe2",
     "components": {
       "trend": 53,
-      "volatility": 76,
+      "volatility": 77,
       "breadth": 60,
       "sentiment": 51
     }
@@ -20,19 +20,19 @@
   "market_summary": [
     "\ud83d\udfe2 Overall market is Bullish with a Market Score of 60/100.",
     "\u25b2 Trend: Strong Uptrend (EMA20 > EMA50 > EMA200), 81% confidence.",
-    "Volatility: VIX at 16.8 \u2014 calm conditions.",
+    "Volatility: VIX at 16.6 \u2014 calm conditions.",
     "Breadth: 60.0% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (71 vs 29).",
     "Sentiment: Fear & Greed at 51 (Neutral)."
   ],
   "sp500": {
-    "price": 7688.8701171875,
-    "change_pct": 1.5847729471391458,
-    "sma50": 7692.97443359375,
-    "sma200": 7320.346413574219,
-    "off_52w_high_pct": -1.6633996681106655,
-    "ema20": 7676.671339648044,
-    "ema50": 7673.585777083036,
-    "ema200": 7350.514607784074
+    "price": 7688.6201171875,
+    "change_pct": 1.5814699659663978,
+    "sma50": 7692.96943359375,
+    "sma200": 7320.3451635742185,
+    "off_52w_high_pct": -1.6665970364766691,
+    "ema20": 7676.6475301242335,
+    "ema50": 7673.575973161467,
+    "ema200": 7350.512120221884
   },
   "nasdaq": {
     "price": 25736.513671875,
@@ -45,26 +45,26 @@
     "ema200": 25188.804611100375
   },
   "dow": {
-    "price": 53357.19140625,
-    "change_pct": 3.0325780318916307,
-    "sma50": 52148.5428125,
-    "sma200": 50654.62609375,
-    "off_52w_high_pct": -1.8251071361190196,
-    "ema20": 52194.19234903646,
-    "ema50": 52156.840143654794,
-    "ema200": 50677.70846965139
+    "price": 53356.12109375,
+    "change_pct": 3.030511261635005,
+    "sma50": 52148.52140625,
+    "sma200": 50654.6207421875,
+    "off_52w_high_pct": -1.8270764641936221,
+    "ema20": 52194.09041451264,
+    "ema50": 52156.79817061558,
+    "ema200": 50677.69781977577
   },
   "russell": {
-    "price": 2852.8125,
-    "change_pct": 1.4351383857091227,
-    "sma50": 2848.534033203125,
-    "sma200": 2807.5254113769533,
-    "off_52w_high_pct": -7.026659563051274,
-    "ema20": 2810.5822944632855,
-    "ema50": 2842.210412255895,
-    "ema200": 2781.289649358125
+    "price": 2856.94970703125,
+    "change_pct": 1.58224169787744,
+    "sma50": 2848.61677734375,
+    "sma200": 2807.5460974121092,
+    "off_52w_high_pct": -6.891827723323097,
+    "ema20": 2810.9763141805474,
+    "ema50": 2842.3726556688853,
+    "ema200": 2781.3308155972422
   },
-  "vix": 16.81999969482422,
+  "vix": 16.610000610351562,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -429,7 +429,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 22
+        "rs_rating": 23
       },
       {
         "symbol": "CSGP",
@@ -485,8 +485,8 @@
       },
       {
         "symbol": "KHC",
-        "price": 25.45,
-        "change_pct": 3.79,
+        "price": 25.44,
+        "change_pct": 3.75,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
@@ -494,7 +494,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 41
+        "rs_rating": 40
       },
       {
         "symbol": "PEP",
@@ -653,19 +653,6 @@
         "rs_rating": 43
       },
       {
-        "symbol": "CSX",
-        "price": 52.1,
-        "change_pct": 2.71,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 77
-      },
-      {
         "symbol": "COST",
         "price": 1046.47,
         "change_pct": 2.67,
@@ -690,6 +677,19 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 39
+      },
+      {
+        "symbol": "CSX",
+        "price": 52.05,
+        "change_pct": 2.62,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 77
       },
       {
         "symbol": "ORLY",
@@ -767,7 +767,7 @@
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 74
+        "rs_rating": 73
       },
       {
         "symbol": "XEL",
@@ -923,7 +923,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 50
+        "rs_rating": 51
       },
       {
         "symbol": "ADBE",
@@ -975,7 +975,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 56
+        "rs_rating": 55
       },
       {
         "symbol": "VRSK",
@@ -1040,7 +1040,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 40
+        "rs_rating": 41
       },
       {
         "symbol": "TEAM",
@@ -1213,8 +1213,8 @@
       },
       {
         "symbol": "KLAC",
-        "price": 149.76,
-        "change_pct": -4.13,
+        "price": 149.79,
+        "change_pct": -4.1,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -1396,7 +1396,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 60
+        "val": 61
       },
       {
         "name": "SAFE HAVEN",
