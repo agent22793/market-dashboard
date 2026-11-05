@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T00:00:38.286953+00:00",
+  "updated_at": "2026-11-05T00:30:30.963804+00:00",
   "market": {
     "score": 60,
     "label": "Bullish",
@@ -468,7 +468,7 @@
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 72
+        "rs_rating": 71
       },
       {
         "symbol": "CCEP",
@@ -767,7 +767,7 @@
         "above_sma200": true,
         "new_high": true,
         "new_low": false,
-        "rs_rating": 73
+        "rs_rating": 74
       },
       {
         "symbol": "XEL",
@@ -1424,10 +1424,6 @@
     {
       "time": "2026-11-04T15:00:35.234272+00:00",
       "text": "\u2714 Market shifted to Bullish"
-    },
-    {
-      "time": "2026-11-04T00:00:41.042584+00:00",
-      "text": "\u2714 Market remains Neutral"
     }
   ]
 }
