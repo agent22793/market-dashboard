@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-05T21:00:40.632281+00:00",
+  "updated_at": "2026-11-05T21:30:36.228638+00:00",
   "market": {
-    "score": 36,
+    "score": 34,
     "label": "Bearish",
     "emoji": "\ud83d\udd34",
     "components": {
       "trend": 46,
-      "volatility": 25,
+      "volatility": 19,
       "breadth": 47,
       "sentiment": 20
     }
@@ -18,21 +18,21 @@
     "relation": "EMA20 < EMA50, EMA50 \u2265 EMA200"
   },
   "market_summary": [
-    "\ud83d\udd34 Overall market is Bearish with a Market Score of 36/100.",
+    "\ud83d\udd34 Overall market is Bearish with a Market Score of 34/100.",
     "\u25bc Trend: Downtrend (EMA20 < EMA50, EMA50 \u2265 EMA200), 60% confidence.",
-    "Volatility: VIX at 27.0 \u2014 elevated conditions.",
+    "Volatility: VIX at 28.2 \u2014 elevated conditions.",
     "Breadth: 47.0% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (17 vs 83).",
     "Sentiment: Fear & Greed at 20 (Extreme Fear)."
   ],
   "sp500": {
-    "price": 7353.7998046875,
-    "change_pct": -4.35475166410585,
-    "sma50": 7686.53142578125,
-    "sma200": 7322.736062011719,
-    "off_52w_high_pct": -5.948772538402613,
-    "ema20": 7645.900127701687,
-    "ema50": 7661.035695052041,
-    "ema200": 7344.6393368261715
+    "price": 7353.72998046875,
+    "change_pct": -4.35565981430297,
+    "sma50": 7686.530029296875,
+    "sma200": 7322.735712890625,
+    "off_52w_high_pct": -5.949665553395455,
+    "ema20": 7645.893477776092,
+    "ema50": 7661.0329568473835,
+    "ema200": 7344.638642057826
   },
   "nasdaq": {
     "price": 24314.998046875,
@@ -45,26 +45,26 @@
     "ema200": 25162.475916488722
   },
   "dow": {
-    "price": 51521.28125,
-    "change_pct": -3.4388553855443704,
-    "sma50": 52109.669453125,
-    "sma200": 50666.84099609375,
-    "off_52w_high_pct": -5.203101332351068,
-    "ema20": 52130.01335122572,
-    "ema50": 52131.875687895874,
-    "ema200": 50645.22956868766
+    "price": 51523.05859375,
+    "change_pct": -3.4355242892923132,
+    "sma50": 52109.705,
+    "sma200": 50666.8498828125,
+    "off_52w_high_pct": -5.199831097774621,
+    "ema20": 52130.18262205906,
+    "ema50": 52131.945387650776,
+    "ema200": 50645.247253700094
   },
   "russell": {
-    "price": 2726.443603515625,
-    "change_pct": -4.56803058810038,
-    "sma50": 2843.02765625,
-    "sma200": 2807.6874670410157,
-    "off_52w_high_pct": -11.145029919842454,
-    "ema20": 2802.925600868568,
-    "ema50": 2837.826418149324,
-    "ema200": 2779.2550050615346
+    "price": 2729.88671875,
+    "change_pct": -4.447513417928639,
+    "sma50": 2843.0965185546875,
+    "sma200": 2807.7046826171877,
+    "off_52w_high_pct": -11.032818575826953,
+    "ema20": 2803.2535166051753,
+    "ema50": 2837.9614422761624,
+    "ema200": 2779.289264914613
   },
-  "vix": 27.010000228881836,
+  "vix": 28.18000030517578,
   "breadth": {
     "sectors_above_200sma": 7,
     "sectors_total": 11
@@ -354,6 +354,19 @@
         "rs_rating": 15
       },
       {
+        "symbol": "KHC",
+        "price": 25.32,
+        "change_pct": -0.47,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": true,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 45
+      },
+      {
         "symbol": "INTU",
         "price": 354.84,
         "change_pct": -0.5,
@@ -365,19 +378,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 7
-      },
-      {
-        "symbol": "KHC",
-        "price": 25.31,
-        "change_pct": -0.51,
-        "above_sma5": true,
-        "above_sma10": true,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": true,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 44
       },
       {
         "symbol": "FAST",
@@ -637,7 +637,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 18
+        "rs_rating": 17
       },
       {
         "symbol": "PYPL",
@@ -1131,7 +1131,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 3
+        "rs_rating": 2
       },
       {
         "symbol": "CRWD",
@@ -1392,7 +1392,7 @@
       },
       {
         "name": "MOMENTUM",
-        "val": 42
+        "val": 41
       },
       {
         "name": "PUT/CALL",
@@ -1400,7 +1400,7 @@
       },
       {
         "name": "SAFE HAVEN",
-        "val": 18
+        "val": 17
       },
       {
         "name": "JUNK BONDS",
