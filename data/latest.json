@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T11:00:40.859254+00:00",
+  "updated_at": "2026-11-05T11:30:32.981310+00:00",
   "market": {
     "score": 59,
     "label": "Neutral",
@@ -64,7 +64,7 @@
     "ema50": 2842.3726652430273,
     "ema200": 2781.330818026502
   },
-  "vix": 16.81999969482422,
+  "vix": 16.799999237060547,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -1388,7 +1388,7 @@
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 57
+        "val": 58
       },
       {
         "name": "MOMENTUM",
