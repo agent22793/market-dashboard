@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-06T12:30:33.832225+00:00",
+  "updated_at": "2026-11-06T13:00:46.859317+00:00",
   "market": {
     "score": 36,
     "label": "Bearish",
     "emoji": "\ud83d\udd34",
     "components": {
       "trend": 46,
-      "volatility": 26,
+      "volatility": 24,
       "breadth": 47,
       "sentiment": 21
     }
@@ -20,7 +20,7 @@
   "market_summary": [
     "\ud83d\udd34 Overall market is Bearish with a Market Score of 36/100.",
     "\u25bc Trend: Downtrend (EMA20 < EMA50, EMA50 \u2265 EMA200), 60% confidence.",
-    "Volatility: VIX at 26.9 \u2014 elevated conditions.",
+    "Volatility: VIX at 27.1 \u2014 elevated conditions.",
     "Breadth: 47.0% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (17 vs 83).",
     "Sentiment: Fear & Greed at 21 (Fear)."
   ],
@@ -64,7 +64,7 @@
     "ema50": 2837.9615667400103,
     "ema200": 2779.2892964949924
   },
-  "vix": 26.889999389648438,
+  "vix": 27.1200008392334,
   "breadth": {
     "sectors_above_200sma": 7,
     "sectors_total": 11
@@ -1396,7 +1396,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 11
+        "val": 8
       },
       {
         "name": "SAFE HAVEN",
