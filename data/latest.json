@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-06T00:59:51.811947+00:00",
+  "updated_at": "2026-11-06T01:30:33.144203+00:00",
   "market": {
-    "score": 37,
+    "score": 38,
     "label": "Bearish",
     "emoji": "\ud83d\udd34",
     "components": {
       "trend": 46,
       "volatility": 19,
       "breadth": 60,
-      "sentiment": 20
+      "sentiment": 23
     }
   },
   "trend_strength": {
@@ -18,11 +18,11 @@
     "relation": "EMA20 < EMA50, EMA50 \u2265 EMA200"
   },
   "market_summary": [
-    "\ud83d\udd34 Overall market is Bearish with a Market Score of 37/100.",
+    "\ud83d\udd34 Overall market is Bearish with a Market Score of 38/100.",
     "\u25bc Trend: Downtrend (EMA20 < EMA50, EMA50 \u2265 EMA200), 60% confidence.",
     "Volatility: VIX at 28.2 \u2014 elevated conditions.",
     "Breadth: 60.0% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (71 vs 29).",
-    "Sentiment: Fear & Greed at 20 (Extreme Fear)."
+    "Sentiment: Fear & Greed at 23 (Fear)."
   ],
   "sp500": {
     "price": 7353.72998046875,
@@ -66,7 +66,7 @@
   },
   "vix": 28.18000030517578,
   "breadth": {
-    "sectors_above_200sma": 7,
+    "sectors_above_200sma": 0,
     "sectors_total": 11
   },
   "internals": {
@@ -1383,8 +1383,8 @@
     ]
   },
   "fear_greed": {
-    "score": 20,
-    "rating": "Extreme Fear",
+    "score": 23,
+    "rating": "Fear",
     "components": [
       {
         "name": "VOLATILITY",
@@ -1400,11 +1400,11 @@
       },
       {
         "name": "SAFE HAVEN",
-        "val": 17
+        "val": 32
       },
       {
         "name": "JUNK BONDS",
-        "val": 33
+        "val": 38
       }
     ]
   },
