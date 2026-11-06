@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T00:00:35.927211+00:00",
+  "updated_at": "2026-11-06T00:30:35.069410+00:00",
   "market": {
     "score": 34,
     "label": "Bearish",
@@ -1424,10 +1424,6 @@
     {
       "time": "2026-11-05T18:00:35.433112+00:00",
       "text": "\u26a0 Market shifted to Bearish"
-    },
-    {
-      "time": "2026-11-05T08:30:28.329682+00:00",
-      "text": "\u26a0 Market shifted to Neutral"
     }
   ]
 }
