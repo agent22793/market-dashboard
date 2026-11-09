@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T23:52:13.150074+00:00",
+  "updated_at": "2026-11-09T03:05:36.359610+00:00",
   "market": {
     "score": 38,
     "label": "Bearish",
@@ -35,14 +35,14 @@
     "ema200": 7344.742583007766
   },
   "nasdaq": {
-    "price": 24579.423828125,
-    "change_pct": 1.0874926100143956,
-    "sma50": 26457.8190234375,
-    "sma200": 25098.28466796875,
-    "off_52w_high_pct": -10.943435935453538,
-    "ema20": 25870.828862219932,
-    "ema50": 26220.49155276189,
-    "ema200": 25156.95775089322
+    "price": 24579.4296875,
+    "change_pct": 1.0875167077935455,
+    "sma50": 26457.819140625,
+    "sma200": 25098.284697265626,
+    "off_52w_high_pct": -10.943414705671717,
+    "ema20": 25870.829420255646,
+    "ema50": 26220.491782541303,
+    "ema200": 25156.957809195457
   },
   "dow": {
     "price": 51285.73046875,
@@ -55,14 +55,14 @@
     "ema200": 50645.22355427019
   },
   "russell": {
-    "price": 2754.10546875,
-    "change_pct": 0.8870532191686875,
-    "sma50": 2837.8918896484374,
-    "sma200": 2807.881375732422,
-    "off_52w_high_pct": -10.24352797621435,
-    "ema20": 2798.573023624566,
-    "ema50": 2834.6730904123588,
-    "ema200": 2778.7293700468676
+    "price": 2754.110107421875,
+    "change_pct": 0.8872231407427211,
+    "sma50": 2837.891982421875,
+    "sma200": 2807.8813989257815,
+    "off_52w_high_pct": -10.243376801603532,
+    "ema20": 2798.5734654028397,
+    "ema50": 2834.67327232106,
+    "ema200": 2778.7294162028065
   },
   "vix": 25.639999389648438,
   "breadth": {
@@ -212,7 +212,7 @@
       },
       {
         "symbol": "INSM",
-        "price": 114.4,
+        "price": 114.41,
         "change_pct": 5.19,
         "above_sma5": true,
         "above_sma10": true,
@@ -290,7 +290,7 @@
       },
       {
         "symbol": "AMAT",
-        "price": 332.71,
+        "price": 332.72,
         "change_pct": 4.22,
         "above_sma5": false,
         "above_sma10": false,
@@ -299,7 +299,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 52
+        "rs_rating": 51
       },
       {
         "symbol": "BKR",
@@ -624,7 +624,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 45
+        "rs_rating": 44
       },
       {
         "symbol": "MAR",
@@ -741,7 +741,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 78
+        "rs_rating": 77
       },
       {
         "symbol": "KDP",
@@ -1027,7 +1027,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 47
+        "rs_rating": 48
       },
       {
         "symbol": "EXC",
@@ -1144,7 +1144,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 68
+        "rs_rating": 69
       },
       {
         "symbol": "FTNT",
@@ -1300,11 +1300,11 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 29
+        "rs_rating": 28
       },
       {
         "symbol": "BKNG",
-        "price": 160.66,
+        "price": 160.67,
         "change_pct": -4.77,
         "above_sma5": false,
         "above_sma10": true,
@@ -1409,6 +1409,10 @@
     ]
   },
   "recent_alerts": [
+    {
+      "time": "2026-11-09T03:05:36.359610+00:00",
+      "text": "\u2714 Market remains Bearish"
+    },
     {
       "time": "2026-11-06T21:00:39.268598+00:00",
       "text": "\u26a0 Market shifted to Bearish"
