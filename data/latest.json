@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-16T21:12:24.133801+00:00",
+  "updated_at": "2026-11-16T22:38:23.531557+00:00",
   "market": {
-    "score": 44,
+    "score": 46,
     "label": "Neutral",
     "emoji": "\ud83d\udfe1",
     "components": {
       "trend": 47,
-      "volatility": 42,
+      "volatility": 45,
       "breadth": 53,
-      "sentiment": 33
+      "sentiment": 36
     }
   },
   "trend_strength": {
@@ -18,11 +18,11 @@
     "relation": "EMA20 < EMA50, EMA50 \u2265 EMA200"
   },
   "market_summary": [
-    "\ud83d\udfe1 Overall market is Neutral with a Market Score of 44/100.",
+    "\ud83d\udfe1 Overall market is Neutral with a Market Score of 46/100.",
     "\u25bc Trend: Downtrend (EMA20 < EMA50, EMA50 \u2265 EMA200), 57% confidence.",
-    "Volatility: VIX at 23.6 \u2014 moderate conditions.",
+    "Volatility: VIX at 22.9 \u2014 moderate conditions.",
     "Breadth: 53.0% of Nasdaq-100 stocks above their 200-day average, more decliners than advancers today (25 vs 74).",
-    "Sentiment: Fear & Greed at 33 (Fear)."
+    "Sentiment: Fear & Greed at 36 (Fear)."
   ],
   "sp500": {
     "price": 7416.58984375,
@@ -55,16 +55,16 @@
     "ema200": 50779.589902307656
   },
   "russell": {
-    "price": 2741.469482421875,
-    "change_pct": -1.7566989304406255,
-    "sma50": 2819.760576171875,
-    "sma200": 2812.4907470703124,
-    "off_52w_high_pct": -10.655335572627145,
-    "ema20": 2799.7342780601284,
-    "ema50": 2828.220094199569,
-    "ema200": 2781.6179207262776
+    "price": 2742.941162109375,
+    "change_pct": -1.7039598167849501,
+    "sma50": 2819.790009765625,
+    "sma200": 2812.49810546875,
+    "off_52w_high_pct": -10.607373438207135,
+    "ema20": 2799.8744380303665,
+    "ema50": 2828.2778071284906,
+    "ema200": 2781.632564305258
   },
-  "vix": 23.6200008392334,
+  "vix": 22.90999984741211,
   "breadth": {
     "sectors_above_200sma": 8,
     "sectors_total": 11
@@ -793,7 +793,7 @@
         "above_sma200": true,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 19
+        "rs_rating": 18
       },
       {
         "symbol": "MNST",
@@ -858,7 +858,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 30
+        "rs_rating": 31
       },
       {
         "symbol": "DXCM",
@@ -936,7 +936,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 38
+        "rs_rating": 37
       },
       {
         "symbol": "AXON",
@@ -1383,12 +1383,12 @@
     ]
   },
   "fear_greed": {
-    "score": 33,
+    "score": 36,
     "rating": "Fear",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 18
+        "val": 25
       },
       {
         "name": "MOMENTUM",
@@ -1396,7 +1396,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 21
+        "val": 26
       },
       {
         "name": "SAFE HAVEN",
@@ -1423,10 +1423,6 @@
     },
     {
       "time": "2026-11-12T01:44:03.823711+00:00",
-      "text": "\u2714 Market remains Neutral"
-    },
-    {
-      "time": "2026-11-11T00:37:33.117197+00:00",
       "text": "\u2714 Market remains Neutral"
     }
   ]
