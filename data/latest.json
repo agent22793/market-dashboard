@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-17T21:26:26.291654+00:00",
+  "updated_at": "2026-11-17T22:53:46.717027+00:00",
   "market": {
     "score": 26,
     "label": "Bearish",
     "emoji": "\ud83d\udd34",
     "components": {
       "trend": 6,
-      "volatility": 32,
+      "volatility": 33,
       "breadth": 48,
       "sentiment": 29
     }
@@ -64,7 +64,7 @@
     "ema50": 2823.320613788907,
     "ema200": 2780.4828556340526
   },
-  "vix": 25.540000915527344,
+  "vix": 25.459999084472656,
   "breadth": {
     "sectors_above_200sma": 6,
     "sectors_total": 11
@@ -1396,7 +1396,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 19
+        "val": 18
       },
       {
         "name": "SAFE HAVEN",
@@ -1423,10 +1423,6 @@
     },
     {
       "time": "2026-11-13T01:28:06.596498+00:00",
-      "text": "\u2714 Market remains Neutral"
-    },
-    {
-      "time": "2026-11-12T01:44:03.823711+00:00",
       "text": "\u2714 Market remains Neutral"
     }
   ]
