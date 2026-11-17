@@ -607,7 +607,7 @@ def maybe_send_email(prev: dict | None, market: dict, snapshot: dict) -> None:
         ]
     lines += [
         "",
-        "Full dashboard: (add your GitHub Pages URL here)",
+        "Full dashboard: https://agent22793.github.io/market-dashboard/",
     ]
     body = "\n".join(lines)
 
