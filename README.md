@@ -1,7 +1,9 @@
 # Market Dashboard
 
+**Live dashboard:** https://agent22793.github.io/market-dashboard/
+
 A self-updating market dashboard: a GitHub Actions job pulls index, volatility,
-breadth, trend, and sentiment data roughly every 15 minutes during US market
+breadth, trend, and sentiment data roughly every 30 minutes during US market
 hours, computes a composite Market Score, commits it to the repo, and GitHub
 Pages serves a static dashboard that reads that data. No server, no paid API
 keys required.
