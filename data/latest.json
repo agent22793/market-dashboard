@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T23:51:48.420743+00:00",
+  "updated_at": "2026-11-24T00:28:37.010423+00:00",
   "market": {
     "score": 23,
     "label": "Bearish",
@@ -1410,6 +1410,10 @@
   },
   "recent_alerts": [
     {
+      "time": "2026-11-24T00:28:37.010423+00:00",
+      "text": "\u2714 Market remains Bearish"
+    },
+    {
       "time": "2026-11-23T23:51:48.420743+00:00",
       "text": "\u2714 Market remains Bearish"
     },
@@ -1424,10 +1428,6 @@
     {
       "time": "2026-11-18T20:59:01.644036+00:00",
       "text": "\u2714 Market remains Bearish"
-    },
-    {
-      "time": "2026-11-17T21:26:26.291654+00:00",
-      "text": "\u26a0 Market shifted to Bearish"
     }
   ]
 }
