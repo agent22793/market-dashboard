@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-25T22:03:22.686252+00:00",
+  "updated_at": "2026-11-26T22:00:56.535177+00:00",
   "market": {
-    "score": 20,
+    "score": 23,
     "label": "Bearish",
     "emoji": "\ud83d\udd34",
     "components": {
       "trend": 3,
-      "volatility": 19,
+      "volatility": 26,
       "breadth": 49,
-      "sentiment": 24
+      "sentiment": 30
     }
   },
   "trend_strength": {
@@ -18,11 +18,11 @@
     "relation": "EMA20 < EMA50, EMA50 \u2265 EMA200"
   },
   "market_summary": [
-    "\ud83d\udd34 Overall market is Bearish with a Market Score of 20/100.",
+    "\ud83d\udd34 Overall market is Bearish with a Market Score of 23/100.",
     "\u25bc Trend: Downtrend (EMA20 < EMA50, EMA50 \u2265 EMA200), 51% confidence.",
-    "Volatility: VIX at 28.3 \u2014 elevated conditions.",
-    "Breadth: 49.0% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (61 vs 39).",
-    "Sentiment: Fear & Greed at 24 (Fear)."
+    "Volatility: VIX at 26.8 \u2014 elevated conditions.",
+    "Breadth: 49.0% of Nasdaq-100 stocks above their 200-day average, more advancers than decliners today (62 vs 38).",
+    "Sentiment: Fear & Greed at 30 (Fear)."
   ],
   "sp500": {
     "price": 7182.77978515625,
@@ -35,14 +35,14 @@
     "ema200": 7353.343509970146
   },
   "nasdaq": {
-    "price": 23585.802734375,
-    "change_pct": -0.6224791327410162,
-    "sma50": 25978.689765625,
-    "sma200": 25167.647216796875,
-    "off_52w_high_pct": -14.543539876465317,
-    "ema20": 24637.188859530503,
-    "ema50": 25449.517160177653,
-    "ema200": 25094.802712545967
+    "price": 23585.80078125,
+    "change_pct": -0.622487362128954,
+    "sma50": 25978.6897265625,
+    "sma200": 25167.64720703125,
+    "off_52w_high_pct": -14.54354695305925,
+    "ema20": 24637.188673518598,
+    "ema50": 25449.517083584517,
+    "ema200": 25094.802693111887
   },
   "dow": {
     "price": 50182.94921875,
@@ -55,24 +55,24 @@
     "ema200": 50703.857110648154
   },
   "russell": {
-    "price": 2704.06103515625,
-    "change_pct": 0.7121609483743407,
-    "sma50": 2788.0714111328125,
-    "sma200": 2813.406104736328,
-    "off_52w_high_pct": -11.874479243248537,
-    "ema20": 2736.0119187336572,
-    "ema50": 2790.345780421731,
-    "ema200": 2775.650119615785
+    "price": 2704.06005859375,
+    "change_pct": 0.7121245765179252,
+    "sma50": 2788.0713916015625,
+    "sma200": 2813.4060998535156,
+    "off_52w_high_pct": -11.874511069482397,
+    "ema20": 2736.0118257277045,
+    "ema50": 2790.3457421251624,
+    "ema200": 2775.6501098987455
   },
-  "vix": 28.290000915527344,
+  "vix": 26.799999237060547,
   "breadth": {
     "sectors_above_200sma": 7,
     "sectors_total": 11
   },
   "internals": {
     "universe_size": 100,
-    "advancers": 61,
-    "decliners": 39,
+    "advancers": 62,
+    "decliners": 38,
     "unchanged": 0,
     "new_highs": 4,
     "new_lows": 1,
@@ -195,7 +195,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 36
+        "rs_rating": 35
       },
       {
         "symbol": "TTWO",
@@ -278,7 +278,7 @@
       {
         "symbol": "CPRT",
         "price": 33.17,
-        "change_pct": 2.52,
+        "change_pct": 2.53,
         "above_sma5": true,
         "above_sma10": true,
         "above_sma20": true,
@@ -302,6 +302,19 @@
         "rs_rating": 25
       },
       {
+        "symbol": "MCHP",
+        "price": 57.66,
+        "change_pct": 2.31,
+        "above_sma5": true,
+        "above_sma10": false,
+        "above_sma20": false,
+        "above_sma50": false,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 38
+      },
+      {
         "symbol": "FANG",
         "price": 180.15,
         "change_pct": 2.3,
@@ -313,19 +326,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 46
-      },
-      {
-        "symbol": "MCHP",
-        "price": 57.65,
-        "change_pct": 2.3,
-        "above_sma5": true,
-        "above_sma10": false,
-        "above_sma20": false,
-        "above_sma50": false,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 38
       },
       {
         "symbol": "QCOM",
@@ -806,7 +806,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 52
+        "rs_rating": 51
       },
       {
         "symbol": "HON",
@@ -859,6 +859,19 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 1
+      },
+      {
+        "symbol": "TMUS",
+        "price": 166.25,
+        "change_pct": 0.07,
+        "above_sma5": true,
+        "above_sma10": true,
+        "above_sma20": true,
+        "above_sma50": true,
+        "above_sma200": false,
+        "new_high": false,
+        "new_low": false,
+        "rs_rating": 11
       },
       {
         "symbol": "VRTX",
@@ -1067,19 +1080,6 @@
         "new_high": false,
         "new_low": false,
         "rs_rating": 97
-      },
-      {
-        "symbol": "TMUS",
-        "price": 166.25,
-        "change_pct": -0.63,
-        "above_sma5": true,
-        "above_sma10": false,
-        "above_sma20": true,
-        "above_sma50": true,
-        "above_sma200": false,
-        "new_high": false,
-        "new_low": false,
-        "rs_rating": 10
       },
       {
         "symbol": "ABNB",
@@ -1292,7 +1292,7 @@
       {
         "symbol": "ADSK",
         "price": 246.79,
-        "change_pct": -3.49,
+        "change_pct": -3.48,
         "above_sma5": false,
         "above_sma10": false,
         "above_sma20": false,
@@ -1313,7 +1313,7 @@
         "above_sma200": false,
         "new_high": false,
         "new_low": false,
-        "rs_rating": 53
+        "rs_rating": 52
       },
       {
         "symbol": "CEG",
@@ -1383,12 +1383,12 @@
     ]
   },
   "fear_greed": {
-    "score": 24,
+    "score": 30,
     "rating": "Fear",
     "components": [
       {
         "name": "VOLATILITY",
-        "val": 16
+        "val": 30
       },
       {
         "name": "MOMENTUM",
@@ -1396,7 +1396,7 @@
       },
       {
         "name": "PUT/CALL",
-        "val": 5
+        "val": 18
       },
       {
         "name": "SAFE HAVEN",
@@ -1409,6 +1409,10 @@
     ]
   },
   "recent_alerts": [
+    {
+      "time": "2026-11-26T22:00:56.535177+00:00",
+      "text": "\u2714 Market remains Bearish"
+    },
     {
       "time": "2026-11-25T20:33:21.140510+00:00",
       "text": "\u2714 Market remains Bearish"
